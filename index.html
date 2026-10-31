@@ -122,7 +122,7 @@ ul.tight li{margin:3px 0}
   <p class="brand-sub">考古題 42 題詳解 · 高分子物理</p>
   <nav>
     <a href="#start">導讀<small>答案速查</small></a>
-    <a href="#pc">物化補給站<small>基礎 1–9，先讀這裡</small></a>
+    <a href="#pc">物化補給站<small>基礎 0–9，先讀這裡</small></a>
     <a href="#c1">1 熱轉變基礎<small>Q9 Q19 Q21 Q37 Q8</small></a>
     <a href="#c2">2 結構如何決定 Tg<small>Q4–7 Q10 Q11 Q25</small></a>
     <a href="#c3">3 結構如何決定 Tm<small>Q12–18 Q22</small></a>
@@ -609,6 +609,42 @@ ul.tight li{margin:3px 0}
   <div class="ch-tag">Primer</div><h2>物化補給站</h2>
   <p class="ch-intro">物化基礎弱的話先讀這裡；每節後面列出用到的考題。每節都是「白話比喻 → 公式 → 和考題的關係」，不用背推導，只要抓住直覺，後面各章的答案就讀得懂。</p>
 
+  <article class="q" id="pc-0">
+    <div class="qhead"><span class="qno">基礎 0</span><div class="qen">符號怎麼念：看到字母先查這裡</div></div>
+    <div class="why">
+      <p>講義裡的字母（很多是希臘字母）只是工程師慣用的<b>名字</b>，不是什麼高深的東西。看到 σ，心裡念「應力」就好。這張表依主題排列，忘記了隨時回來查。</p>
+      <div class="tbl"><table>
+        <tr><th>符號</th><th>念法</th><th>意思（白話）</th><th>常用單位</th><th>出現在</th></tr>
+        <tr><td>Δ</td><td>delta</td><td>「變化量」，後來減原來，例如 ΔL = 拉長了多少</td><td>同後面的量</td><td>到處</td></tr>
+        <tr><td>F</td><td>力</td><td>拉或推的力氣（1 kg 重物約 10 N）</td><td>N（牛頓）</td><td>Q41</td></tr>
+        <tr><td>A</td><td>面積</td><td>受力的那個切面有多大</td><td>m²</td><td>基礎 9</td></tr>
+        <tr><td>σ</td><td>sigma</td><td>應力 = 力 ÷ 面積，每一小塊面積分到多少力</td><td>Pa、MPa</td><td>Q1、Q2、Q41</td></tr>
+        <tr><td>ε</td><td>epsilon</td><td>應變 = 拉長量 ÷ 原長，拉長了「幾成」</td><td>無（或 %）</td><td>Q1</td></tr>
+        <tr><td>λ</td><td>lambda</td><td>伸長比 = 拉長後長度 ÷ 原長（λ = 1 + ε）</td><td>無</td><td>Q2、Q39</td></tr>
+        <tr><td>E、G</td><td>模數</td><td>材料多硬：E 是拉伸模數，G 是剪切模數</td><td>Pa、GPa</td><td>Q2、Q31</td></tr>
+        <tr><td>τ</td><td>tau</td><td>剪應力 = 平行推力 ÷ 面積（有時也拿來代表時間 τ，看上下文）</td><td>Pa</td><td>Q23、Q26</td></tr>
+        <tr><td>γ̇</td><td>gamma dot</td><td>剪切速率：錯開得多快；上面一點 = 「每秒」</td><td>1/s（s⁻¹）</td><td>Q23、Q26、Q30</td></tr>
+        <tr><td>η</td><td>eta</td><td>黏度 = 剪應力 ÷ 剪切速率，液體多難流</td><td>Pa·s</td><td>Q28、Q29、Q40</td></tr>
+        <tr><td>τ、τr</td><td>tau</td><td>鬆弛時間：分子調整回來要花多久</td><td>s</td><td>Q9、Q23、Q32</td></tr>
+        <tr><td>ω</td><td>omega</td><td>角頻率：來回搖得多快（ω = 2π × 每秒次數）</td><td>rad/s</td><td>Q9、Q30</td></tr>
+        <tr><td>δ</td><td>delta（小寫）</td><td>相位差：應變比應力晚到多少；tan δ 越大越耗能</td><td>度或無</td><td>Q9、Q37</td></tr>
+        <tr><td>T、Tg、Tm</td><td>溫度</td><td>絕對溫度；Tg 玻璃轉移溫度；Tm 熔點</td><td>K（= °C + 273）</td><td>到處</td></tr>
+        <tr><td>H、ΔH</td><td>焓</td><td>熱含量；ΔH = 定壓下吸的熱</td><td>J/mol、J/g</td><td>基礎 1、Q16</td></tr>
+        <tr><td>S、ΔS</td><td>熵</td><td>「有多少種擺法」，越亂越大</td><td>J/(mol·K)</td><td>基礎 2、Q16</td></tr>
+        <tr><td>G、ΔG</td><td>自由能</td><td>判斷會不會自己發生：ΔG &lt; 0 會發生</td><td>J/mol</td><td>基礎 3</td></tr>
+        <tr><td>k、R</td><td>波茲曼常數、氣體常數</td><td>把溫度換成能量的常數；R = 8.314 J/(mol·K)</td><td>—</td><td>Q2、Q39</td></tr>
+        <tr><td>ρ</td><td>rho</td><td>密度 = 質量 ÷ 體積</td><td>g/cm³</td><td>Q3、Q39</td></tr>
+        <tr><td>α</td><td>alpha</td><td>熱膨脹係數：升 1 度體積變大幾成</td><td>K⁻¹</td><td>Q8、Q21</td></tr>
+        <tr><td>Cp</td><td>熱容</td><td>升 1 度要吸多少熱</td><td>J/(g·K)</td><td>Q9、Q21</td></tr>
+        <tr><td>M、Mc</td><td>分子量</td><td>鏈有多重（多長）；Mc 是開始纏結的臨界值</td><td>g/mol</td><td>Q28</td></tr>
+        <tr><td>K、Kc</td><td>應力強度因子</td><td>裂縫尖端被拉得多兇；Kc 是材料能忍的上限</td><td>MPa√m</td><td>Q41</td></tr>
+        <tr><td>a、Y</td><td>裂縫長、幾何因子</td><td>a 裂縫多深；Y 依形狀修正，題目會給</td><td>m、無</td><td>Q41</td></tr>
+        <tr><td>∂</td><td>partial（偏）</td><td>「只改這一個量、其他固定時」的變化率</td><td>—</td><td>Q34、基礎 4</td></tr>
+      </table></div>
+      <div class="key"><b class="lab">怎麼用</b>讀題或講義遇到看不懂的字母，先在這裡查念法和意思，再回去讀，式子就會變成一句白話。</div>
+    </div>
+  </article>
+
   <article class="q" id="pc-1">
     <div class="qhead"><span class="qno">基礎 1</span><div class="qen">能量、熱、功與狀態函數 (U, Q, W, first law)</div></div>
     <div class="why">
@@ -804,17 +840,98 @@ ul.tight li{margin:3px 0}
   </article>
 
   <article class="q" id="pc-9">
-    <div class="qhead"><span class="qno">基礎 9</span><div class="qen">應力、應變、模數與應力集中</div></div>
+    <div class="qhead"><span class="qno">基礎 9</span><div class="qen">應力、應變、模數、黏度與應力集中（從零開始）</div></div>
     <div class="why">
-      <p>用拉橡皮筋想：用力 F 拉，越粗（截面積 A 越大）越不容易斷，所以要看「單位面積的力」，叫應力（stress）；拉長了多少比例，叫應變（strain）。</p>
-      <div class="eq">σ = F / A　　ε = ΔL / L₀　　E = σ / ε（楊氏模數）　　G = τ / γ（剪切模數）</div>
-      <p>模數（modulus）是「硬度」：同樣的 ε，σ 越大越硬。E 與 G 的單位都是 Pa。流體則用黏度（viscosity）：</p>
-      <div class="eq">η = τ / γ̇　　（τ 為剪應力，γ̇ 為剪切速率，單位 Pa·s）</div>
-      <p>η 像「流動的阻力」：蜂蜜 η 大，水 η 小。</p>
-      <p>應力集中（stress concentration）：想像一條被拉緊的布，如果有一道小缺口，力線被迫繞過缺口，擠在缺口尖端，那裡的局部應力遠高於平均。裂縫越長、越尖，尖端越危險。</p>
-      <div class="eq">K = Y σ √(π a)　　（a 為裂縫長度，Y 為形狀係數，K 為應力強度因子）</div>
-      <p>當 K 達到材料的臨界值 K_c，裂縫就快速擴展。所以外加應力 σ 不大，也可能因 a 夠大而破壞，σ_c ∝ 1/√a。</p>
-      <div class="key"><b class="lab">這和考題的關係</b>Q1、Q2（應力–應變曲線，σ 與 ε 的定義和模數）；Q26（黏度與剪切速率，剪切變稀）；Q41（用 K = Yσ√(πa) 算臨界載重 F_c）。</div>
+      <p>這一節的式子都只是<b>除法</b>和<b>比例</b>，國中數學就夠。講義直接丟出 σ、ε、η、Kc 卻沒先說它們是什麼，看不懂很正常。先查 <a href="#pc-0">基礎 0 符號表</a>，再往下讀。</p>
+
+      <h3>1. 應力 σ：每一小塊面積分到多少力</h3>
+      <div class="eq">σ = F ÷ A　（力 ÷ 面積，單位 Pa = N/m²；1 MPa = 10⁶ Pa）</div>
+      <p><b>比喻</b>：10 個人一起抬桌子很輕鬆，1 個人抬就很重。桌子一樣重（F 一樣），分攤的人（A）不同，每個人的負擔（σ）就不同。</p>
+      <p><b>例子</b>：用 100 N 拉截面 1 mm² 的細線，σ = 100 N/mm²；換成 10 mm² 的粗棒，σ 只剩 10 N/mm²。除以面積之後，比的就是<b>材料本身</b>，不受粗細影響。</p>
+
+      <h3>2. 應變 ε：拉長了「幾成」</h3>
+      <div class="eq">ε = ΔL ÷ L　（拉長量 ÷ 原長，沒有單位，常寫成 %）</div>
+      <p><b>比喻</b>：「長了 1 公分」沒有意義：1 公尺的繩子長 1 公分幾乎沒變，1 公分的橡皮長 1 公分是長了一倍。所以要用比例，像打幾折一樣。</p>
+      <p><b>例子</b>：10 cm 的橡皮筋拉到 15 cm，ΔL = 5 cm，ε = 5 ÷ 10 = 0.5 = 50%。伸長比 λ = 15 ÷ 10 = 1.5，也就是 λ = 1 + ε。</p>
+
+      <h3>3. 模數 E：要多用力，才能拉長一點點</h3>
+      <div class="eq">E = σ ÷ ε　（在應力–應變圖上 = 起始直線的斜率）</div>
+      <div class="tbl"><table><tr><th>材料</th><th>模數 E（大約）</th><th>感覺</th></tr>
+        <tr><td>鋼</td><td>200 GPa</td><td>幾乎拉不動</td></tr>
+        <tr><td>玻璃態塑膠（PS、PMMA）</td><td>3 GPa ≈ 10<sup>9.5</sup> Pa</td><td>硬，但比鋼軟很多</td></tr>
+        <tr><td>橡膠</td><td>1 MPa = 10⁶ Pa</td><td>一拉就長</td></tr></table></div>
+      <p>圖越陡越硬。Q1 第 ① 段「斜率就是模數」、Q31 主曲線從 10⁹ 掉到 10⁶，講的都是 E。</p>
+
+      <h3>4. 黏度 η：液體版的「多硬」</h3>
+      <p>固體被拉會變長，液體被推會<b>流</b>。描述流動要換成「剪切」：</p>
+      <figure>
+        <svg viewBox="0 0 640 230" role="img" aria-label="兩片平板之間的液體：上板以速度 v 被力 F 推動，下板不動，液體各層速度由上往下遞減">
+          <rect x="120" y="40" width="400" height="14" style="fill:var(--s3)"/>
+          <rect x="120" y="186" width="400" height="14" style="fill:var(--s4)"/>
+          <text x="530" y="52" class="svgtxt">上板（面積 A）</text>
+          <text x="530" y="198" class="svgtxt">下板不動</text>
+          <line x1="40" y1="47" x2="110" y2="47" style="stroke:var(--red)" stroke-width="3"/>
+          <path d="M104 41 L116 47 L104 53 Z" style="fill:var(--red)"/>
+          <text x="40" y="36" class="svgtxt" style="fill:var(--red)">推力 F</text>
+          <g style="stroke:var(--s1)" stroke-width="2.5">
+            <line x1="200" y1="72" x2="330" y2="72"/><line x1="200" y1="102" x2="300" y2="102"/>
+            <line x1="200" y1="132" x2="265" y2="132"/><line x1="200" y1="162" x2="232" y2="162"/>
+          </g>
+          <g style="fill:var(--s1)">
+            <path d="M330 66 L342 72 L330 78 Z"/><path d="M300 96 L312 102 L300 108 Z"/>
+            <path d="M265 126 L277 132 L265 138 Z"/><path d="M232 156 L244 162 L232 168 Z"/>
+          </g>
+          <text x="352" y="76" class="svgsm">最上層最快 = v</text>
+          <text x="254" y="166" class="svgsm">越下層越慢</text>
+          <line x1="96" y1="58" x2="96" y2="182" style="stroke:var(--muted)" stroke-dasharray="4 3"/>
+          <text x="80" y="124" text-anchor="end" class="svgtxt">厚度 h</text>
+          <text x="320" y="222" text-anchor="middle" class="svgsm">像推一疊撲克牌：每一層都比下面那層滑得快一點</text>
+        </svg>
+        <figcaption>剪切流動。拉伸是「拉長」，剪切是「層層錯開」。</figcaption>
+      </figure>
+      <ul class="tight">
+        <li><b>剪應力 τ（tau）= F ÷ A</b>：和應力 σ 一樣是「每一小塊面積分到多少力」，只是力的方向和表面<b>平行</b>（推，不是拉）。單位 Pa。</li>
+        <li><b>剪切速率 γ̇（gamma dot）= v ÷ h</b>：錯開得多快。字母上的那一點表示「每秒」，所以單位是 1/s。例：塗奶油時刀速 0.1 m/s、奶油厚 1 mm（0.001 m），γ̇ = 0.1 ÷ 0.001 = 100 s⁻¹。</li>
+        <li><b>黏度 η（eta）= τ ÷ γ̇</b>：要讓液體錯開得這麼快，需要多大的推力。蜂蜜要用力推，水輕輕一推就動。</li>
+      </ul>
+      <div class="eq">η = τ ÷ γ̇　單位：Pa ÷ (1/s) = Pa·s</div>
+      <div class="tbl"><table><tr><th></th><th>固體（彈性）</th><th>液體（黏性）</th></tr>
+        <tr><td>施力方式</td><td>拉：應力 σ</td><td>推：剪應力 τ</td></tr>
+        <tr><td>回應</td><td>變形「多少」：ε</td><td>變形「多快」：γ̇</td></tr>
+        <tr><td>材料常數</td><td>模數 E = σ/ε</td><td>黏度 η = τ/γ̇</td></tr></table></div>
+      <div class="tbl"><table><tr><th>東西</th><th>黏度 η（Pa·s）</th></tr>
+        <tr><td>水</td><td>0.001</td></tr><tr><td>蜂蜜</td><td>約 10</td></tr>
+        <tr><td>高分子熔體（加工時）</td><td>10² – 10⁶</td></tr><tr><td>Tg 附近的玻璃態高分子</td><td>約 10¹²（幾乎不流）</td></tr></table></div>
+      <p>「剪切變稀」（Q23、Q26）就是：推得越快（γ̇ 越大），η 越小。Q40 的 WLF 則是在算溫度升高後 η 掉了多少。</p>
+
+      <h3>5. 應力集中：缺口讓力全擠到一點</h3>
+      <figure>
+        <svg viewBox="0 0 640 220" role="img" aria-label="有邊緣裂縫的板子受拉：力線繞過裂縫，在裂縫尖端擠在一起">
+          <rect x="140" y="30" width="360" height="160" fill="none" style="stroke:var(--plot)" stroke-width="2"/>
+          <path d="M140 108 L260 110 L140 112 Z" style="fill:var(--red)"/>
+          <g fill="none" style="stroke:var(--s1)" stroke-width="1.6">
+            <path d="M140 45 L500 45"/><path d="M140 65 L500 65"/><path d="M140 85 C200 85 240 98 262 106 C290 98 400 88 500 88"/>
+            <path d="M140 135 C200 135 240 122 262 114 C290 122 400 132 500 132"/><path d="M140 155 L500 155"/><path d="M140 175 L500 175"/>
+          </g>
+          <circle cx="262" cy="110" r="10" fill="none" style="stroke:var(--red)" stroke-width="2"/>
+          <text x="280" y="114" class="svgtxt" style="fill:var(--red)">尖端：力線擠在一起 = 應力集中</text>
+          <text x="150" y="128" class="svgsm">裂縫深 a</text>
+          <line x1="60" y1="110" x2="130" y2="110" style="stroke:var(--plot)" stroke-width="2"/><path d="M66 104 L54 110 L66 116 Z" style="fill:var(--plot)"/>
+          <line x1="510" y1="110" x2="580" y2="110" style="stroke:var(--plot)" stroke-width="2"/><path d="M574 104 L586 110 L574 116 Z" style="fill:var(--plot)"/>
+          <text x="60" y="100" class="svgsm">拉</text><text x="570" y="100" class="svgsm">拉</text>
+        </svg>
+        <figcaption>力像水流一樣「流」過材料，遇到缺口要繞過去，全部擠在尖端，所以尖端的應力比別處大很多倍。</figcaption>
+      </figure>
+      <p><b>比喻</b>：洋芋片袋子用手直接撕很難撕開，從小鋸齒缺口一撕就開。缺口越尖、越深，擠得越嚴重。</p>
+      <div class="eq">K = Y × σ × √(π × a)　；K 達到 Kc 就斷</div>
+      <ul class="tight">
+        <li><b>σ</b>：整體拉得多用力（第 1 段的應力）。</li>
+        <li><b>a</b>：裂縫多深。越深越危險，但它在根號裡：深 4 倍，危險只變 2 倍。</li>
+        <li><b>Y</b>：形狀修正（裂縫在邊上還是中間），題目會給，不用自己算。</li>
+        <li><b>K</b>：尖端有多危險；<b>Kc</b>：材料能忍的上限，查表得到。</li>
+      </ul>
+      <p>Q41 只是把數字代進去，讓 K 剛好等於 Kc，反推最大拉力 F（σ = F ÷ 截面積）。整題只有乘、除和一次開根號，計算機就能算。</p>
+      <div class="key"><b class="lab">這和考題的關係</b>Q1、Q2（應力–應變曲線與斜率 = 模數）、Q31（模數從 10⁹ 掉到 10⁶）、Q23、Q26、Q28–Q30、Q40（黏度 η = τ/γ̇）、Q41（應力集中 K = Yσ√(πa)）。</div>
     </div>
   </article>
 </section>
