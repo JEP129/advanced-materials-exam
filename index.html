@@ -3802,7 +3802,7 @@ document.querySelectorAll('.neckanim').forEach(b=>{try{build(b);}catch(e){}});
 .structs .mol{flex:1 1 150px;min-width:0;max-width:240px;background:var(--paper);border-radius:8px;padding:6px;text-align:center}
 .structs .mol.wide{max-width:none;flex-basis:100%;overflow-x:auto}
 .structs .mol svg{display:block;width:100%;height:auto;margin:0 auto}
-.structs .mol.wide svg{width:auto;max-width:none;height:110px}
+.structs .mol.wide svg{width:auto;max-width:none;height:130px}
 .structs .nm{font-weight:700;font-size:14px;margin:4px 0 0}
 .structs .nt{font-size:13px;color:var(--muted);margin:2px 0 0;line-height:1.5}
 .structs text{font:15px var(--body)}
@@ -3820,6 +3820,7 @@ function vinyl(d){
   s+=`<path d="M22 32 L14 32 L14 72 L22 72" fill="none" style="${KS}" stroke-width="2"/><path d="M${W-22} 32 L${W-14} 32 L${W-14} 72 L${W-22} 72" fill="none" style="${KS}" stroke-width="2"/>`+txt(W-6,80,'n',K);
   s+=line(14,52,48,52,KS)+line(86,52,cx-12,52,KS)+line(cx+12,52,W-14,52,KS);
   if(d.ptfe){s+=txt(67,58,'C',K)+txt(cx,58,'C',K);[67,cx].forEach(x=>{s+=line(x,40,x,26,TS)+txt(x,20,'F',T)+line(x,64,x,80,TS)+txt(x,96,'F',T);});return [s,110];}
+  if(d.pe){s+=txt(67,58,'CH₂',K)+txt(cx,58,'CH₂',K);return [s,90];}
   s+=txt(67,58,d.b1||'CH₂',K)+txt(cx,58,'C',K);
   const up=d.up||'H',upS=d.alpha?R:T,upL=d.alpha?RS:TS;
   s+=line(cx,40,cx,28,upL)+txt(cx,22,up,upS);
@@ -3866,10 +3867,10 @@ const ester=r=>[{co:1},'O',...r];
 const D={
 4:{lg:L1,items:[V('PS 聚苯乙烯','側基：1 個苯環｜Tg 100 °C',{down:['benz']}),V('Poly(vinyl naphthalene)','側基：萘（2 環並排）｜135 °C',{down:['naph']}),V('Poly(vinyl biphenyl)','側基：聯苯（2 環串成長條，最龐大）｜145 °C',{down:['biph']})]},
 5:{lg:L1,items:[V('PMA 聚丙烯酸甲酯','主鏈碳上：H ＋ 酯基｜279 K',{down:ester(['CH₃'])}),V('PMMA 聚甲基丙烯酸甲酯','主鏈碳上：α-CH₃ ＋ 酯基，同一個碳很擠｜378 K',{up:'CH₃',alpha:1,down:ester(['CH₃'])}),V('Poly(pentyl acrylate) 丙烯酸戊酯','酯基末端是長而柔軟的戊基（5 碳）｜比 PMA 低',{down:ester(['CH₂','CH₂','CH₂','CH₂','CH₃'])})]},
-6:{lg:L1,items:[V('PE 聚乙烯','沒有側基｜188 K',{}),V('PP 聚丙烯','–CH₃｜253 K',{down:['CH₃']}),V('Polybutene 聚丁烯','–CH₂CH₃（直鏈、柔軟）｜249 K',{down:['CH₂','CH₃']}),V('Polyhexene 聚己烯','–(CH₂)₃CH₃（更長、更軟）｜223 K',{down:['CH₂','CH₂','CH₂','CH₃']}),V('P4MP 聚4-甲基戊烯','–CH₂CH(CH₃)₂（分枝、龐大）｜302 K 最高',{down:['CH₂',{c:'CH',l:'CH₃',r:'CH₃',hl:1}]})]},
+6:{lg:L1,items:[V('PE 聚乙烯','沒有側基，只有 H｜188 K',{pe:1}),V('PP 聚丙烯','–CH₃｜253 K',{down:['CH₃']}),V('Polybutene 聚丁烯','–CH₂CH₃（直鏈、柔軟）｜249 K',{down:['CH₂','CH₃']}),V('Polyhexene 聚己烯','–(CH₂)₃CH₃（更長、更軟）｜223 K',{down:['CH₂','CH₂','CH₂','CH₃']}),V('P4MP 聚4-甲基戊烯','–CH₂CH(CH₃)₂（分枝、龐大）｜302 K 最高',{down:['CH₂',{c:'CH',l:'CH₃',r:'CH₃',hl:1}]})]},
 7:{lg:L1,items:[V('PMMA','酯基 R = 甲基（1 碳）｜105 °C',{up:'CH₃',down:ester(['CH₃'])}),V('PEMA','R = 乙基（2 碳）｜65 °C',{up:'CH₃',down:ester(['CH₂','CH₃'])}),V('PPMA','R = 丙基（3 碳）｜38 °C',{up:'CH₃',down:ester(['CH₂','CH₂','CH₃'])}),V('PBMA','R = 丁基（4 碳，最長最軟）｜−2 °C 最低',{up:'CH₃',down:ester(['CH₂','CH₂','CH₂','CH₃'])})]},
 14:{lg:L1,items:[V('(1) –CH₃','PP；側基短｜第 3',{down:['CH₃']}),V('(2) –CH₂C(CH₃)₂CH₂CH₃','有四級碳，分枝最擠｜第 1',{down:['CH₂',{c:'C',l:'CH₃',r:'CH₃',hl:1},'CH₂','CH₃']}),V('(3) –CH₂CH₂CH₃','直鏈、柔軟｜第 4',{down:['CH₂','CH₂','CH₃']}),V('(4) –(CH₂)₃CH₃','直鏈更長、更軟｜第 5',{down:['CH₂','CH₂','CH₂','CH₃']}),V('(5) –CH₂CH(CH₃)CH₂CH₃','一個分枝｜第 2',{down:['CH₂',{c:'CH',r:'CH₃',hl:1},'CH₂','CH₃']})]},
-16:{lg:'<b class="k">黑＝主鏈碳</b>　<b class="s">青＝接在碳上的原子</b>',items:[V('PE 聚乙烯','每個碳接 2 個小的 H｜Tm 410 K',{b1:'CH₂',down:[]}),V('PTFE 鐵氟龍','每個碳接 2 個較大的 F，互相排斥 → 鏈扭成剛硬螺旋｜Tm 645 K',{ptfe:1})]},
+16:{lg:'<b class="k">黑＝主鏈碳</b>　<b class="s">青＝接在碳上的原子</b>',items:[V('PE 聚乙烯','每個碳接 2 個小的 H｜Tm 410 K',{pe:1}),V('PTFE 鐵氟龍','每個碳接 2 個較大的 F，互相排斥 → 鏈扭成剛硬螺旋｜Tm 645 K',{ptfe:1})]},
 25:{lg:'<b class="r">紅＝–N=C=O 異氰酸基</b>（會和二醇反應成胺酯）　六角形：有圓圈＝苯環（芳香、剛硬）、無圓圈＝環己烷（脂環）　<b class="s">青色鋸齒＝CH₂ 柔性段</b>',items:[
   C('(1) HMI','直鏈 –(CH₂)₆–，沒有環，最柔軟 → Tg 最低',{t:[{a:'OCN',hl:1},{ch:6},{a:'NCO',hl:1}]}),
   C('(2) H₁₂MDI','兩個環己烷（脂環）',{t:[{a:'OCN',hl:1},{ring:'cy'},{a:'CH₂'},{ring:'cy'},{a:'NCO',hl:1}]}),
