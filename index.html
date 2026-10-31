@@ -1468,7 +1468,14 @@ ul.tight li{margin:3px 0}
   </article>
   <article class="q" id="q2">
     <div class="qhead"><span class="qno">Q2</span><div class="qen">Please give a whole picture of the stress-strain curves for a rubbery polymer with a molecular conformation point of view.</div></div>
-    <div class="ans"><b class="lab">考卷寫法</b>高於 Tg、輕度交聯的橡膠：熵彈性。<br>拉伸 → 鏈取向、構形數 Ω ↓、S = k ln Ω ↓ → 回復力 σ = NkT(λ − λ⁻²)，初始模數低（約 1 MPa）。<br>大伸長時鏈接近極限伸展（有限伸展性），天然橡膠並有應變誘發結晶 → 應力陡升；無降伏、無頸縮，卸載後大致回復。</div>
+    <div class="ans"><b class="lab">考卷寫法</b>先畫圖（σ 對 λ，分 ①–④ 段，虛線為高斯理論線，終點畫 ×），再逐段寫：<br>
+橡膠 = Tg 以上、輕度交聯網路，彈性來自熵。<br>
+① 小變形 λ ≈ 1–2：亂團鏈拉開、取向 → 構形數 Ω↓、S = k ln Ω↓ → 回復力；<span class="m">σ = NkT(λ − λ⁻²)</span>，起始模數低（G = NkT ≈ 1 MPa）。<br>
+② 中段 λ ≈ 2–5：曲線變平、略低於高斯理論（交聯點非完全仿射，Mooney–Rivlin 軟化）。<br>
+③ 大變形 λ &gt; 5：鏈接近拉直（有限伸展性）＋天然橡膠應變誘發結晶 → 應力陡升。<br>
+④ 斷裂 λ ≈ 7–8：網路鏈斷；之前幾乎完全可回復、遲滯小；<b>沒有降伏、沒有頸縮</b>（對比 Q1）。<br>
+加分：模數隨溫度與交聯密度上升（G = ρRT/Mc）。<br>
+<b>English：</b>Rubber is a lightly crosslinked network above Tg, so its elasticity is entropic. (1) At small strain, random coils uncoil and orient; Ω and S = k ln Ω decrease, giving a retractive force σ = NkT(λ − λ⁻²) with a low modulus (~1 MPa). (2) At intermediate strain the curve flattens slightly below the Gaussian prediction (non-affine, Mooney–Rivlin). (3) At large strain, finite chain extensibility and strain-induced crystallization (NR) cause a sharp upturn. (4) Fracture at λ ≈ 7–8; deformation is nearly fully reversible, with no yield or necking. Modulus increases with T and crosslink density.</div>
 <!--draw--><div class="drawq" data-def="q2"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
@@ -1477,6 +1484,7 @@ ul.tight li{margin:3px 0}
   <p class="step"><b>第 2 步：擺法越少，熵就越低。</b>熵（entropy）S 描述系統可採微觀狀態的多寡，寫成 <b>S = k ln Ω</b>；Ω 是可採的構形數，k 是波茲曼常數（Boltzmann constant）。拉伸使 Ω 減少，S 因而下降。在理想橡膠中，內能 U 的改變很小；固定溫度下，亥姆霍茲自由能（Helmholtz free energy）A = U − TS，所以熵降低會使 A 升高。網路傾向回到自由能較低、構形較多的捲曲狀態，形成回復力，這叫熵彈性（entropic elasticity）。因此橡膠回縮的主要來源，是可採構形的改變。</p>
   <p class="step"><b>第 3 步：把回復力換成應力曲線。</b>對等溫、近似不可壓縮的理想網路，中等伸長的工程應力可寫 <b>σ = NkT(λ − λ⁻²)</b>。N 是每單位原始體積內有效網路鏈的條數，T 是絕對溫度；NkT 給出應力尺度，括號描述拉長與橫向收縮共同造成的變化。未拉伸時 λ = 1，括號為零；例如 λ = 2 時，σ = 1.75NkT。小應變時 λ⁻² ≈ 1 − 2ε，得到 σ ≈ 3NkTε，所以初始模數 E ≈ 3NkT。模數（modulus）是曲線起始斜率；橡膠通常只有約 1 MPa 的量級，因此可以用不大的力拉長很多。</p>
   <p class="step"><b>第 4 步：最後的陡升，是鏈快沒有餘裕了。</b>軟繩不能無限拉長，鏈也有有限伸展性（finite extensibility）。大伸長時，鏈逐漸接近完全展開，繼續拉就要很大的應力，曲線因此急升，前面的理想公式也開始不足。天然橡膠（natural rubber，NR）還能因取向而長出晶體，稱為應變誘發結晶（strain-induced crystallization），進一步承載；並非每種橡膠都有此效應。典型曲線可由初期上升、中段較平緩到末段陡升，但沒有塑膠式降伏與頸縮。卸載後鏈大致捲回，可有黏彈性耗能；持續拉到網路破壞仍會斷裂。</p>
+  <!--q2link--><p class="step"><b>公式從哪來？</b>σ = NkT(λ − λ⁻²) 的四步推導（附講義出處）在 <a href="#q39">Q39 的「從零開始」</a>。</p><!--/q2link-->
   <div class="mapback"><b>對回考卷寫法：</b>「取向 → Ω ↓ → S ↓ → 回復力」就是熵彈性；公式描述理想網路，低初始模數解釋容易拉長，有限伸展性與天然橡膠結晶解釋末段陡升。<br><b>English：</b>Lightly crosslinked rubber above Tg shows entropy-driven, largely reversible deformation, with ideal nominal stress σ = NkT(λ − λ⁻²). Finite chain extensibility and strain-induced crystallization in natural rubber cause the high-stretch upturn, without plastic yielding or necking.</div>
 </div>
 <p class="advlab">進階解說（看懂上面再讀）</p><!--/basics-->
@@ -1533,6 +1541,19 @@ ul.tight li{margin:3px 0}
     <li><b>等溫可逆</b>：拉得夠慢，溫度固定，鏈來得及調整。</li>
   </ul>
   <p class="step"><b>第 3 步：從單鏈到整塊橡膠。</b>高斯假設讓單鏈的熵降低量正比於端距的平方（拉得越開，熵越低）。仿射假設讓每條鏈的端距隨 λ 變化，把 Ns 條鏈的熵變加起來，再用 ΔU = 0，自由能增加就等於 −TΔS。不可壓縮假設讓單軸拉伸的橫向伸長比成為 λ<sup>−1/2</sup>。代入微分後得到：σ = νkT(λ − λ⁻²)。其中 ν 是每單位體積的網路鏈數，k 是 Boltzmann 常數，T 是絕對溫度；用 ν = ρNA/Mc（ρ 密度、Mc 交聯點間莫耳質量）換成 G = ρRT/Mc。交聯越密，Mc 越小，G 越大，橡膠越硬。</p>
+  <!--q39deriv-->
+  <h3>σ = NkT(λ − λ⁻²) 是怎麼來的？（講義 Mechanical Properties.1 第 31–39 張）</h3>
+  <p class="step"><b>第 1 步：一條鏈被拉長，熵就下降。</b>鏈兩端距離 R 越大，鏈越接近拉直，能擺的形狀越少。講義算出單一條鏈的熵 S = 常數 − (正數) × R²：R 越大，S 越小，而且跟 R² 成比例地變小（來自高斯分布：亂團最常見，拉開的狀態機率按 R² 指數下降）。</p>
+  <p class="step"><b>第 2 步：整塊拉長 λ 倍，每條鏈跟著變形。</b>仿射假設：每條鏈在拉伸方向也拉長 λ 倍。體積不變：寬和厚各縮成 1/√λ 倍（λ × 1/√λ × 1/√λ = 1），像把黏土條拉長會變細。</p>
+  <p class="step"><b>第 3 步：把 N 條鏈的熵變加起來。</b>每個方向的 R² 乘上伸長比的平方：拉伸方向 λ²；兩個橫向各 (1/√λ)² = 1/λ，合計 2/λ；未拉時三方向合計 3，要減掉，讓沒拉時 ΔS = 0。</p>
+  <div class="eq">ΔS = −(Nk/2) [λ² + 2/λ − 3]　（驗算：λ = 1 時括號 = 1 + 2 − 3 = 0）</div>
+  <p class="step"><b>第 4 步：力 = 溫度 × 熵下降得多快。</b>講義寫 f = −T(dS/dλ)。dS/dλ 是「λ 每多拉一點，熵降多少」，也就是熵曲線的斜率；熵降得越快，越想縮回，力越大；乘上 T，所以越熱力越大。λ² 的斜率是 2λ，2/λ 的斜率是 −2/λ²，常數的斜率是 0：</p>
+  <div class="eq">dS/dλ = −(Nk/2)(2λ − 2/λ²) = −Nk(λ − 1/λ²)　⇒　f = −T·dS/dλ = NkT(λ − λ⁻²)</div>
+  <div class="tbl"><table><tr><th>λ</th><th>λ − λ⁻²</th><th>力（以 NkT 為單位）</th></tr>
+    <tr><td>1</td><td>1 − 1 = 0</td><td>0（沒拉，沒力）</td></tr><tr><td>1.5</td><td>1.5 − 0.44</td><td>1.06</td></tr>
+    <tr><td>2</td><td>2 − 0.25</td><td>1.75</td></tr><tr><td>4</td><td>4 − 0.06</td><td>3.94</td></tr></table></div>
+  <p><b>兩項的意思</b>：λ 是拉伸方向被拉開、熵下降的力；−λ⁻² 是橫向變細時鏈被擠亂、熵回升一點，抵消一部分力。<br><b>小提醒</b>：講義寫 E = NkT，嚴格說 NkT 是剪切模數 G（拉伸起始斜率是 3NkT，因為小拉伸時 λ − λ⁻² ≈ 3ε）；考試照講義寫即可。N 是每單位體積的網路鏈數，換成可量的量就是 G = ρRT/Mc。</p>
+<!--/q39deriv-->
   <div class="mapback"><b>對回考卷寫法：</b>考卷把六個假設各用一個名詞列出（高斯鏈、ΔU = 0、仿射、不可壓縮、完美網路、等溫可逆），每個名詞就是上面第 2 步的一條；結果 σ = νkT(λ − λ⁻²) = (ρRT/Mc)(λ − λ⁻²) 是第 3 步推導的終點，G = ρRT/Mc 即模數。<br><b>English：</b>The theory assumes Gaussian chains, an ideal entropic network (ΔU = 0), affine deformation, incompressibility (λ₁λ₂λ₃ = 1), a perfect network without dangling chains, and isothermal reversible deformation, giving σ = (ρRT/Mc)(λ − λ⁻²).</div>
 </div>
 <p class="advlab">進階解說（看懂上面再讀）</p><!--/basics-->
