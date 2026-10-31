@@ -205,13 +205,13 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q21">
     <div class="qhead"><span class="qno">Q21</span><div class="qen">What's the definition of state function? Give the physical meaning of the second-order transition in terms of ΔV and ΔH?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>State function：值只由目前狀態決定、與路徑無關（H, S, U, A, G, P, V, T）；W、Q 與路徑有關，不是（s046）。<br>① Tm（1st order）：first derivative of G（V、H、S）跳躍，有潛熱（補充）<br>② Tg（2nd order）：ΔV = 0、ΔH = 0（V、H 連續，只是斜率改變）；α、Cp、κ 出現階躍（s048）<br>→ 因此稱 2nd order phase transition（實為表觀 / 偽二階，與冷卻速率有關，補充）<br><br><b>English：</b>A state function depends only on the state, not the path. At Tg, V and H are continuous (ΔV = ΔH = 0) while α, Cp and κ show a step, so it is called a second-order transition.</div>
-<!--draw--><div class="drawq" data-def="q21"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 046 張</b>（中文文字頁）：狀態函數 H、S、U、A、G、P、V、T 只由狀態決定、與路徑無關；W 與 Q 與路徑有關，不是狀態函數</li><li><b>Polym Solid 第 048 張</b>「What’s this all good for?」：Tm 處 V、H、S（G 的一次微分）跳躍 = 1st order phase transition；Tg 處 V、H、S 連續只有斜率改變，α、Cp、κ（二次微分）出現階躍 = 2nd order phase transition</li><li><b>Polym Solid 第 083 張</b>、<b>第 090 張</b>：Tg 為 V–T 斜率轉折與 ΔCp 階躍，並隨 Cool Quickly / Cool Slowly 而移動</li></ul>
 <blockquote>"Properties related to the first derivative of the free energy V, H, S … 1st order phase transition"</blockquote>
 <p><b>老師的邏輯：</b>state function 與路徑無關；Tm 為 1st order：first derivative of G（V、H、S）跳躍；Tg 處 V、H、S 連續，只有 α、Cp、κ 階躍 → 2nd order phase transition。</p>
 <p class="supp"><b>講義無，補充：</b>「潛熱」一詞與稱 Tg 為「表觀（偽）二階轉變」講義沒有（s090 只暗示 Tg 與冷卻速率有關）。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q21"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：「轉變」是什麼？</b>物質在某個溫度突然換一種狀態就叫轉變（transition），例如冰在 0 °C 變成水。高分子有兩個重要轉變：<b>Tm（熔點）</b>晶體融化成液體；<b>Tg（玻璃轉移溫度）</b>硬脆的玻璃態變成軟的橡膠態，像保鮮膜一加熱就變軟。「一階、二階」是把轉變分兩類，只看一件事：<b>跨過轉變點時，什麼東西「跳」了？</b></p>
@@ -1564,7 +1564,6 @@ ul.tight li{margin:3px 0}
 ④ 應力再上升：取向鏈承載（應變硬化 strain hardening，補充；連結鏈 tie chain，補充）<br>
 ⑤ plastic failure：斷裂，之後 E、TS 沿拉伸方向上升、延性下降（drawing）<br>
 <b>English：</b>Semi-crystalline polymer above Tg: amorphous regions elongate, then yielding with the onset of necking as crystalline regions slide. Crystalline regions align along the load, the neck propagates, and the sample ends in plastic failure.</div>
-<!--draw--><div class="drawq" data-def="q1"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Mechanical Properties 1 第 26 張</b>「TENSILE RESPONSE: BRITTLE &amp; PLASTIC」：半結晶高分子的塑性曲線，每一段下方配晶片卡通（amorphous regions elongate → crystalline regions align → crystalline regions slide → near failure）</li>
@@ -1577,6 +1576,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>semi-crystalline 高於 Tg：amorphous regions elongate（彈性）→ yield point / onset of necking（crystalline regions slide）→ 頸部沿近乎定應力的平台延伸 → crystalline regions align（鏈沿負載方向取向）→ 應力上升 → plastic failure。</p>
 <p class="supp"><b>講義無，補充：</b>tie chain、cold drawing、microfibril、strain hardening、spherulite 等詞投影片沒有印出（只以卡通呈現晶塊排成纖維束）。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q1"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：曲線的兩個軸，和材料裡的兩種區域。</b>應力（stress）是每單位面積承受的力；工程應力 σ = F/A0，F 是拉力，A0 是原始截面積。應變（strain）是拉長量占原長的比例，ε = (L − L0)/L0，L0、L 分別是原長與目前長度。半結晶高分子（semicrystalline polymer）含有規則排列的晶相與較無序的非晶相。晶相常形成薄片，叫晶片（lamella）；許多晶片可組成球晶（spherulite）。跨接不同晶片的非晶長鏈叫連結鏈（tie chain）。形態（morphology）就是這些區域如何排列與連接。</p>
@@ -1633,7 +1633,6 @@ ul.tight li{margin:3px 0}
 ② 高延伸：偏離 Gaussian 理論、往上翹（chains are straight, still cross-linked，鏈接近拉直）；天然橡膠的應變誘發結晶（補充）；Mooney–Rivlin σ = 2(C1 + C2/λ)(λ − 1/λ²) 擬合較好<br>
 ③ 斷裂：網路鏈斷；全程 reversible、無降伏、無頸縮（交聯防止流動）<br>
 <b>English：</b>Rubber networks obey Hooke's law at low extensions, f = NkT(λ − 1/λ²), with a low modulus. At high strain the stress deviates upward from the Gaussian theory because the chains are straight but still cross-linked; the Mooney–Rivlin equation fits better. Deformation is reversible, with no yield or necking.</div>
-<!--draw--><div class="drawq" data-def="q2"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 38 張</b>「Comparison to experiment」：Treloar 數據在低 λ 貼著 Gaussian 虛線，λ 超過約 3 後明顯高於理論線；Mooney–Rivlin 式擬合較好</li>
@@ -1651,6 +1650,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較橡膠與實驗：低延伸遵守 Hooke's law（Gaussian 理論成立）→ 高應變偏離理論、曲線上翹（chains are straight, still cross-linked）；全程 reversible、無 yield（s047 對照）。</p>
 <p class="supp"><b>講義無，補充：</b>strain-induced crystallization、finite extensibility 等解釋投影片沒有印出；投影片只說「高應變偏離」與「鏈拉直」。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q2"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先認識橡膠裡能動的長鏈。</b>高分子（polymer）是長鏈分子；構形（conformation）是同一條鏈靠單鍵轉動形成的不同捲曲形狀，不必打斷化學鍵。橡膠態（rubbery state）表示鏈段能活動；本題是溫度高於玻璃轉移溫度（glass transition temperature，Tg）、有少量交聯點（crosslink）的網路。交聯把不同鏈接起來，阻止整條鏈滑走。應力（stress）是單位面積承受的力，工程應變（engineering strain）ε 是拉長量除以原長；伸長比（stretch ratio）λ 則是目前長度除以原長：λ = L ÷ L₀。兩個都是除法，但除的東西不同：ε = (L − L₀) ÷ L₀ = L ÷ L₀ − L₀ ÷ L₀ = λ − 1，所以 λ = 1 + ε。例：10 cm 拉到 15 cm，λ = 15 ÷ 10 = 1.5，ε = 5 ÷ 10 = 0.5，1 + 0.5 = 1.5。白話：λ 是「現在是原本的幾倍」，ε 是「多出來幾成」，原本那一份算 1，加上多出來的就是倍數。</p>
@@ -2074,7 +2074,6 @@ ul.tight li{margin:3px 0}
 &lt; 423 K：phase separation，PS 聚集成 domain，當作 physical crosslinks → 暫態物理網路，強烈剪切變稀、彈性顯著 → non-Newtonian（補充：423 K 數據需看 Fig B3.1）<br>
 448 K：越過 ODT（補充），domain 消失、物理交聯點被拆掉 → 均勻纏結熔體，低剪切率有黏度平台 η₀ → Newtonian（補充）<br>
 <b>English：</b>Below the order–disorder transition the PS blocks (soft above their Tg of 373 K but still segregated) stay in domains that act as physical crosslinks, so the melt behaves like a network and is non-Newtonian and elastic. At 448 K the domains dissolve (order–disorder transition), so the melt flows as a Newtonian liquid.</div>
-<!--draw--><div class="drawq" data-def="q24"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 66 張</b>「Thermoplastic Elastomers」：SBS 是三嵌段共聚物，軟的 elastomeric segment 加兩個硬的 glassy 段；加工時兩段都高於 Tg 所以能流動，冷卻後相分離成 domain，形成 physical crosslinks</li>
@@ -2085,6 +2084,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>glassy A 嵌段聚集成 domain → 當作 physical crosslinks → 網路有彈性；兩段都高於 Tg → 才能流動。</p>
 <p class="supp"><b>講義無，補充：</b>題目的 Fig B3.1（423 K／448 K 黏度對剪切率圖）不在已檢查的投影片中；ODT（order–disorder transition）、暫態網路、η₀ 平台、剪切變稀都是補充說明，保留原答案。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q24"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：這題用到的名詞。</b><b>黏度（viscosity, η）</b>是流體「有多黏稠、多難流動」，蜂蜜的 η 比水大。<b>剪切率（shear rate, γ̇）</b>是你推它推得多快、多用力。<b>牛頓流體（Newtonian fluid）</b>指不管推多快，η 都是同一個數，水就是這樣。<b>非牛頓（non-Newtonian）</b>則是 η 會隨推的速度改變，例如推越快越稀，叫<b>剪切變稀（shear thinning）</b>。<b>SBS</b> 是三嵌段共聚物（triblock copolymer）：中間一段橡膠 PB（聚丁二烯），兩端各接一段硬塑膠 PS（聚苯乙烯）。<b>Tg</b> 是 PS 從硬玻璃變軟的溫度，約 373 K。<b>ODT（order–disorder transition，有序–無序轉變）</b>是 PS 與 PB 兩種鏈「分區排好隊」的結構被熱運動打散的溫度。</p>
@@ -2190,7 +2190,6 @@ ul.tight li{margin:3px 0}
 (4) 半結晶模數與結晶度成正比；結晶度不變則與溫度無關（slide 原句）<br>
 (5) 結晶度只影響 Tg–Tm；低於 Tg 影響小（slide 原句）<br>
 <b>English：</b>All five are correct. Crystallinity only affects the modulus between Tg and Tm, and the glassy modulus is much higher than the rubbery plateau.</div>
-<!--draw--><div class="drawq" data-def="q31"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelasticity 第 30、35 張</b>（同 Polym Solid 第 143 張）「FIGURE 15.9」：三種 polystyrene 的 modulus–temperature 曲線（Crystalline、Cross linked、Linear amorphous），玻璃態模數相近；結晶者在 Tg–Tm 之間維持較高、到 Tm 才下降；交聯者平台持續、無 terminal flow</li>
 <li><b>Polym Solid 第 145 張</b>：兩條敘述，內容即選項 (4)、(5)（原文見下）</li>
@@ -2202,6 +2201,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較三種 PS 曲線 → 玻璃態相同、結晶度只影響 Tg–Tm 範圍、交聯使 rubbery plateau 持續（無 terminal flow）→ 對照五個選項。</p>
 <p class="supp"><b>講義無，補充：</b>(2)「平台隨交聯度升高」講義圖只顯示交聯樣品平台持續，未顯示更高（橡膠彈性 G = ρRT/Mc 可支持）；(1) 的數值需從圖讀出，不是印出的數字。依學生訂正過的考卷仍答 (1)–(5) 全對。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q31"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>模數（modulus）</b>是材料有多「硬」：拉同樣的長度，需要多大的力。鋼的模數大，橡皮筋的小。<b>鬆弛模數（relaxation modulus）</b>是把材料拉長到固定長度後，等一段時間，看它還保有多少硬度。<b>Tg</b>是硬脆的玻璃態變成軟的橡膠態的溫度；<b>Tm</b>是晶體熔化的溫度。<b>交聯（crosslinking）</b>是鏈和鏈之間接上永久的化學鍵。<b>結晶度（crystallinity）</b>是有多少比例的鏈排成整齊的晶體。<b>主曲線（master curve）</b>是模數對溫度（或時間）的一條完整曲線，Pa 是壓力與模數的單位。</p>
@@ -2258,7 +2258,6 @@ ul.tight li{margin:3px 0}
 ③ t ≪ τ₁：E₁ + E₂ ≈ Eg（glassy）；τ₁ ≪ t ≪ τ₂：E₂ = Er（rubbery plateau）；t ≫ τ₂：→ 0（terminal flow）<br>
 ④ 配法：台階高度定 Eᵢ，下降位置定 τᵢ = ηᵢ/Eᵢ（在 Eᵢ/e 處讀，補充）<br>
 <b>English：</b>At least two Maxwell elements in parallel (Maxwell–Wiechert, n = 2): E(t) = ΣEₙ exp(−t/τₙ). Step heights give Eₙ and the drop times give τₙ = ηₙ/Eₙ.</div>
-<!--draw--><div class="drawq" data-def="q32"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelastic Modelling 第 13 張</b>「Distribution of relaxation &amp; retardation times」：Maxwell–Weichert model，n = 2；E(t) = Σ Eₙ exp(−t/τₙ)；例 E₁ = 3×10⁹、τ₁ = 1 min，E₂ = 5×10⁵、τ₂ = 1000 min，圖上先降一階、有平台、再降</li>
 <li><b>Viscoelastic Modelling 第 24、26 張</b>「The Maxwell–Wiechert Model」：數個 Maxwell 元件（彈簧 Eᵢ 串聯 dashpot ηᵢ）並聯；stress relaxation 時 σᵢ = σ₀ exp(−t/τᵢ)，E(t) = Σ Eₙ exp(−t/τₙ)</li>
@@ -2268,6 +2267,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>單一 Maxwell 只有一個指數衰減 → 真實曲線有 glassy、rubbery plateau、terminal flow → 並聯多個 Maxwell 元件，E(t) = Σ Eₙ exp(−t/τₙ)，講義例用 n = 2。</p>
 <p class="supp"><b>講義無，補充：</b>「在 Eᵢ/e 處讀 τᵢ」講義未寫（講義只給 τ = η/E）；「至少兩個」不是講義原句，講義以 n = 2 為例（第 24 張以 n = 3 示意）。第 13 張的 E₁ 是第一階高度（glassy），因 E₁ ≫ E₂，與 E₁ + E₂ 幾乎相同。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q32"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>彈簧（spring）</b>代表彈性：拉它，它出力，放手就彈回，力的大小 σ = E × 伸長量，E 是彈簧的硬度。<b>黏壺（dashpot）</b>代表黏性：像裝了蜂蜜的針筒，快拉很費力，慢拉很輕鬆，拉開了就回不來。<b>Maxwell 元件</b>是把一個彈簧和一個黏壺<b>串聯</b>。<b>鬆弛模數 E(t)</b>是固定伸長後，隨時間還剩下多少硬度。<b>鬆弛時間 τ</b>是硬度掉到原來約 1/e（約 37%）所需的時間。<b>終端流動</b>是最後整條鏈都流開、模數趨近 0。</p>
@@ -2377,7 +2377,6 @@ ul.tight li{margin:3px 0}
 ③ Shear thickening（dilatant）：n &gt; 1，γ̇ ↑ → η ↑<br>
 ④ 高分子熔體 thinning：剪切使鏈由 random coil → stretched，沿流向取向並 disentangle，纏結限制減少（補充）→ η ↓，不會增稠<br>
 <b>English：</b>Shear thinning means η decreases with shear rate (n &lt; 1); shear thickening means η increases (n &gt; 1). A polymer melt thins because chains uncoil, align and disentangle under shear.</div>
-<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Newtonian Fluid 第 21 張</b>「Power-Law Fluid」：η = mγ̇ⁿ⁻¹；n &gt; 1 shear thickening、n = 1 Newtonian、n &lt; 1 shear thinning</li>
 <li><b>Newtonian Fluid 第 20 張</b>「Power-Law Model (Ostwald-deWaele Model)」：τ₂₁ = −m|dv₁/dx₂|ⁿ⁻¹ dv₁/dx₂；m 為 consistency index，n 為 power-law index</li>
@@ -2388,6 +2387,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>用 power-law 指數 n 分類（n &lt; 1 thinning、n = 1 Newtonian、n &gt; 1 thickening）→ 高分子鏈受剪切由 random coil 變 stretched 並 disentangle → η 下降，所以是 thinning。</p>
 <p class="supp"><b>講義無，補充：</b>「有效纏結限制減少」不是講義原句（講義用 disentangle / stretch out）；講義沒有說明高分子為何不會 shear thickening 的機制，只給 n &gt; 1 的定義與 dilatant 曲線。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先把幾個詞講白。</b><b>剪切（shear）</b>是相鄰的流層彼此滑動，像用手推一疊撲克牌，上面的牌滑得比下面快。<b>剪切率（shear rate，γ̇）</b>是「推得有多快」，單位 s⁻¹。<b>剪切應力（shear stress，τs）</b>是「為了這個速度要用多大的力」。<b>黏度（viscosity，η）</b>是流體的「阻力係數」，定義為 η = τs/γ̇：同樣推快一點，需要多少力。蜂蜜黏度大，水黏度小。</p>
@@ -2432,7 +2432,6 @@ ul.tight li{margin:3px 0}
 ② 高剪切率（γ̇ &gt; γ̇c = 1/λ）：process time 比 λ 短，鏈來不及鬆弛 → 由 random coil 變 stretched、沿流向取向並 disentangle → η 下降 = shear thinning<br>
 ③ 加工剪切率（10⁰–10⁵ s⁻¹）多在下降區，熔體易流動（補充）<br>
 <b>English：</b>At low shear rate (De ≪ 1) chains relax, so η stays at the zero shear rate viscosity. At high shear rate chains stretch out and disentangle before they relax, so η falls: shear thinning.</div>
-<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelasticity 第 9 張</b>「Variation of melt viscosity with strain rate」：低剪切率有 Zero Shear Rate Viscosity 平台，之後 η 隨剪切率下降；加工剪切率（10⁰–10⁵ s⁻¹）都落在下降區</li>
 <li><b>Viscoelasticity 第 2、4、5 張</b>「Deborah Number」：Random Coil →（Shear or Deformation）→ Stretched；De = λ/T，De ≪ 1 像 Viscous Liquid，De ≫ 1 像 Elastic Solid</li>
@@ -2443,6 +2442,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 process time (T) 與 relaxation time (λ) → 低剪切率 De ≪ 1，鏈來得及回到 random coil，η 為平台（zero shear rate viscosity）→ 高剪切率鏈來不及鬆弛，變 Stretched、disentangle → η 下降（shear thinning）。</p>
 <p class="supp"><b>講義無，補充：</b>「利於擠出、射出」只由第 9 張的加工剪切率條暗示，講義未用文字寫出；γ̇τr 的寫法是 De 的等價說法。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先認識這幾個詞。</b><b>熔體（melt）</b>是加熱到熔化的高分子，像一鍋很稠的液體。<b>黏度（viscosity，η）</b>是它流動時的阻力。<b>剪切率（shear rate，γ̇）</b>是推動的速度。<b>纏結（entanglement）</b>是長鏈互相穿插、不能任意穿過鄰鏈造成的運動限制，不是化學鍵。<b>鬆弛時間（relaxation time，τr）</b>是被扭歪的鏈靠熱運動回到隨機線團所需的時間。<b>剪切變稀（shear thinning）</b>是 γ̇ 越大，η 越小。</p>
@@ -2489,7 +2489,6 @@ ul.tight li{margin:3px 0}
 ② M &gt; Mc：鏈 entangle（reptation）→ η₀ ∝ M³·⁴（斜率 3.4），Mc = 2–3 Me<br>
 ③ M 加倍（均在纏結區）：η₀ 增為 2³·⁴ ≈ 10.6 倍（補充，自行計算）<br>
 <b>English：</b>Below the critical molecular weight Mc, η₀ ∝ M because chains do not entangle. Above Mc, entanglement makes η₀ ∝ M³·⁴.</div>
-<!--draw--><div class="drawq" data-def="q28"></div><!--/draw-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Fluid 2 第 72 張</b>「Polymer Properties from Rheology」：Polymer Melt η₀ ∝ Mw；η₀ ~ M（M &lt; Mc）、η₀ ∝ Mw³·⁴（M &gt; Mc）；Mc = 2–3 Me</li>
 <li><b>Fluid 2 第 74 張</b>「Variation of melt viscosity with molecular weight」：η_m = K_L N¹·⁰ 與 η_m = K_H N³·⁴（N = degree of polymerization），log–log 圖斜率 1.0 轉為 3.4</li>
@@ -2501,6 +2500,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 M 與 critical molecular weight Mc → 短鏈不 entangle，黏度只隨鏈長成正比 → 長鏈 entangle、reptation，黏度急升為 M³·⁴。</p>
 <p class="supp"><b>講義無，補充：</b>「M 加倍 → 2³·⁴ ≈ 10.6 倍」是由 3.4 次方算出的（驗算：2³·⁴ = 10.56）；講義第 72 張寫 Mw，第 74 張寫 N。</p>
 </div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q28"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先把詞講白。</b><b>分子量（molecular weight，M）</b>代表鏈有多長，M 越大鏈越長。<b>黏度（viscosity，η）</b>是流動的阻力。<b>零剪切黏度（zero-shear viscosity，η₀）</b>是推得很慢時量到的黏度，這時鏈幾乎不被流動改變，所以不同分子量可以公平比較。<b>纏結（entanglement）</b>是長鏈互相穿插、不能穿過彼此造成的限制。<b>臨界分子量 Mc</b>是鏈長到足以開始纏結的門檻。</p>
