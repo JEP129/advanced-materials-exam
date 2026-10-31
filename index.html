@@ -93,6 +93,10 @@ ul.tight li{margin:3px 0}
 .slidebox h3{margin:0 0 6px;color:var(--amber)}
 .slidebox blockquote{margin:8px 0;padding:6px 12px;border-left:3px solid var(--amber);font:15px/1.6 Georgia,"Times New Roman",serif;font-style:italic}
 .slidebox .supp{font-size:14px;color:var(--muted)}
+.compare{margin:14px 0;padding:14px 16px;background:var(--sheet);border:2px solid var(--teal);border-radius:10px}
+.compare h3{margin:0 0 6px;color:var(--teal)}
+.compare h4{margin:14px 0 4px;font-size:15.5px;color:var(--ink)}
+.compare td.hi{background:var(--red-soft)}
 .basics{margin:16px 0;padding:16px 18px;background:var(--teal-soft);border-radius:10px}
 .basics h3{margin:0 0 8px;color:var(--teal)}
 .basics .step{margin:10px 0}
@@ -413,6 +417,28 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>「剛硬」一詞講義沒有，講義只說 bulky / steric hindrance。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s098.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s098.webp" alt="Polym Solid 第 98 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 98 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s119.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s119.webp" alt="Polym Solid 第 119 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 119 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="4"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：同樣是「貼在主鏈旁邊的硬環狀側基」，環越大，Tg 越高。</p>
+<div class="tbl"><table><tr><th></th><th>側基接在哪裡</th><th>側基的形狀</th><th>環的數目</th><th>Tg</th></tr>
+<tr><td>PS</td><td>直接接在主鏈碳上</td><td>單一苯環（硬）</td><td>1 個</td><td>100 °C</td></tr>
+<tr><td>Poly(vinyl naphthalene)</td><td>直接接在主鏈碳上</td><td class="hi">萘基（兩個苯環併在一起，硬）</td><td class="hi">2 個（併環）</td><td>135 °C</td></tr>
+<tr><td>Poly(vinyl biphenyl)</td><td>直接接在主鏈碳上</td><td class="hi">聯苯基（兩個苯環以單鍵相連，硬）</td><td class="hi">2 個（串接，更長更大）</td><td>145 °C</td></tr></table></div>
+<h4>比較一：PS vs poly(vinyl naphthalene) → 比的是「環的大小」</h4>
+<ul class="tight"><li><b>相同</b>：主鏈相同，側基都是<b>緊貼主鏈碳</b>的硬芳香環，位置和硬度都沒變。<b>唯一差別</b>：苯環（1 個環）換成萘環（2 個環併在一起）。</li>
+<li>側基貼在主鏈旁又硬又大，主鏈每次轉動，這個大側基都會擠到鄰近的鏈段 → 立體障礙（steric hindrance）；環越大，被擠到的範圍越大，轉動越難。</li>
+<li><b>結果</b>：鏈段更難轉 → Tg 從 100 °C 升到 135 °C（與 Table 12.2：373 K → 408 K 相同）。</li>
+<li>講義：Polym Solid 第 98 張「Bulky substituents」："The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."</li></ul>
+<h4>比較二：poly(vinyl naphthalene) vs poly(vinyl biphenyl) → 比的是「再更大一點」</h4>
+<ul class="tight"><li><b>相同</b>：都是貼著主鏈的 2 環硬側基。<b>唯一差別</b>：2 個環從「併在一起」變成「用單鍵串成一排」，整個側基更長、掃過的空間更大。</li>
+<li>側基依然緊貼主鏈、依然是硬的，所以不像長直鏈烷基那樣會柔軟扭動來撐開鏈；它只會更用力地擋住主鏈轉動。</li>
+<li><b>結果</b>：Tg 再升到 145 °C，三者中最高。</li>
+<li>講義：Polym Solid 第 98 張，同一張的圖依序標出 100、135、145 °C。</li></ul>
+<h4>判斷關鍵：側基「貼近主鏈 + 硬 + 大」→ Tg 越高</h4>
+<div class="tbl"><table><tr><th>側基的樣子</th><th>效果</th><th>Tg</th><th>例子</th></tr>
+<tr><td><b>貼著主鏈</b>、硬、體積越大</td><td>立體障礙越強，鏈段越難轉</td><td class="hi">↑</td><td>PE −80 → aPP −10 → PS 100 → PVN 135 → PVBP 145 °C</td></tr>
+<tr><td>伸得遠、長又軟（直鏈烷基）</td><td>撐開鏈、增加自由體積</td><td class="hi">↓</td><td>Q6 聚己烯、Q7 PBMA（本題不是這種）</td></tr></table></div>
+<p><b>回到題目</b>：(2) poly(vinyl biphenyl) 145 °C 最高（側基最大、硬、貼主鏈）&gt; (3) poly(vinyl naphthalene) 135 °C（2 個併環）&gt; (1) PS 100 °C（只有 1 個苯環）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先認識要比較的東西。</b>高分子（polymer）是許多小單元接成的長鏈；沿著長鏈連續相接的部分叫主鏈（backbone），掛在旁邊的原子團叫側基（pendant group）。玻璃轉移溫度（glass transition temperature，Tg）是鏈段開始能在觀察時間內協同活動的溫度區域：低於它較硬脆，高於它較軟。題目要找最高 Tg，就是找哪一種鏈段需要加熱到最高溫，才比較容易活動。</p>
@@ -452,6 +478,28 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>poly(pentyl acrylate) 的數值表中沒有（表只到 butyl 218 K，此為趨勢外推）；「α-甲基與酯基在同一碳上阻礙旋轉」及「內部塑化」講義未明說。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s118.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s118.webp" alt="Polym Solid 第 118 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 118 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s119.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s119.webp" alt="Polym Solid 第 119 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 119 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s099.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s099.webp" alt="Polym Solid 第 99 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 99 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="5"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>，三個選項剛好分成兩組比較。</p>
+<div class="tbl"><table><tr><th></th><th>主鏈碳的「上手」</th><th>往下長的側基</th></tr>
+<tr><td>PMA</td><td>H</td><td>C(=O)–O–<b>CH₃</b>（短）</td></tr>
+<tr><td>PMMA</td><td class="hi">CH₃（α-甲基）</td><td>C(=O)–O–<b>CH₃</b>（短）</td></tr>
+<tr><td>丙烯酸戊酯</td><td>H</td><td class="hi">C(=O)–O–CH₂CH₂CH₂CH₂CH₃（長）</td></tr></table></div>
+<h4>比較一：PMA vs PMMA → 比的是「主鏈碳上的立體效應」</h4>
+<ul class="tight"><li><b>相同</b>：側基完全一樣。<b>唯一差別</b>：主鏈那個碳的另一隻手，H 換成 CH₃。</li>
+<li>這個 CH₃ <b>直接長在主鏈碳上</b>，和酯基擠在同一個碳，主鏈要轉動時一定會撞到 → 立體障礙（steric hindrance）。</li>
+<li><b>結果</b>：鏈段難轉 → Tg 從 279 K 升到 378 K。</li>
+<li>講義：Polym Solid 第 98 張「Bulky substituents」。</li></ul>
+<h4>比較二：PMA vs 丙烯酸戊酯 → 比的是「側鏈長度」</h4>
+<ul class="tight"><li><b>相同</b>：主鏈碳一樣（都是 H）。<b>唯一差別</b>：酯基最末端從 1 個碳變成 5 個碳。</li>
+<li>這段長鏈<b>離主鏈很遠</b>，又柔軟會扭動，不會卡住主鏈；反而把鄰近的主鏈<b>撐開</b>，自由體積變大。</li>
+<li><b>結果</b>：鏈段更好動 → Tg 下降。</li>
+<li>講義：Polym Solid 第 99 張「Flexible substituents」："These side chains increase the free volume through their effect on the packing of the chains, the Tg is lowered."</li></ul>
+<h4>判斷關鍵：看「位置」和「軟硬」，不是單純看「大小」</h4>
+<div class="tbl"><table><tr><th>側基的樣子</th><th>效果</th><th>Tg</th><th>例子</th></tr>
+<tr><td><b>貼著主鏈</b>、又擠又硬（α-取代、環、分枝）</td><td>立體障礙，卡住主鏈轉動</td><td class="hi">↑</td><td>PMMA 的 α-CH₃、Q4 苯環、Q6 P4MP 分枝</td></tr>
+<tr><td><b>伸得很遠</b>、又長又軟（直鏈烷基）</td><td>撐開鏈、增加自由體積</td><td class="hi">↓</td><td>丙烯酸戊酯、Q7 PBMA、Q6 聚己烯</td></tr></table></div>
+<p><b>回到題目</b>：PMMA（有升高因素 α-CH₃）378 K 最高 &gt; PMA 279 K &gt; 丙烯酸戊酯（有降低因素：長柔性鏈）最低。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先讀懂三個材料名稱。</b>玻璃轉移溫度（glass transition temperature，Tg）是高分子鏈段開始能協同活動的溫度區域；Tg 越高，表示要加熱到更高溫才容易活動。主鏈（backbone）是長分子的連續骨架，側基（pendant group）是掛在旁邊的原子團。本題比較聚丙烯酸甲酯（poly(methyl acrylate)，PMA）、聚甲基丙烯酸甲酯（poly(methyl methacrylate)，PMMA）與聚丙烯酸戊酯（poly(pentyl acrylate)）。名字相似，關鍵差在多出的碳鏈接在哪裡。</p>
@@ -489,6 +537,30 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>「異丁基緊靠主鏈」與「內部塑化」的說法講義沒有，講義只給 Table 12.2 數字與 bulky / flexible 的一般敘述。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s118.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s118.webp" alt="Polym Solid 第 118 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 118 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s098.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s098.webp" alt="Polym Solid 第 98 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 98 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s099.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s099.webp" alt="Polym Solid 第 99 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 99 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="6"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：直鏈側鏈越長 Tg 越低，但貼著主鏈的分枝大側基會讓 Tg 變高。</p>
+<div class="tbl"><table><tr><th></th><th>側基</th><th>側基形狀</th><th>碳數</th><th>Tg</th></tr>
+<tr><td>聚乙烯 PE</td><td>無（只有 H）</td><td>沒有側基</td><td>0</td><td>188 K</td></tr>
+<tr><td>聚丙烯 PP</td><td>–CH₃</td><td>很短的直鏈</td><td>1</td><td>253 K</td></tr>
+<tr><td>聚丁烯</td><td>–C₂H₅</td><td class="hi">直鏈，較長</td><td>2</td><td>249 K</td></tr>
+<tr><td>聚己烯</td><td>–C₄H₉</td><td class="hi">直鏈，很長、很軟</td><td>4</td><td>223 K</td></tr>
+<tr><td>P4MP（聚 4-甲基戊烯）</td><td>–CH₂–CH(CH₃)₂</td><td class="hi">分枝（異丁基），第一個碳後就岔開</td><td>4（同聚己烯）</td><td>302 K</td></tr></table></div>
+<h4>比較一：PP → 聚丁烯 → 聚己烯 → 比的是「直鏈側鏈長度」</h4>
+<ul class="tight"><li><b>相同</b>：側基都是直鏈烷基，都很柔軟。<b>唯一差別</b>：碳數從 1 增加到 2、4。</li>
+<li>長直鏈會自己扭動，而且離主鏈越遠越不會卡住主鏈；它反而把相鄰的主鏈撐開，增加自由體積（free volume），鏈段更好動。</li>
+<li><b>結果</b>：253 → 249 → 233（聚戊烯）→ 223 K，越長 Tg 越低。</li>
+<li>講義：Polym Solid 第 99 張「Flexible substituents」："These side chains increase the free volume through their effect on the packing of the chains, the Tg is lowered."；數值見第 118 張 Table 12.2。</li></ul>
+<h4>比較二：聚己烯 vs P4MP → 比的是「直鏈 vs 分枝」</h4>
+<ul class="tight"><li><b>相同</b>：側基的原子數相同（V<sub>X</sub> 都是 92.5 cm³/mol，碳數都是 4）。<b>唯一差別</b>：聚己烯是一條直鏈，P4MP 在靠近主鏈的位置分岔成兩個 CH₃。</li>
+<li>分枝讓側基變成一團又硬又胖的東西，而且<b>岔點靠近主鏈</b>，主鏈一轉就會碰到 → 立體障礙；直鏈則可以彎曲避開。</li>
+<li><b>結果</b>：同樣大小，Tg 從 223 K 升到 302 K，是整題最高。</li>
+<li>講義：Polym Solid 第 98 張「Bulky substituents」："The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."；數值見第 118 張 Table 12.2。</li></ul>
+<h4>判斷關鍵：看側基的「形狀與位置」，不是看碳數</h4>
+<div class="tbl"><table><tr><th>側基的樣子</th><th>效果</th><th>Tg</th><th>例子</th></tr>
+<tr><td>直鏈、又長又軟</td><td>撐開鏈、增加自由體積</td><td class="hi">↓</td><td>聚己烯、Q7 PBMA</td></tr>
+<tr><td>分枝、貼近主鏈、又胖又硬</td><td>立體障礙，卡住主鏈轉動</td><td class="hi">↑</td><td>P4MP、Q5 PMMA 的 α-CH₃、Q4 芳香環</td></tr></table></div>
+<p><b>回到題目</b>：(5) poly(4-methyl pentene) 302 K 最高（分枝大側基，立體障礙）&gt; (2) PP 253 K &gt; (3) 聚丁烯 249 K &gt; (4) 聚己烯 223 K（直鏈變長，自由體積增加）&gt; (1) PE 188 K（完全沒有側基）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先把名稱變成看得懂的結構。</b>高分子（polymer）是許多小單元接成的長鏈；主鏈（backbone）是連續的骨架，側基（side group）是旁邊掛的基團。玻璃轉移溫度（glass transition temperature，Tg）是鏈的一小段，也就是鏈段（segment），開始能在觀察時間內協同活動的溫度；低於它通常硬脆，高於它則較柔軟。本題比較聚乙烯（polyethylene，PE）、聚丙烯（polypropylene，PP）、聚丁烯（polybutylene）、聚己烯（polyhexylene）與聚(4-甲基-1-戊烯)（poly(4-methyl-1-pentene)，P4MP）。題目的丁烯、己烯依講義指 1-烯烴聚合物。</p>
@@ -526,6 +598,24 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>「內部塑化」一詞講義沒有（講義說 free volume）。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s099.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s099.webp" alt="Polym Solid 第 99 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 99 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s100.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s100.webp" alt="Polym Solid 第 100 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 100 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s119.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s119.webp" alt="Polym Solid 第 119 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 119 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="7"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：酯基末端的直鏈烷基 R 越長，Tg 越低。</p>
+<div class="tbl"><table><tr><th></th><th>主鏈碳上的取代基</th><th>酯基 –C(=O)–O–R 的 R</th><th>R 的碳數</th><th>Tg</th></tr>
+<tr><td>PMMA</td><td>CH₃（α-甲基）</td><td>–CH₃（甲基）</td><td class="hi">1</td><td>105 °C</td></tr>
+<tr><td>PEMA</td><td>CH₃（α-甲基）</td><td>–CH₂CH₃（乙基）</td><td class="hi">2</td><td>65 °C</td></tr>
+<tr><td>PPMA</td><td>CH₃（α-甲基）</td><td>–(CH₂)₂CH₃（丙基）</td><td class="hi">3</td><td>38 °C</td></tr>
+<tr><td>PBMA</td><td>CH₃（α-甲基）</td><td>–(CH₂)₃CH₃（丁基）</td><td class="hi">4</td><td>−2 °C</td></tr></table></div>
+<h4>比較：PMMA → PEMA → PPMA → PBMA，每次只多一個 CH₂ → 比的是「側鏈長度」</h4>
+<ul class="tight"><li><b>相同</b>：主鏈、α-甲基、酯基全部一樣。<b>唯一差別</b>：酯基最末端的直鏈烷基 R 每次多一個 CH₂。</li>
+<li>R 長在酯基末端，<b>離主鏈很遠</b>，又是柔軟的直鏈，會自己扭動；它不會卡住主鏈，反而把鄰近的鏈撐開，鏈堆得比較鬆 → 自由體積（free volume）增加，鏈段更好動。</li>
+<li><b>結果</b>：R 越長 Tg 越低：105 → 65 → 38 → −2 °C（Table 12.2 的 K 值：378 → 338 → 308 K，丁酯未列）。</li>
+<li>講義：Polym Solid 第 99 張「Flexible substituents」："These side chains increase the free volume through their effect on the packing of the chains, the Tg is lowered."</li></ul>
+<h4>判斷關鍵：長又軟的側鏈 → 自由體積變大 → Tg 下降</h4>
+<div class="tbl"><table><tr><th>側基的樣子</th><th>效果</th><th>Tg</th><th>例子</th></tr>
+<tr><td>伸得遠、又長又軟（直鏈烷基）</td><td>撐開鏈、增加自由體積</td><td class="hi">↓</td><td>PMMA → PBMA、Q5 丙烯酸戊酯、Q6 聚己烯</td></tr>
+<tr><td>貼著主鏈、又擠又硬</td><td>立體障礙，卡住主鏈轉動</td><td class="hi">↑</td><td>Q4 芳香環、Q6 P4MP（本題四個都有同樣的 α-CH₃，所以不拿來比）</td></tr></table></div>
+<p><b>回到題目</b>：(4) PBMA −2 °C 最低（丁基最長、自由體積最大）&lt; (3) PPMA 38 °C &lt; (2) PEMA 65 °C &lt; (1) PMMA 105 °C（甲基最短、最不會撐開鏈）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：這四個縮寫差在哪裡？</b>玻璃轉移溫度（glass transition temperature，Tg）是高分子鏈段開始能協同活動的溫度範圍；鏈段就是長鏈中的一小段，低於 Tg 時通常像硬玻璃，高於 Tg 時較容易變形。四種材料都是聚甲基丙烯酸酯（polymethacrylate），具有相同類型的主鏈，只改變酯基（ester group）–COO– 後面的烷基。PMMA 是聚甲基丙烯酸甲酯（poly(methyl methacrylate)）；PEMA 是乙酯（poly(ethyl methacrylate)）；PPMA 是正丙酯（poly(n-propyl methacrylate)）；PBMA 是正丁酯（poly(n-butyl methacrylate)）。這裡比較的是直鏈烷基，依序有 1、2、3、4 個碳。</p>
@@ -565,6 +655,30 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>各 PU 的 Tg 數值，以及 H12MDI &lt; MDI ≈ TDI 的細部排序，講義沒有。</p>
 <div class="slideimgs"><figure><a href="slides/Condensation_s045.webp" class="slidelink"><img src="slides/Condensation_s045.webp" alt="Condensation polymerization 第 45 張" loading="lazy" width="900" height="675"></a><figcaption>Condensation polymerization 第 45 張</figcaption></figure><figure><a href="slides/Condensation_s044.webp" class="slidelink"><img src="slides/Condensation_s044.webp" alt="Condensation polymerization 第 44 張" loading="lazy" width="900" height="675"></a><figcaption>Condensation polymerization 第 44 張</figcaption></figure><figure><a href="slides/Condensation_s051.webp" class="slidelink"><img src="slides/Condensation_s051.webp" alt="Condensation polymerization 第 51 張" loading="lazy" width="900" height="675"></a><figcaption>Condensation polymerization 第 51 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s096.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s096.webp" alt="Polym Solid 第 96 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 96 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="25"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：二異氰酸酯（diisocyanate）骨架的僵硬程度，也就是有沒有環、是什麼環；分子量與二醇含量都相同。</p>
+<div class="tbl"><table><tr><th></th><th>兩個 –N=C=O 之間的骨架</th><th>有沒有環</th><th>環的種類</th><th>骨架僵硬度</th></tr>
+<tr><td>(1) HMI</td><td class="hi">6 個 CH₂ 連成一條直鏈</td><td class="hi">無環</td><td class="hi">—</td><td class="hi">最柔軟</td></tr>
+<tr><td>(2) H₁₂MDI</td><td>兩個環己烷環，中間以 –CH₂– 相連</td><td>有 2 個環</td><td>脂環（cycloaliphatic，環上全是單鍵）</td><td>較硬</td></tr>
+<tr><td>(3) MDI</td><td>兩個苯環，中間以 –CH₂– 相連</td><td>有 2 個環</td><td class="hi">芳香環（aromatic，平面）</td><td>最硬</td></tr>
+<tr><td>(4) TDI</td><td>一個苯環帶 CH₃</td><td>有 1 個環</td><td class="hi">芳香環（aromatic，平面）</td><td>最硬（與 MDI 相近）</td></tr></table></div>
+<h4>比較一：HMI vs 其他三個 → 比的是「有沒有環」</h4>
+<ul class="tight"><li><b>相同</b>：都是二異氰酸酯，都和二醇反應成聚氨酯（polyurethane），分子量與二醇含量相同。<b>唯一差別</b>：HMI 的骨架是 6 個 CH₂ 的直鏈，其他三個骨架裡有環。</li>
+<li>直鏈上每個 C–C 單鍵都能自由轉動，鏈段容易動；環在<b>主鏈（硬段）裡</b>，環要整個一起轉，轉動能障很高。環放在主鏈裡，等於把鏈變硬。</li>
+<li><b>結果</b>：HMI 的 PU 硬段最柔軟，Tg 最低。</li>
+<li>講義：Condensation polymerization 第 45 張「Table 9-7 Examples of Typical Diisocyanates」列出這四個縮寫；Polym Solid 第 96 張（chain stiffness）："there is a high energy barrier to rotations, which then only occur at higher temperatures."（主鏈中有苯環時）。</li></ul>
+<h4>比較二：H₁₂MDI vs MDI → 比的是「環的種類（脂環 vs 芳香環）」</h4>
+<ul class="tight"><li><b>相同</b>：都是兩個六員環中間夾一個 –CH₂–，大小與長度幾乎一樣。<b>唯一差別</b>：環己烷（飽和、可折疊成椅式）換成苯環（平面、共軛）。</li>
+<li>芳香環是平面、不能折疊，比脂環更僵硬，所以 MDI 的硬段比 H₁₂MDI 更硬。</li>
+<li><b>結果</b>：H₁₂MDI 比 MDI 柔軟，Tg 較低。這一層的排序是推理，不在講義上。</li>
+<li>講義無，補充。</li></ul>
+<h4>判斷關鍵：主鏈（硬段）裡「有環、越平面越硬」→ Tg 越高</h4>
+<div class="tbl"><table><tr><th>骨架的樣子</th><th>效果</th><th>Tg</th><th>例子</th></tr>
+<tr><td>全是單鍵的直鏈（無環）</td><td>每個鍵都能轉，鏈段柔軟</td><td class="hi">低</td><td>HMI、PDMS −120 °C、PE −80 °C</td></tr>
+<tr><td>脂環（飽和環）</td><td>環要整個轉，但可折疊，中等硬</td><td class="hi">中</td><td>H₁₂MDI（補充）</td></tr>
+<tr><td>芳香環（平面）</td><td>環不能折疊，能障最高</td><td class="hi">高</td><td>MDI、TDI、PPO 200 °C</td></tr></table></div>
+<p><b>回到題目</b>：(1) HMI 最低（直鏈 –(CH₂)₆–、無環、最柔軟）&lt; (2) H₁₂MDI（脂環，較硬）&lt; (3) MDI ≈ (4) TDI（芳香環，最硬）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先拆開 PU 的材料名稱。</b>聚氨酯（polyurethane，PU）是含有氨基甲酸酯鍵 –NH–CO–O– 的高分子，可由二異氰酸酯（diisocyanate）的兩個 –NCO 基團，與二醇（diol）的兩個 –OH 基團反應形成。分子量（molecular weight，MW）表示分子的大小；題目固定分子量和二醇含量，是讓比較集中在另一種原料的骨架。玻璃轉移溫度（glass transition temperature，Tg）是鏈段開始能協同活動的溫度；鏈段就是長鏈的一小段，活動越容易，通常 Tg 越低。</p>
@@ -644,6 +758,29 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>miscible = 單相 → single Tg（PS/PPO：加 HIPS 把 PPO 的 Tg 降到可加工）；immiscible = phase separated → two Tgs（PC/PBT 為反例）。</p>
 <p class="supp"><b>講義無，補充：</b>「ΔGm = ΔHm − TΔSm &lt; 0；高分子 ΔSm 小，需特殊作用力使 ΔHm 為負」講義沒有。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s108.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s108.webp" alt="Polym Solid 第 108 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 108 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s115.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s115.webp" alt="Polym Solid 第 115 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 115 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s106.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s106.webp" alt="Polym Solid 第 106 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 106 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s112.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s112.webp" alt="Polym Solid 第 112 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 112 張</figcaption></figure></div></div><!--/slidebox-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：兩種高分子混在一起，會不會變成單一相（miscible，互溶）；四個選項是四組配對，要逐組判斷。</p>
+<div class="tbl"><table><tr><th>選項</th><th>配對</th><th>講義怎麼分類</th><th>混合後的相態</th><th>Tg 的樣子</th></tr>
+<tr><td>(1)</td><td>PC / PBT</td><td class="hi">Immiscible（不互溶），第 114、115 張</td><td class="hi">兩相分離（phase separated）</td><td class="hi">兩個 Tg（PC 155 °C、PBT 約 35 °C），還有尖銳的 Tm（PBT 220 °C）</td></tr>
+<tr><td>(2)</td><td>PS / PPO</td><td>Miscible（第 108 張列表；第 111 張）</td><td>單相</td><td>單一個 Tg，介於兩者之間</td></tr>
+<tr><td>(3)</td><td>PVDF / PMA</td><td>Miscible（第 108 張列表）</td><td>單相</td><td>單一個 Tg</td></tr>
+<tr><td>(4)</td><td>PEO / PMMA</td><td>Miscible（第 108 張列表）</td><td>單相</td><td>單一個 Tg</td></tr></table></div>
+<h4>比較一：(2)(3)(4) 這一組 → 比的是「混合後是不是單一相」</h4>
+<ul class="tight"><li><b>相同</b>：三組都是兩種不同的高分子混合。<b>共同點</b>：混合後在分子層級均勻，只有一個相，所以只量得到一個 Tg。</li>
+<li>講義用 PS/PPO 做例子：PPO 的 Tg = 210 °C 太高、很難加工；加入 HIPS 後 "Lowers Tg to a manageable level"，Tg 落在中間，這正是互溶的表現。</li>
+<li><b>結果</b>：(2)(3)(4) 都是 miscible。</li>
+<li>講義：Polym Solid 第 108 張「Miscible Blends」列表含 PS/PPO、PVDF/PMA、PEO/PMMA；第 112 張「Miscible blends have a single Tg」。</li></ul>
+<h4>比較二：(1) PC/PBT vs 上面那組 → 比的是「兩相還是單相」</h4>
+<ul class="tight"><li><b>相同</b>：同樣是兩種高分子混合，也混得很均勻（講義說 "Well blending"）。<b>唯一差別</b>：PC 和 PBT 在分子層級沒有互溶，各自形成小區域（液滴或共連續結構）。</li>
+<li>兩相各自保有自己的鏈段運動，所以各自有 Tg；PBT 的結晶區也還在，所以熔點仍然尖銳。</li>
+<li><b>結果</b>：講義第 115 張："Well blending but still has two Tgs and sharp melting point"，所以 (1) 是 immiscible。</li>
+<li>講義：Polym Solid 第 114 張「Immiscible Blend」、第 115 張「PC / PBT」、第 106 張「Miscible &amp; immiscible blends」（單相 = 一個 Tg；兩相 = 兩個 Tg）。</li></ul>
+<h4>判斷關鍵：用 Tg 的個數判斷相態</h4>
+<div class="tbl"><table><tr><th>觀察到的現象</th><th>代表</th><th>相態</th><th>例子</th></tr>
+<tr><td>只有<b>一個</b> Tg（介於兩個純物質之間）</td><td>分子層級互溶</td><td class="hi">Miscible</td><td>PS/PPO、PVDF/PMA、PEO/PMMA</td></tr>
+<tr><td>出現<b>兩個</b> Tg</td><td>分成兩相、各自獨立</td><td class="hi">Immiscible</td><td>PC/PBT（155 °C 與約 35 °C）</td></tr></table></div>
+<p><b>回到題目</b>：選 (2)(3)(4)。PS/PPO、PVDF/PMA、PEO/PMMA 三組都在講義 miscible 名單、單一 Tg；(1) PC/PBT 是 immiscible，兩相、兩個 Tg。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：「混在一起」有多均勻？</b>高分子摻合物（polymer blend）是把兩種高分子混合；斜線如 PS/PPO 表示一組材料。互溶（miscibility）指兩種鏈在分子尺度形成同一相（phase），也就是同一種均勻環境；相分離（phase separation）則形成不同組成的區域。玻璃轉移溫度（glass transition temperature，Tg）是鏈段開始能協同活動的溫度，鏈段就是長鏈的一小段。各縮寫先對照：</p>
@@ -1039,6 +1176,24 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>講義 ΔHf 為 3970 J/mol（ΔSf 9.70、4.76），與考卷 3870 不同，本題依考卷數字算得 9.44、4.43，兩者都顯示 PTFE 的 ΔSf 約為 PE 一半；「F 原子較大、互相排斥、螺旋鏈」為補充。</p>
 <div class="slideimgs"><figure><a href="slides/3_Polym_Solid_s016.webp" class="slidelink"><img src="slides/3_Polym_Solid_s016.webp" alt="Polym Solid（綜合版） 第 16 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid（綜合版） 第 16 張</figcaption></figure><figure><a href="slides/3_Polym_Solid_s015.webp" class="slidelink"><img src="slides/3_Polym_Solid_s015.webp" alt="Polym Solid（綜合版） 第 15 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid（綜合版） 第 15 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s064.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s064.webp" alt="Polym Solid 第 64 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 64 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="16"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：PTFE 的 ΔHf 比 PE 小，Tm 卻高得多，答案在 <b>ΔSf</b> 縮水得更多（鏈硬），不是鏈間吸引力更強。</p>
+<div class="tbl"><table><tr><th></th><th>重複單元</th><th>ΔHf（J/mol）</th><th>Tm（K）</th><th>ΔSf = ΔHf/Tm（J/mol·K）</th></tr>
+<tr><td>PE</td><td>–CH₂–CH₂–</td><td>3870（講義 3970）</td><td>410</td><td>9.44（講義 9.70）</td></tr>
+<tr><td>PTFE</td><td>–CF₂–CF₂–（H 全換成 F）</td><td class="hi">2860（較小）</td><td class="hi">645（較高）</td><td class="hi">4.43（講義 4.76），約 PE 的一半</td></tr></table></div>
+<h4>比較一：PE vs PTFE → 比的是「ΔHf 與 ΔSf 誰縮得多」</h4>
+<ul class="tight"><li><b>相同</b>：主鏈都是 C–C，重複單元大小相近、都能結晶。<b>唯一差別</b>：每個 C 上的兩個原子，H 換成 F。</li>
+<li>Tm = ΔHf/ΔSf。PTFE 的 ΔHf 只有 PE 的 0.74 倍（分子變小），但 ΔSf 只有 0.47 倍（分母縮更多），所以比值變大：Tm 比 = 0.74/0.47 ≈ 1.57 = 645/410。</li>
+<li>為什麼 ΔSf 小：F 比 H 大，鄰近 F 彼此互斥，鏈呈較硬的螺旋（補充）。能量對轉角圖上，PTFE 的 trans 與 gauche 能量差大、能障高；熔化後能新增的低能量構形少，熔化多出的亂度小。</li>
+<li><b>結果</b>：ΔSf 約砍半 → 儘管 ΔHf 較小，PTFE 的 Tm 仍高。</li>
+<li>講義：3_Polym_Solid 第 16 張「PE vs PTFE Melting Thermodynamics」（表列 PE 3970、9.70；PTFE ΔSf 4.76，約為 PE 一半）；第 15 張「Teflon vs. Polyethylene Chain Stiffness」（能量–轉角曲線）；Polym Solid 第 64 張 Tm = ΔHf/ΔSf。「F 大、互斥、螺旋」的字面說法講義無，補充。</li></ul>
+<h4>判斷關鍵：Tm 高，不一定是 ΔH 大，也可能是 ΔS 小</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>作用在</th><th>Tm</th><th>例子</th></tr>
+<tr><td>鏈間吸引力強（氫鍵）</td><td>ΔHf 大</td><td class="hi">↑</td><td>Q13、Q17 氫鍵基團</td></tr>
+<tr><td>鏈本身硬、轉動能障高</td><td>ΔSf 小</td><td class="hi">↑</td><td>PTFE；Q15 聯苯、Q13 苯環</td></tr>
+<tr><td>鏈很柔軟（C–C 易轉）</td><td>ΔSf 大</td><td class="hi">↓</td><td>PE；Q14 長直鏈側基</td></tr></table></div>
+<p><b>回到題目</b>：PTFE 的 ΔHf（2860）比 PE（3870）小，但 ΔSf 4.43 只有 PE 的 9.44 的約一半（鏈硬、F 互斥），所以 Tm = 645 K &gt; 410 K。答案採用考卷數字，講義數字僅作註記。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：熔化要比較哪些量？</b>聚乙烯（polyethylene，PE）的重複單元是 –CH₂–CH₂–；聚四氟乙烯（polytetrafluoroethylene，PTFE）是 –CF₂–CF₂–，可看成把氫換成氟。熔點（melting temperature，Tm）是晶體與熔體平衡共存的溫度。熔融焓（enthalpy of fusion，ΔHf）是熔化吸收的熱，題目稱 melt energy；熔融熵（entropy of fusion，ΔSf）是熔化後可用排列與形狀增加的程度。Δ 表示熔體減晶體，f 表示熔融。J/mol 表示每莫耳的能量；J/(mol·K) 表示每莫耳的熵。題目兩種材料都用各自一致的莫耳基準計算。</p>
@@ -1081,6 +1236,30 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 iPP 與 sPP 的 Tm → Tm = ΔHf/ΔSf；結晶需要規則鏈（helix 堆積）；晶片 l 越厚 Tm 越高（Thompson-Gibbs）。</p>
 <p class="supp"><b>講義無，補充：</b>講義只給框架，沒有 iPP 187 / sPP 150 °C 的數字（取自考卷）；「3₁ 螺旋 iPP 堆積較緊、sPP 較鬆」「iPP ΔH 較大」「sPP 晶片較薄」皆為補充推論。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s015.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s015.webp" alt="Polym Solid 第 15 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 15 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s064.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s064.webp" alt="Polym Solid 第 64 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 64 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s058.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s058.webp" alt="Polym Solid 第 58 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 58 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s153.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s153.webp" alt="Polym Solid 第 153 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 153 張</figcaption></figure></div></div><!--/slidebox-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：兩種鏈都「規則、能結晶」，差在側基（CH₃）的空間排列不同，晶體裡鏈靠得多緊、晶片多厚，主要作用在 <b>ΔHf</b>，不是鏈柔不柔。</p>
+<div class="tbl"><table><tr><th></th><th>化學組成</th><th>CH₃ 沿主鏈的排列</th><th>能否結晶</th><th>晶體堆積（補充）</th></tr>
+<tr><td>iPP（等規）</td><td>–CH₂–CH(CH₃)–</td><td class="hi">CH₃ 全在主鏈同一側</td><td>能（鏈規則）</td><td>3₁ 螺旋，堆積緊密</td></tr>
+<tr><td>sPP（間規）</td><td>–CH₂–CH(CH₃)–</td><td class="hi">CH₃ 左右交替</td><td>能（鏈規則）</td><td>堆積較鬆、晶片較薄</td></tr></table></div>
+<h4>比較一：iPP vs sPP → 比的是「ΔHf（鏈間堆積）」</h4>
+<ul class="tight"><li><b>相同</b>：化學式完全一樣、都只有 C–C 與 C–H、都沒有氫鍵，鏈一樣柔軟。<b>唯一差別</b>：CH₃ 在主鏈兩側的排列方式（立構規則性 tacticity）。</li>
+<li>Tm = ΔHf/ΔSf。兩者鏈柔軟度相近，ΔSf 差不多，所以差別落在分子：iPP 的螺旋鏈能像螺絲一樣緊貼並排，鏈間接觸多、晶體較穩定，熔化要拆的能量 ΔHf 較大（補充）。</li>
+<li>另一層：sPP 較難排得完美，晶片（lamella）較薄；依 Thompson-Gibbs，晶片厚度 l 小 → Tm 低。</li>
+<li><b>結果</b>：iPP 187 °C &gt; sPP 150 °C。</li>
+<li>講義：Polym Solid 第 64 張「The effect of chemical structure」：Tm = ΔHf/ΔSf；第 58 張「Melting temperature of polymer crystals」：Thompson-Gibbs rule，Tm 隨 l 上升；第 15 張「Isotactic Polypropylene」。具體「3₁ 螺旋較緊、ΔH 較大」講義無，補充。</li></ul>
+<h4>比較二：iPP（規則）vs 無規 PP（atactic）→ 比的是「能不能結晶」</h4>
+<ul class="tight"><li><b>相同</b>：化學式一樣。<b>唯一差別</b>：CH₃ 隨機亂排，鏈不規則。</li>
+<li>鏈不規則就排不成晶格，沒有晶體可熔，也就沒有明確 Tm。這是「有無結晶」的差別，和本題的 iPP vs sPP（兩者都能結晶）不同層次。</li>
+<li><b>結果</b>：atactic PP 不結晶。</li>
+<li>講義：Polym Solid 第 15 張「Isotactic Polypropylene」："Would Atactic Polypropylene Be Able to Crystallize?" "What is the Basic Requirement for Crystallization?"</li></ul>
+<h4>判斷關鍵：先問「能不能結晶」，再問「晶體排得多緊」</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>作用在</th><th>Tm</th><th>例子</th></tr>
+<tr><td>鏈不規則、排不成晶格</td><td>根本無晶體</td><td class="hi">無 Tm</td><td>atactic PP</td></tr>
+<tr><td>鏈規則、可緊密並排（螺旋貼合）</td><td>ΔHf 大、晶片厚</td><td class="hi">↑</td><td>iPP</td></tr>
+<tr><td>鏈規則但堆積較鬆、晶片較薄</td><td>ΔHf 較小</td><td class="hi">↓</td><td>sPP</td></tr>
+<tr><td>鏈間氫鍵多</td><td>ΔHf 大</td><td class="hi">↑</td><td>Q13 聚氨酯、Q17 尼龍</td></tr></table></div>
+<p><b>回到題目</b>：iPP（187 °C）較高：規則鏈、螺旋堆積緊、ΔHf 大、晶片厚；sPP（150 °C）較低：堆積較鬆、晶片較薄。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先認識 PP 與熔點。</b>聚丙烯（polypropylene, PP）是許多 –CH₂–CH(CH₃)– 接成的長鏈，旁邊的 CH₃ 叫甲基（methyl group）。立構規則性（tacticity）是這些側基在空間中的排列規律：等規（isotactic, iPP）在慣用平面圖中同側，間規（syndiotactic, sPP）交替兩側。晶體（crystal）是鏈有秩序地排在一起；熔點（melting temperature, Tm）是晶體失去這種排列、成為熔體的溫度。</p>
@@ -1118,6 +1297,28 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>Tacticity 決定能否 crystallize（規則的 iPP / sPP 可，atactic 不行）→ 影響 Tm；Tg 由 chain stiffness 與 bulky pendant group 決定（aPP Tg 約 −10 °C）。</p>
 <p class="supp"><b>講義無，補充：</b>講義只給 aPP 的 Tg；「iPP、sPP 的 Tg 也約 −10 °C」「立構對 Tm 影響大於 Tg」「PMMA 例外」皆為補充；「iPP/sPP 有 Tm、aPP 無 Tm」僅由 s015 暗示。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s015.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s015.webp" alt="Polym Solid 第 15 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 15 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s153.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s153.webp" alt="Polym Solid 第 153 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 153 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s098.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s098.webp" alt="Polym Solid 第 98 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 98 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s070.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s070.webp" alt="Polym Solid 第 70 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 70 張</figcaption></figure></div></div><!--/slidebox-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：立構規整度（tacticity）對 Tm 的影響，和對 Tg 的影響，要分開看，再比誰受影響比較大。</p>
+<div class="tbl"><table><tr><th></th><th>甲基（CH₃）側基的排列</th><th>鏈規不規則</th><th>能不能結晶</th><th>Tm</th><th>Tg</th></tr>
+<tr><td>iPP（等規）</td><td class="hi">全部排在主鏈同一側</td><td class="hi">規則</td><td class="hi">能</td><td>187 °C（考卷）</td><td>約 −10 °C（補充）</td></tr>
+<tr><td>sPP（間規）</td><td class="hi">左右兩側交替</td><td class="hi">規則</td><td class="hi">能</td><td>150 °C（考卷）</td><td>約 −10 °C（補充）</td></tr>
+<tr><td>aPP（無規）</td><td class="hi">隨機排列</td><td class="hi">不規則</td><td class="hi">不能</td><td class="hi">無 Tm（補充）</td><td>約 −10 °C（第 98 張）</td></tr></table></div>
+<h4>比較一：iPP / sPP vs aPP → 比的是「Tm（需要排整齊才能結晶）」</h4>
+<ul class="tight"><li><b>相同</b>：化學式一樣，每個單元都帶一個 CH₃ 側基。<b>唯一差別</b>：CH₃ 的空間排列有沒有規律。</li>
+<li>結晶要求鏈像整齊的積木一樣排進晶格。iPP、sPP 排列規則，鏈可以規整堆疊，所以有晶體、有熔點；aPP 的 CH₃ 亂排，鏈堆不整齊，無法結晶，沒有真正的 Tm。對 Tm 來說，這是「有」或「沒有」的差別，影響很大。</li>
+<li><b>結果</b>：規則度決定 Tm 的有無與高低（iPP 187 °C、sPP 150 °C 是考卷數字）。</li>
+<li>講義：Polym Solid 第 15 張「Isotactic Polypropylene」問 "What is the Basic Requirement for Crystallization?"；第 153 張「Stereochemistry and Polymer Properties」畫出 isotactic / syndiotactic / atactic。「iPP、sPP 有 Tm、aPP 沒有」是第 15 張的延伸（補充）。</li></ul>
+<h4>比較二：三種立構彼此比 → 比的是「Tg（局部鏈段活動）」</h4>
+<ul class="tight"><li><b>相同</b>：主鏈、側基種類都一樣，都是 CH₃。<b>唯一差別</b>：CH₃ 排在哪一側。</li>
+<li>Tg 看的是非晶區裡一小段鏈段能不能轉動，由<b>鏈的僵硬程度與側基大小</b>決定。三種 PP 的側基同樣是貼在主鏈上的 CH₃，大小與僵硬度相同，對局部轉動的阻礙差不多，所以 Tg 差不多。</li>
+<li><b>結果</b>：Tg 大致相同，約 −10 °C（講義只給 aPP 的 −10 °C；三者相近是補充）。</li>
+<li>講義：Polym Solid 第 98 張「Bulky substituents」："The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."（aPP 約 −10 °C）。</li></ul>
+<h4>判斷關鍵：規則度 → 結晶 → Tm；側基與僵硬度 → 鏈段轉動 → Tg</h4>
+<div class="tbl"><table><tr><th>性質</th><th>決定因素</th><th>立構改變時</th><th>例子</th></tr>
+<tr><td><b>Tm</b></td><td>鏈能不能規整堆疊成晶體</td><td class="hi">影響大（有 / 無晶體）</td><td>iPP、sPP 有 Tm；aPP 無</td></tr>
+<tr><td><b>Tg</b></td><td>局部鏈段轉動（側基大小、鏈僵硬）</td><td class="hi">影響小（側基相同）</td><td>PP 三種立構約 −10 °C；例外：PMMA 立構對 Tg 也有影響（補充，見 Q5 PMMA 與 Q42 表 12.3）</td></tr></table></div>
+<p><b>回到題目</b>：規則度對 <b>Tm 影響較大</b>（iPP、sPP 規則可結晶有 Tm，aPP 不能結晶）；對 Tg 影響較小（三種 PP 同為 CH₃ 側基，Tg 約 −10 °C）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：Tg 與 Tm 問的是什麼？</b>聚丙烯（polypropylene, PP）的主鏈旁接甲基（methyl group）CH₃。構型（configuration）是側基固定的立體關係，不能只轉單鍵就互換；立構規則性（tacticity）描述這種關係是否規律。玻璃轉移溫度（glass transition temperature, Tg）是非晶區的局部鏈段從難以活動變成能協同活動的溫度範圍；熔點（melting temperature, Tm）則是晶體的整齊排列被破壞、變成熔體的溫度。非晶（amorphous）表示沒有長程的晶體秩序。</p>
@@ -1167,6 +1368,31 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>講義無聚胺酯（polyurethane）資料與 Tm 數字（513、481–485、406 K 來自考卷／手寫）；(1) 與 (2) 的先後（二胺段 (CH₂)₆ 較短、胺酯基較集中）無講義支持。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s063.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s063.webp" alt="Polym Solid 第 63 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 63 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s067.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s067.webp" alt="Polym Solid 第 67 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 67 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s068.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s068.webp" alt="Polym Solid 第 68 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 68 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s069.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s069.webp" alt="Polym Solid 第 69 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 69 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s093.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s093.webp" alt="Polym Solid 第 93 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 93 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="13"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：氫鍵（作用在 ΔHf）與鏈的剛柔（作用在 ΔSf），而且 (1) vs (2) 比的是「氫鍵基團擺放得多近」。</p>
+<div class="tbl"><table><tr><th></th><th>胺酯基 –NH–CO–O– 個數</th><th>二胺段 (CH₂)ₙ</th><th>二醇段</th><th>CH₂ 總數／苯環</th></tr>
+<tr><td>(1)</td><td>2</td><td class="hi">(CH₂)₆（較短）</td><td>(CH₂)₃–苯環–(CH₂)₃</td><td>12 個 CH₂＋1 環</td></tr>
+<tr><td>(2)</td><td>2</td><td class="hi">(CH₂)₈（較長）</td><td>(CH₂)₂–苯環–(CH₂)₂</td><td>12 個 CH₂＋1 環</td></tr>
+<tr><td>(3)</td><td>2</td><td>(CH₂)₈</td><td class="hi">(CH₂)₁₀，無環</td><td class="hi">18 個 CH₂，0 環</td></tr></table></div>
+<h4>比較一：(1) vs (2) → 比的是「胺酯基的分布」（ΔHf）</h4>
+<ul class="tight"><li><b>相同</b>：每單元都是 2 個胺酯基、12 個 CH₂、1 個苯環，所以<b>平均</b>胺酯基密度一樣、環數一樣。<b>唯一差別</b>：這些 CH₂ 怎麼分給二胺段與二醇段。</li>
+<li>(1) 的二胺段只有 (CH₂)₆，讓兩個胺酯基在鏈上靠得較近，形成較集中的氫鍵區；(2) 的二胺段 (CH₂)₈ 較長，氫鍵點被拉開、分布較稀（補充）。氫鍵集中、較易整齊對位 → 鏈間吸引力大 → 作用在 ΔHf（interchain attraction）。</li>
+<li>兩者鏈柔軟度相近，所以差別主要在 ΔHf，不在 ΔSf。</li>
+<li><b>結果</b>：(1) 約 513 K &gt; (2) 約 481–485 K。</li>
+<li>講義無，補充（沒有聚氨酯數據）。可對應 Polym Solid 第 63 張「Intermolecular interactions」：含 –C(=O)NH– 的鏈 Tm 約 265 °C，PE 約 135 °C（氫鍵使 ΔHf 大）。</li></ul>
+<h4>比較二：(2) vs (3) → 比的是「苯環＋長柔性段」（ΔSf，並帶 ΔHf）</h4>
+<ul class="tight"><li><b>相同</b>：二胺段都是 (CH₂)₈、都有 2 個胺酯基。<b>差別</b>：(2) 的二醇段含苯環且 CH₂ 較少；(3) 是 10 個 CH₂ 的純柔性段、沒有環。這裡有兩個變因同時動（環的有無＋長度），要說清楚。</li>
+<li>苯環剛硬、不能自由轉 → 熔化後增加的構形少，ΔSf 小 → Tm 高。(3) 一長串 CH₂ 都能轉，ΔSf 大 → Tm 低。</li>
+<li>另外 (3) 每單元更長（18 個 CH₂），胺酯基密度較低，氫鍵也較稀，ΔHf 也較小，兩者都使 Tm 更低。</li>
+<li><b>結果</b>：(2) 約 481–485 K &gt; (3) 約 406 K。</li>
+<li>講義：Polym Solid 第 67、68 張「Entropy &amp; chain flexibility」："Flexible … ΔSf large"、"Stiff … ΔSf small"；第 69 張 poly(p-xylene) 約 400 °C 對照 PE 約 135 °C。</li></ul>
+<h4>判斷關鍵：氫鍵看「多不多、近不近」，剛柔看「有沒有環、CH₂ 長不長」</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>效果</th><th>Tm</th><th>例子</th></tr>
+<tr><td>氫鍵基團密度高、靠得近</td><td>ΔHf 大</td><td class="hi">↑</td><td>(1) &gt; (2)；Q17 尼龍 n 小</td></tr>
+<tr><td>主鏈有苯環（剛硬）</td><td>ΔSf 小</td><td class="hi">↑</td><td>(2) &gt; (3)；Q15 聯苯</td></tr>
+<tr><td>長串柔性 CH₂</td><td>ΔSf 大，氫鍵密度也低</td><td class="hi">↓</td><td>(3)；Q18 m 大</td></tr></table></div>
+<p><b>回到題目</b>：(1) &gt; (2) &gt; (3)。(1)：氫鍵集中＋苯環剛硬，最高；(2)：氫鍵較分散但仍有環；(3)：無環、CH₂ 最多，最低。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先找出能互相抓住的地方。</b>聚氨酯（polyurethane）的鏈上有胺酯基（urethane group）–NH–CO–O–。其中 N–H 可提供氫鍵，C=O 的氧可接受氫鍵；氫鍵（hydrogen bond）是相鄰基團間的吸引作用，寫成 N–H···O=C。CH₂ 是亞甲基（methylene group），接成可扭動的柔性段；苯環（benzene ring）是較剛硬的環。熔點（melting temperature, Tm）是晶體整齊排列被破壞的溫度。</p>
@@ -1221,6 +1447,36 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>考題中的 –CH₂C(CH₃)₂CH₂CH₃、–CH₂CH(CH₃)CH₂CH₃ 側基、poly(hexene-1) 及 (2) &gt; (5) 的先後不在講義。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s079.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s079.webp" alt="Polym Solid 第 79 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 79 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s067.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s067.webp" alt="Polym Solid 第 67 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 67 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s068.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s068.webp" alt="Polym Solid 第 68 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 68 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s064.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s064.webp" alt="Polym Solid 第 64 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 64 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="14"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：側基是「直鏈越長越軟」還是「分枝靠近主鏈而卡住」，兩者都作用在 <b>ΔSf</b>（本組沒有氫鍵）。</p>
+<div class="tbl"><table><tr><th></th><th>側基</th><th>形狀</th><th>離主鏈的樣子</th></tr>
+<tr><td>(1)</td><td>–CH₃（1 個碳）</td><td>最短，直鏈</td><td>貼近主鏈，但太小不構成卡住</td></tr>
+<tr><td>(3)</td><td>正丙基（3 個碳）</td><td>直鏈</td><td>伸出去、可扭動</td></tr>
+<tr><td>(4)</td><td>正丁基（4 個碳）</td><td class="hi">直鏈，最長</td><td>伸出去、更軟</td></tr>
+<tr><td>(5)</td><td>–CH₂–CH(CH₃)–CH₂CH₃</td><td class="hi">分枝，第 2 個碳是三級碳</td><td>分枝點離主鏈近</td></tr>
+<tr><td>(2)</td><td>–CH₂–C(CH₃)₂–CH₂CH₃</td><td class="hi">分枝，第 2 個碳是四級碳（連 4 個碳）</td><td>分枝點離主鏈近、更擠</td></tr></table></div>
+<h4>比較一：(1) vs (3) vs (4) → 比的是「直鏈側基的長度」（ΔSf）</h4>
+<ul class="tight"><li><b>相同</b>：都是直鏈烷基、都沒有分枝。<b>唯一差別</b>：長度 1 → 3 → 4 個碳。</li>
+<li>直鏈側基很柔軟，可以扭來扭去；越長，熔化後多出來的構形越多（ΔSf 變大），也把主鏈撐開、堆積變鬆。Tm = ΔHf/ΔSf，分母變大 → Tm 下降。</li>
+<li><b>結果</b>：(1) &gt; (3) &gt; (4)。Fig. 7-4 上 PP 約 440 K，poly(pentene-1)（正丙基）約 340 K。</li>
+<li>講義：Polym Solid 第 79 張「From Billmeyer」Fig. 7-4：長直鏈側基（butene-1、pentene-1）落在較低位置。poly(hexene-1)（正丁基）講義無，補充。</li></ul>
+<h4>比較二：直鏈 (3)(4) vs 分枝 (5)(2) → 比的是「側基位置（近主鏈卡住）vs 軟」</h4>
+<ul class="tight"><li><b>相同</b>：側基都是幾個碳的烷基。<b>差別</b>：直鏈沿一條線往外長；分枝在靠近主鏈處就岔開。</li>
+<li>分枝點靠近主鏈 → 又大又擠，主鏈轉動時會撞到 → 鏈變硬，ΔSf 小 → Tm 高。直鏈離主鏈遠且柔軟，不卡主鏈。所以「碳數多」不一定 Tm 低，要看形狀。</li>
+<li><b>結果</b>：分枝 (2)(5) &gt; 直鏈。Fig. 7-4 上 poly(3-methyl-1-butene) 約 570 K、poly(4-methyl-1-pentene) 約 510 K，是圖中最高的。</li>
+<li>講義：Polym Solid 第 79 張 Fig. 7-4：靠近主鏈的分枝側基位置最高；第 67、68 張：Stiff … ΔSf small。</li></ul>
+<h4>比較三：(2) vs (5) → 比的是「四級碳 vs 三級碳」</h4>
+<ul class="tight"><li><b>相同</b>：側基都是分枝、分枝點都在離主鏈第 2 個碳。<b>唯一差別</b>：(2) 的分枝碳多帶一個 CH₃（連 4 個碳，四級碳），(5) 只連 3 個碳（三級碳）。</li>
+<li>多一個 CH₃ 在分枝點周圍，更擠、轉動更受限，鏈更硬，ΔSf 更小。</li>
+<li><b>結果</b>：(2) &gt; (5)。</li>
+<li>講義無，補充（講義沒有這兩種側基的數據）。</li></ul>
+<h4>判斷關鍵：側基看「形狀與位置」，不是單看碳數</h4>
+<div class="tbl"><table><tr><th>側基</th><th>效果</th><th>Tm</th><th>例子</th></tr>
+<tr><td>直鏈、越長越軟</td><td>ΔSf 大、堆積鬆</td><td class="hi">↓</td><td>(1) &gt; (3) &gt; (4)；Q7 PBMA</td></tr>
+<tr><td>分枝、分枝點靠近主鏈</td><td>卡住旋轉，ΔSf 小</td><td class="hi">↑</td><td>(5)、Q6 P4MP</td></tr>
+<tr><td>分枝點更擠（四級碳）</td><td>卡得更緊</td><td class="hi">↑↑</td><td>(2)</td></tr></table></div>
+<p><b>回到題目</b>：(2) &gt; (5) &gt; (1) &gt; (3) &gt; (4)。(2)：四級碳分枝最擠；(5)：三級碳分枝；(1)：短甲基；(3)：丙基較軟；(4)：丁基最長最軟。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：題目列的是側基。</b>聚烯烴（polyolefin）可看成碳主鏈旁掛不同的側基（side group），本題五個式子都是掛在主鏈上的 R，不是整條高分子。CH₂ 是亞甲基（methylene group），CH₃ 是甲基（methyl group）；碳鏈若另伸出小支路，就叫分枝（branching）。熔點（melting temperature, Tm）是有序晶體變成熔體的溫度。鏈的柔性（flexibility）則表示單鍵轉動、改換形狀的容易程度。</p>
@@ -1269,6 +1525,35 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>「醚鍵像鉸鏈、醚比例越高越軟」是由 Tm 數值與 s067/s068 推論，非講義原句。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s163.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s163.webp" alt="Polym Solid 第 163 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 163 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s164.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s164.webp" alt="Polym Solid 第 164 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 164 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s093.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s093.webp" alt="Polym Solid 第 93 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 93 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s067.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s067.webp" alt="Polym Solid 第 67 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 67 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s068.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s068.webp" alt="Polym Solid 第 68 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 68 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="15"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：主鏈裡「剛硬單元」與「柔性鉸鏈」的比例，也就是 <b>ΔSf</b>（鏈有多硬）。四個都有苯環，所以不能只數有沒有環。</p>
+<div class="tbl"><table><tr><th></th><th>每單元結構（Ph = 苯環）</th><th>醚 –O–（柔）</th><th>酮 –CO–（硬）</th><th>苯環連法</th></tr>
+<tr><td>(a)</td><td>Ph–CO–Ph–O</td><td>1 個</td><td>1 個</td><td>2 環，隔開</td></tr>
+<tr><td>(b)</td><td>Ph–CO–Ph–CO–Ph–O</td><td>1 個</td><td class="hi">2 個</td><td>3 環，隔開</td></tr>
+<tr><td>(c)</td><td>Ph–O–Ph–CO–Ph–O</td><td class="hi">2 個</td><td>1 個</td><td>3 環，隔開</td></tr>
+<tr><td>(d)</td><td>Ph–Ph–O–Ph–CO–Ph–O</td><td>2 個</td><td>1 個</td><td class="hi">含 Ph–Ph 直接相連（聯苯）</td></tr></table></div>
+<h4>比較一：(b) vs (c) → 比的是「醚多還是酮多」（ΔSf）</h4>
+<ul class="tight"><li><b>相同</b>：都是 3 個苯環、都沒有氫鍵。<b>差別</b>：(b) 有 2 個 –CO–、1 個 –O–；(c) 有 1 個 –CO–、2 個 –O–。</li>
+<li>–O– 像可轉的鉸鏈，讓鏈能轉彎；–CO– 夾在兩個苯環之間較剛硬，也較極性。醚越多，熔化時多出的構形越多（ΔSf 大）→ Tm 低。</li>
+<li><b>結果</b>：(b) 657 K &gt; (c) 628 K。</li>
+<li>講義：Polym Solid 第 163、164 張「TABLE 15.11 Typical Aromatic Poly(ether ketone)s」。「醚像鉸鏈」的說法講義無，補充（由 Tm 與第 67、68 張推得）。</li></ul>
+<h4>比較二：(a) vs (b)、(a) vs (c) → 比的是「把 (a) 往兩邊推」</h4>
+<ul class="tight"><li><b>相同</b>：都是醚＋酮＋苯環的重複單元。<b>差別</b>：(b) 比 (a) 多加一個 –CO–Ph（硬段變多）；(c) 比 (a) 多加一個 –O–Ph（柔段變多）。</li>
+<li>多加硬段 → ΔSf 小 → Tm 上升；多加醚鉸鏈 → ΔSf 大 → Tm 下降。(a) 剛好在中間。</li>
+<li><b>結果</b>：(b) 657 &gt; (a) 640 &gt; (c) 628 K。</li>
+<li>講義：同 Table 15.11：Ⅰ 640 K、Ⅱ 657 K、Ⅲ 628 K。</li></ul>
+<h4>比較三：(c) vs (d) → 比的是「Ph–Ph 直接相連的聯苯」</h4>
+<ul class="tight"><li><b>相同</b>：醚 2 個、酮 1 個。<b>唯一差別</b>：(d) 多了一個苯環，且它與隔壁苯環直接相連（沒有 O 或 CO 隔開）。</li>
+<li>聯苯中間沒有可轉的鍵，是整根硬棒，熔化後構形增加最少 → ΔSf 最小 → Tm 最高。同樣有兩個醚也無法抵消，所以不能只按醚的個數判斷。</li>
+<li><b>結果</b>：(d) 689 K &gt; (c) 628 K。</li>
+<li>講義：Table 15.11 第 Ⅳ 項 689 K；Table 4-8（Polym Solid 第 93 張）也顯示：對苯撐 270 → 聯苯撐 355 °C，聯苯更硬、Tm 更高。</li></ul>
+<h4>判斷關鍵：數「硬段 vs 柔段」，並注意「直接相連的環」</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>效果</th><th>Tm</th><th>例子</th></tr>
+<tr><td>苯環直接相連（聯苯）</td><td>ΔSf 最小</td><td class="hi">↑↑</td><td>(d)；Table 4-8 聯苯撐</td></tr>
+<tr><td>酮 –CO– 比例高</td><td>鏈較硬、極性</td><td class="hi">↑</td><td>(b)</td></tr>
+<tr><td>醚 –O– 比例高</td><td>鉸鏈，ΔSf 大</td><td class="hi">↓</td><td>(c)；Q13 柔性 CH₂ 段</td></tr></table></div>
+<p><b>回到題目</b>：(d) &gt; (b) &gt; (a) &gt; (c)（689 &gt; 657 &gt; 640 &gt; 628 K）。(d)：有聯苯硬棒；(b)：酮最多；(a)：醚酮各一；(c)：兩個醚鉸鏈。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先把結構字母翻成白話。</b>本題 Ph 代表鏈中的苯環單元（phenylene unit）；醚鍵（ether linkage）–O– 是氧接在兩個碳之間；酮基（ketone group）–CO– 含有碳氧雙鍵 C=O；聯苯（biphenyl）Ph–Ph 則是兩個苯環直接相連。分子量（molecular weight, MW）表示整條分子的質量尺度，題目指定相同，是要我們集中比較結構。熔點（melting temperature, Tm）是晶體失去有序排列、成為熔體的溫度。</p>
@@ -1316,6 +1601,34 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>本題照 Table 15.3 (s136) 排 9 &gt; 8 &gt; 11 &gt; 10（與手寫註記一致）；s019 (°C) 則是 10 &gt; 11，兩者只差約 2–5 K。「odd–even effect」字眼講義未明寫。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s136.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s136.webp" alt="Polym Solid 第 136 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 136 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s019.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s019.webp" alt="Polym Solid 第 19 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 19 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s020.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s020.webp" alt="Polym Solid 第 20 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 20 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="17"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：n 越大，醯胺基（氫鍵）越稀、Tm 整體下降；另外奇數與偶數 n 的氫鍵對位不同，造成起伏。兩者都作用在 <b>ΔHf</b>。</p>
+<div class="tbl"><table><tr><th></th><th>n 的奇偶</th><th>相鄰醯胺基之間的 CH₂ 數</th><th>Table 15.3 Tm（K）</th></tr>
+<tr><td>Nylon 8</td><td class="hi">偶數</td><td>7</td><td>473</td></tr>
+<tr><td>Nylon 9</td><td class="hi">奇數</td><td>8</td><td>482</td></tr>
+<tr><td>Nylon 10</td><td class="hi">偶數</td><td>9</td><td>461</td></tr>
+<tr><td>Nylon 11</td><td class="hi">奇數</td><td>10</td><td>463</td></tr></table></div>
+<h4>比較一：8 vs 10（都是偶數）；9 vs 11（都是奇數）→ 比的是「醯胺基密度」</h4>
+<ul class="tight"><li><b>相同</b>：奇偶相同，所以氫鍵對位的排法一樣。<b>唯一差別</b>：n 多 2，每兩個醯胺之間多 2 個柔性 CH₂。</li>
+<li>醯胺基 –CO–NH– 之間的氫鍵是鏈間吸引力的來源（ΔHf）；CH₂ 變多，單位鏈長上的氫鍵變少，ΔHf 變小（柔性 CH₂ 也使 ΔSf 增加）→ Tm 下降。</li>
+<li><b>結果</b>：8（473）&gt; 10（461），差 12 K；9（482）&gt; 11（463），差 19 K。</li>
+<li>講義：Polym Solid 第 136 張「TABLE 15.3 Melting Temperatures Tm of Linear Aliphatic Polyamides」；第 19 張「Interchain hydrogen-bonding」（Tm 對 1/n 約成直線）；第 137 張 FIGURE 15.1：氫鍵能力下降，Tm 下降。</li></ul>
+<h4>比較二：8 vs 9（相鄰、一奇一偶）→ 比的是「奇偶效應」</h4>
+<ul class="tight"><li><b>相同</b>：都是 nylon，都有氫鍵。<b>唯一差別</b>：n 差 1，奇偶不同。</li>
+<li>若只看密度，8 的 CH₂ 較少、應該較高；實際 9 反而較高。表示奇數 n 時，鏈在晶體中對位後氫鍵配得更完整，這個優勢蓋過少一點的密度劣勢（補充）。</li>
+<li><b>結果</b>：9（482）&gt; 8（473），差 9 K，是密度趨勢之外的「起伏」。</li>
+<li>講義：第 20 張 FIGURE 11.4 畫出 nylon-6,6 與 nylon-7,7 允許的氫鍵對位。明講的「奇偶效應（odd–even）」說法講義無，補充。</li></ul>
+<h4>比較三：11 vs 10 → 差距小，要註明資料來源</h4>
+<ul class="tight"><li><b>相同</b>：兩者都在密度低的尾端。<b>差別</b>：11 是奇數、10 是偶數，密度趨勢和奇偶效應方向相反。</li>
+<li>Table 15.3：11（463）&gt; 10（461），只差 2 K；第 19 張（°C）卻是 10（192）&gt; 11（187）。差距在誤差內。本題依 Table 15.3，與學生手寫一致。</li>
+<li><b>結果</b>：9 &gt; 8 &gt; 11 &gt; 10，兩個表都符合 9 &gt; 8 &gt; {10, 11}。</li></ul>
+<h4>判斷關鍵：先看大趨勢（密度），再看起伏（奇偶）</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>效果</th><th>Tm</th><th>例子</th></tr>
+<tr><td>n 增加、氫鍵基團變稀</td><td>ΔHf 下降</td><td class="hi">↓（大趨勢）</td><td>8 &gt; 10、9 &gt; 11；Q18 m 增加</td></tr>
+<tr><td>奇數 n，氫鍵對位完整</td><td>ΔHf 略大</td><td class="hi">↑（起伏）</td><td>9 &gt; 8</td></tr>
+<tr><td>氫鍵基團密度決定 ΔHf</td><td>與 Q13 同一原理</td><td class="hi">—</td><td>Q13 聚氨酯</td></tr></table></div>
+<p><b>回到題目</b>：Nylon 9 &gt; 8 &gt; 11 &gt; 10（482 &gt; 473 &gt; 463 &gt; 461 K）。9：奇數、氫鍵對位好；8：密度高；11：奇數但很稀；10：偶數且很稀。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：尼龍的數字在數什麼？</b>尼龍（nylon）是聚醯胺（polyamide），鏈中反覆出現醯胺基（amide group）–CO–NH–。單一數字的 Nylon-n 可寫成 –NH–(CH₂)n−1–CO–；n 是單元中的碳總數，包含 C=O 的羰基碳（carbonyl carbon），所以 Nylon 9 只有八個 CH₂。氫鍵（hydrogen bond）是相鄰鏈 N–H 與 C=O 間的吸引，寫成 N–H···O=C。熔點（melting temperature, Tm）是有序晶體變成熔體的溫度。</p>
@@ -1365,6 +1678,37 @@ ul.tight li{margin:3px 0}
 <p class="supp"><b>講義無，補充：</b>「酯基只有偶極作用、醯胺有 N–H···O=C 氫鍵」只是由數值與 s063 暗示。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s135.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s135.webp" alt="Polym Solid 第 135 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 135 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s062.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s062.webp" alt="Polym Solid 第 62 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 62 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s063.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s063.webp" alt="Polym Solid 第 63 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 63 張</figcaption></figure></div></div><!--/slidebox-->
 <!--struct--><div class="structs" data-q="18"></div><!--/struct-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考兩種效應</b>：m 增加使酯基變稀、鏈變柔（整體 Tm 下降，ΔHf 降、ΔSf 升），再疊上奇偶起伏；另外要和聚醯胺比，看酯基沒有氫鍵。</p>
+<div class="tbl"><table><tr><th></th><th>m 的奇偶</th><th>相鄰酯基間 CH₂ 數</th><th>聚酯 Tm（K）</th><th>聚醯胺 Tm（K）</th></tr>
+<tr><td>m = 2</td><td>偶</td><td>少</td><td class="hi">395</td><td>598</td></tr>
+<tr><td>m = 3</td><td>奇</td><td>中</td><td>335</td><td>538</td></tr>
+<tr><td>m = 4</td><td>偶</td><td>中</td><td class="hi">329</td><td>532</td></tr>
+<tr><td>m = 5</td><td>奇</td><td>中</td><td>335</td><td>496</td></tr>
+<tr><td>m = 6</td><td>偶</td><td class="hi">多</td><td class="hi">325</td><td>506</td></tr></table></div>
+<h4>比較一：m = 2 vs m = 6 → 比的是「酯基密度與柔性」</h4>
+<ul class="tight"><li><b>相同</b>：都是 –(CH₂)ₘ–COO– 的聚酯，奇偶相同（偶數）。<b>唯一差別</b>：m 從 2 增加到 6，酯基之間多了 4 個 CH₂。</li>
+<li>酯基有極性，能產生偶極作用（ΔHf 的來源）；CH₂ 變多，酯基稀了，鏈也更柔軟，熔化後構形增加更多（ΔSf 增加）。ΔHf 變小、ΔSf 變大，Tm 下降。</li>
+<li><b>結果</b>：395 K → 325 K。</li>
+<li>講義：Polym Solid 第 135 張「TABLE 15.1 Influence of Various Links on Tm when Incorporated in an All-Carbon Chain」。</li></ul>
+<h4>比較二：m = 3、4、5 → 比的是「奇偶起伏」</h4>
+<ul class="tight"><li><b>相同</b>：都在密度中段、都是聚酯。<b>差別</b>：奇、偶、奇。</li>
+<li>若只看密度，應該 3 &gt; 4 &gt; 5 逐漸下降；實際 m = 3 與 5 同為 335 K，m = 4（329）反而更低。奇數 m 的排列使晶體堆積略有利（補充），疊在下降趨勢上。</li>
+<li><b>結果</b>：3 = 5（335）&gt; 4（329）。</li>
+<li>講義：第 135 張的表值；「奇偶效應」說法講義無，補充。</li></ul>
+<h4>比較三：聚酯 vs 聚醯胺（同一個 m）→ 比的是「有沒有氫鍵」（ΔHf）</h4>
+<ul class="tight"><li><b>相同</b>：同表、同樣的 m、同樣的 CH₂ 柔性段。<b>唯一差別</b>：–COO–（酯）換成 –CO–NH–（醯胺）。</li>
+<li>酯基沒有 N–H，只有偶極作用；醯胺的 N–H···O=C 氫鍵強得多 → ΔHf 大得多 → Tm 高很多。</li>
+<li><b>結果</b>：m = 2：598 − 395 = 203 K；m = 6：506 − 325 = 181 K。</li>
+<li>講義：同第 135 張的聚醯胺列；Polym Solid 第 63 張「Intermolecular interactions」：含 –C(=O)NH– 的鏈約 265 °C，PE 約 135 °C。「酯只有偶極作用」講義無，補充。</li>
+<li>起伏型態也不同：聚醯胺 m = 5 → 6 反而上升（496 → 506），聚酯則是下降（335 → 325），所以奇偶的細節不要硬套同一個規則。</li></ul>
+<h4>判斷關鍵：先看大趨勢（密度），再看奇偶；基團種類決定高低水準</h4>
+<div class="tbl"><table><tr><th>特徵</th><th>效果</th><th>Tm</th><th>例子</th></tr>
+<tr><td>極性基團間 CH₂ 變多</td><td>密度降、鏈變柔</td><td class="hi">↓（大趨勢）</td><td>m = 2 → 6；Q17 n 增加</td></tr>
+<tr><td>奇偶不同</td><td>堆積略有差</td><td class="hi">起伏</td><td>3 = 5 &gt; 4；Q17 9 &gt; 8</td></tr>
+<tr><td>換成氫鍵基團（醯胺）</td><td>ΔHf 大增</td><td class="hi">↑↑</td><td>聚醯胺列；Q13、Q17</td></tr></table></div>
+<p><b>回到題目</b>：m = 2 &gt; 3 = 5 &gt; 4 &gt; 6（395 &gt; 335 = 335 &gt; 329 &gt; 325 K）。2：酯基最密；3、5：同為 335 K；4：奇偶起伏較低；6：CH₂ 最長最稀。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：先讀懂這條分子鏈。</b>高分子（polymer）是許多小單元接成的長鏈；聚酯（polyester）是主鏈含有酯基（ester group，–COO–）的高分子。本題的重複單元是 –(CH₂)m–COO–，m 表示兩個酯基之間有幾個亞甲基（methylene group，CH₂），不是整條鏈的長度。熔點（melting temperature，Tm）是晶體的規則排列失去穩定、變成熔體的溫度；題目的 K 是絕對溫度單位，數值越大就是熔點越高。「遞減」就是由高排到低。</p>
@@ -1527,6 +1871,24 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>高結晶度（HDPE）→ 密度高、較硬較強較不透明；講義沒有討論 barrier properties。</p>
 <p class="supp"><b>講義無，補充：</b>氣體阻隔、P = D·S、晶區不可穿透、擴散路徑曲折、以及 atactic PS、E/P 隨機共聚物、mCOC 的比較全不在講義；答案維持 (4)。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s150.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s150.webp" alt="Polym Solid 第 150 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 150 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s156.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s156.webp" alt="Polym Solid 第 156 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 156 張</figcaption></figure></div></div><!--/slidebox-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>只考一件事</b>：哪個高分子最容易結晶（結晶度最高）；題目提示「結晶的比非結晶的阻隔性好」，四個選項就是在比結晶度。</p>
+<div class="tbl"><table><tr><th>選項</th><th>高分子</th><th>鏈規不規則</th><th>能不能結晶</th><th>阻隔性</th></tr>
+<tr><td>(1)</td><td>Atactic polystyrene（aPS）</td><td>苯環側基隨機排列，不規則</td><td>非晶（補充）</td><td>差</td></tr>
+<tr><td>(2)</td><td>乙烯 / 丙烯隨機共聚物（50/50）</td><td>兩種單元亂序，不規則</td><td>非晶（補充）</td><td>差</td></tr>
+<tr><td>(3)</td><td>mCOC（環烯烴共聚物）</td><td>環狀體積大、單元不規則</td><td>非晶（補充）</td><td>差</td></tr>
+<tr><td>(4)</td><td class="hi">HDPE（高密度聚乙烯）</td><td class="hi">無側基的長直鏈，最規則</td><td class="hi">高度結晶</td><td class="hi">最好</td></tr></table></div>
+<h4>比較：(4) HDPE vs (1)(2)(3) → 比的是「有沒有結晶區」</h4>
+<ul class="tight"><li><b>分組</b>：(1)(2)(3) 都是鏈不規則的非晶高分子；(4) 是唯一規則、緊密堆疊、結晶度高的。</li>
+<li>阻隔性（氣體不容易穿過）取決於滲透率 P = D·S：結晶區堆得很緊，氣體分子進不去，可溶解的體積減少（溶解度 S 變小）；晶片又使氣體要繞路（擴散係數 D 變小），所以 P 最小。這個機制是補充。</li>
+<li><b>結果</b>：HDPE 的密度最高（0.94–0.97 g/cm³），結晶度最高，阻隔性最好。</li>
+<li>講義：Polym Solid 第 156 張「TABLE 15.7」：HDPE 密度 0.94–0.97 g/cm³、Tm 高於 403 K，比 LDPE（0.92）高；第 150 張說明結晶度越高越強、越硬、越不透明。講義無阻隔性內容，P = D·S 與 mCOC 的分類是補充。</li></ul>
+<h4>判斷關鍵：結晶度越高 → 阻隔性越好</h4>
+<div class="tbl"><table><tr><th>鏈的特徵</th><th>效果</th><th>阻隔性</th><th>例子</th></tr>
+<tr><td>規則、無側基或小側基、容易緊密堆疊</td><td>結晶度高，氣體進不去、要繞路</td><td class="hi">↑</td><td>HDPE（本題 (4)）；Table 15.7 密度越高越緻密</td></tr>
+<tr><td>不規則（無規側基、隨機共聚、大環狀）</td><td>非晶，氣體可自由溶解與擴散</td><td class="hi">↓</td><td>aPS、乙烯/丙烯隨機共聚物、mCOC；Q22 aPP 也不能結晶</td></tr></table></div>
+<p><b>回到題目</b>：選 (4) HDPE，規則直鏈、結晶度最高、密度最高。(1) aPS、(2) 隨機共聚物、(3) mCOC 都是非晶，阻隔性較差。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：「阻隔好」是什麼意思？</b>高分子（polymer）是長鏈分子組成的材料；阻隔性（barrier property）是薄膜阻止氣體或水氣穿過的能力。晶相（crystalline phase）的鏈排列規則、緊密；非晶相（amorphous phase）較無序。半結晶（semicrystalline）表示兩者都有。滲透係數（permeability）P 是材料讓氣體通過的容易程度，所以<b>阻隔越好，P 越小</b>。本題已提示晶體有利於阻隔，我們要在這個模型下選出晶區明顯的材料。</p>
@@ -1940,6 +2302,34 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 cis 與 trans microstructure：天然橡膠是 cis；trans 的 Tg、Tm 較高、ΔHu 較大（較易結晶、較硬）；repeat distance cis 0.81 nm，0.88 nm 屬 trans。</p>
 <p class="supp"><b>講義無，補充：</b>選項 (4) 高爾夫球皮、balata／gutta-percha、「α 晶型」都不在投影片上，是外部知識。</p>
 <div class="slideimgs"><figure><a href="slides/1_Elasticity_s005.webp" class="slidelink"><img src="slides/1_Elasticity_s005.webp" alt="Elasticity 第 5 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 5 張</figcaption></figure><figure><a href="slides/1_Elasticity_s006.webp" class="slidelink"><img src="slides/1_Elasticity_s006.webp" alt="Elasticity 第 6 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 6 張</figcaption></figure><figure><a href="slides/1_Elasticity_s007.webp" class="slidelink"><img src="slides/1_Elasticity_s007.webp" alt="Elasticity 第 7 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 7 張</figcaption></figure><figure><a href="slides/Chap_2_a_Bond_and_Conformation_s030.webp" class="slidelink"><img src="slides/Chap_2_a_Bond_and_Conformation_s030.webp" alt="Bond and Conformation 第 30 張" loading="lazy" width="900" height="675"></a><figcaption>Bond and Conformation 第 30 張</figcaption></figure></div></div><!--/slidebox-->
+<!--compare--><div class="compare"><h3>這題到底在比什麼？</h3>
+<p>這題<b>同時考好幾件事</b>：四個選項各自在問順式（cis）與反式（trans）聚異戊二烯的不同性質，要逐項判斷。</p>
+<div class="tbl"><table><tr><th>選項</th><th>陳述</th><th>它在測哪個性質</th><th>cis（天然橡膠）</th><th>trans</th><th>對錯</th></tr>
+<tr><td>(1)</td><td>天然橡膠主要是 trans</td><td class="hi">結構：天然橡膠是哪一種</td><td class="hi">天然橡膠是 cis-1,4-polyisoprene</td><td>—</td><td>錯</td></tr>
+<tr><td>(2)</td><td>trans 的 Tg 較低</td><td class="hi">Tg 大小</td><td>200 K</td><td class="hi">220 K（較高）</td><td>錯</td></tr>
+<tr><td>(3)</td><td>cis 的重複距離是 0.88 nm</td><td class="hi">重複距離</td><td class="hi">0.81 nm</td><td>0.88 nm</td><td>錯</td></tr>
+<tr><td>(4)</td><td>trans 可做高爾夫球皮</td><td class="hi">結晶性與硬度的應用</td><td>Tm 301 K，柔軟</td><td>Tm 347 K，易結晶、較硬</td><td>對</td></tr></table></div>
+<h4>比較一：(1)(3) → 比的是「哪一個是 cis、cis 的尺寸」</h4>
+<ul class="tight"><li><b>共同點</b>：兩個陳述都在問「cis 與 trans 各是什麼樣子」。<b>差別</b>：(1) 問天然橡膠的身分，(3) 問 cis 鏈的長度。</li>
+<li>cis 的甲基與氫在雙鍵同一側，鏈較彎曲，重複距離較短（0.81 nm）；trans 在雙鍵兩側，鏈較伸直，重複距離較長（0.88 nm）。</li>
+<li><b>結果</b>：天然橡膠是 cis（(1) 錯）；cis 是 0.81 nm，0.88 nm 屬於 trans（(3) 錯）。</li>
+<li>講義：Elasticity 第 5 張「Natural Rubber」寫 cis-1,4-polyisoprene；第 6 張標出 cis 為 0.81 nm、另一條 trans 鏈為 0.88 nm。</li></ul>
+<h4>比較二：(2) → 比的是「Tg（鏈段活動）」，並看 Tm</h4>
+<ul class="tight"><li><b>相同</b>：兩者化學式相同，都是聚異戊二烯。<b>唯一差別</b>：雙鍵上的幾何形狀（cis 或 trans）。</li>
+<li>trans 鏈較直、較容易整齊堆疊，鏈段較不易動，Tg 較高；同樣原因使 trans 的 Tm 和熔化熱也較大。</li>
+<li><b>結果</b>：Tg trans 220 K &gt; cis 200 K，所以「trans 的 Tg 較低」是錯的；Tm 也是 trans 347 K &gt; cis 301 K。</li>
+<li>講義：Elasticity 第 7 張（= Polym Solid 第 120 張）「TABLE 12.3 The Effect of Microstructure on Tg」；Chap_2_a 第 30 張 Table 11.1 給 Tm。</li></ul>
+<h4>比較三：(4) → 比的是「應用」</h4>
+<ul class="tight"><li><b>相同</b>：同樣是聚異戊二烯。<b>差別</b>：這題問 trans 形式能不能做高爾夫球皮。</li>
+<li>trans 鏈規則、易結晶，材料較硬，適合做球皮；cis 是柔軟的橡膠，不適合。這個應用（balata / gutta-percha）講義沒有，是補充；講義數據只支持「trans 較易結晶、較硬」。</li>
+<li><b>結果</b>：(4) 對。</li>
+<li>講義無，補充。</li></ul>
+<h4>判斷關鍵：cis 較彎、柔軟；trans 較直、易結晶、較硬</h4>
+<div class="tbl"><table><tr><th>形式</th><th>鏈的形狀</th><th>Tg / Tm</th><th>性質</th><th>例子</th></tr>
+<tr><td><b>cis</b></td><td>較彎曲、不易堆整齊</td><td class="hi">Tg 200 K、Tm 301 K（較低）</td><td>柔軟的橡膠</td><td>天然橡膠、Q42 (1)(3)</td></tr>
+<tr><td><b>trans</b></td><td>較直、易堆整齊</td><td class="hi">Tg 220 K、Tm 347 K（較高）</td><td>較硬、易結晶</td><td>balata / gutta-percha（補充）、Q42 (4)</td></tr></table></div>
+<p><b>回到題目</b>：選 (4)。(1) 錯：天然橡膠是 cis；(2) 錯：trans 的 Tg（220 K）較高；(3) 錯：cis 是 0.81 nm；(4) 對：trans 易結晶、較硬，可做球皮（補充）。</p>
+</div><!--/compare-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>聚異戊二烯（polyisoprene）</b>是由異戊二烯單體串成的長鏈，天然橡膠就是它。主鏈上有碳碳雙鍵（C=C），雙鍵<b>不能像單鍵一樣自由轉動</b>。<b>順式（cis）</b>是雙鍵兩側的主鏈在同一側，<b>反式（trans）</b>是在相反側。<b>Tg（玻璃轉移溫度）</b>是鏈段從硬脆變軟的溫度；<b>Tm（熔點）</b>是晶體熔化的溫度。</p>
