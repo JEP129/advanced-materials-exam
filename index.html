@@ -1429,6 +1429,18 @@ ul.tight li{margin:3px 0}
     <tr><td>降伏、頸縮</td><td>晶片傾斜與滑移</td></tr>
     <tr><td>冷抽伸平台</td><td>晶片破碎，微纖維逐步形成</td></tr>
     <tr><td>硬化、斷裂</td><td>取向鏈承載，最後結構失效</td></tr></table></div>
+  <!--q1extra-->
+  <h3>再白話一次：降伏點與冷抽伸</h3>
+  <p class="step"><b>降伏點（yield point）＝「彈得回來」和「回不去」的分界。</b>迴紋針輕輕扳一點，放手會彈回去（彈性變形）；用力扳過某個程度，就永遠彎掉了（塑性變形）。那個轉變點就是降伏點，對應的應力叫降伏應力。在塑膠裡，這時一疊疊的晶片（像一疊紙）開始傾斜、互相滑開，滑開的紙排不回原位，所以變形回不去了。</p>
+  <div class="tbl"><table><tr><th></th><th>彈性變形</th><th>塑性變形</th></tr>
+    <tr><td>放手後</td><td>完全回到原狀</td><td>留下永久變形</td></tr>
+    <tr><td>例子</td><td>輕拉橡皮筋</td><td>扳彎迴紋針</td></tr>
+    <tr><td>曲線位置</td><td>降伏點之前</td><td>降伏點之後</td></tr></table></div>
+  <p class="step"><b>為什麼過了降伏點，應力反而往下掉？</b>試片某處開始變細（頸縮），變細的「脖子」比較容易被拉長，所以維持拉伸需要的<b>力變小</b>。工程應力 = 力 ÷ <b>原本</b>的面積，分母不跟著變小，分子變小，算出來的應力就下降，所以曲線畫成「先到峰頂，再往下掉」。</p>
+  <p class="step"><b>冷抽伸（cold drawing）＝脖子往兩邊擴大。</b>「冷」不是低溫，而是「沒有熔化、在固體狀態下被拉長」，室溫就會發生。像拉麥芽糖：中間先出現細腰，繼續拉時細腰不會一直變細到斷，而是往兩邊擴大，越來越多粗的部分被拉成細的。下面的動畫可以看到這個過程。</p>
+  <div class="neckanim"></div>
+  <p class="step"><b>為什麼冷抽伸是一段平台？</b>想像<b>工廠流水線</b>：每一段材料走到脖子邊界時，都做同一件事：晶片被扯碎成小塊 → 摺疊的鏈被拉直 → 沿拉伸方向排成細絲（微纖維），像把毛衣拆成一條條拉直的毛線。工作內容都一樣，需要的力氣就一樣，所以應力幾乎不變。整根抽完後，已經沒有東西可以「拆」，只能硬拉主鏈，曲線才往上翹（應變硬化）。</p>
+<!--/q1extra-->
   <div class="mapback"><b>對回考卷寫法：</b>「彈性 → 降伏 → 頸縮 → 冷抽伸 → 應變硬化 → 斷裂」是外觀順序；每段補上連結鏈伸展、晶片滑移、破碎取向與承載，就回答了形態觀點。這是典型延性曲線，低溫或快速拉伸時可能提早脆裂。<br><b>English：</b>A ductile semicrystalline polymer undergoes elastic tie-chain extension, yielding and necking through lamellar slip, and cold drawing with lamellar fragmentation and microfibril formation. Oriented chains then cause strain hardening before fracture.</div>
 </div>
 <p class="advlab">進階解說（看懂上面再讀）</p><!--/basics-->
@@ -3195,6 +3207,78 @@ function build(box,def){
   show();
 }
 document.querySelectorAll('.drawq[data-def]').forEach(b=>{try{const d=D[b.dataset.def];if(d)build(b,d);}catch(e){}});
+})();
+</script>
+<style>
+.neckanim{margin:12px 0;padding:12px;background:var(--sheet);border-radius:8px}
+.neckanim svg{display:block;width:100%;height:auto}
+.neckanim .stage{font-weight:700;color:var(--red);margin:6px 0 0}
+.neckanim .desc{margin:2px 0 0;font-size:15px}
+</style>
+<script>
+(function(){
+const ns='http://www.w3.org/2000/svg';
+/* 試片與迷你應力–應變曲線，進度 p 從 0 到 1 */
+const ST=[
+ [0,.15,'① 彈性','整根均勻伸長一點點；晶片間的連結鏈被拉開，放手會回去。'],
+ [.15,.25,'② 降伏、頸縮','到達峰頂（降伏點）：晶片開始滑移，某處變細出現「脖子」，所需的力下降。'],
+ [.25,.85,'③ 冷抽伸','脖子往兩邊擴大：邊界上的晶片被扯碎、鏈拉直排成微纖維；每段做同一件事，力幾乎不變。'],
+ [.85,.97,'④ 應變硬化','整根都抽細了，鏈已排直，只能硬拉主鏈，力往上升。'],
+ [.97,1.01,'⑤ 斷裂','微纖維斷掉，試片斷開。']];
+function curvePt(p){ /* 對應迷你曲線上的 (x,y)，viewBox 0..300 x 0..140 */
+  const x0=20,y0=125;
+  if(p<.15)return [x0+p/.15*18, y0-p/.15*80];
+  if(p<.25){const q=(p-.15)/.1;return [38+q*14, 45-Math.sin(q*Math.PI)*8+q*18];}
+  if(p<.85){const q=(p-.25)/.6;return [52+q*170, 63];}
+  const q=Math.min(1,(p-.85)/.12);return [222+q*45, 63-q*q*45];
+}
+function build(box){
+  box.innerHTML='';
+  const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 640 190');svg.setAttribute('role','img');
+  svg.setAttribute('aria-label','試片拉伸動畫：先均勻伸長，接著中間出現細腰，細腰往兩邊擴大到整根，最後斷裂');
+  const c=document.createElementNS(ns,'svg');c.setAttribute('viewBox','0 0 300 140');c.setAttribute('role','img');c.setAttribute('aria-label','對應的應力–應變曲線與目前位置');
+  c.style.maxWidth='360px';
+  let pts='';for(let i=0;i<=100;i++){const q=curvePt(i/100*.97);pts+=(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);}
+  c.innerHTML='<line x1="20" y1="125" x2="290" y2="125" style="stroke:var(--plot)"/><line x1="20" y1="125" x2="20" y2="8" style="stroke:var(--plot)"/>'+
+    '<text x="155" y="138" text-anchor="middle" class="svgsm">應變</text><text x="8" y="70" class="svgsm" transform="rotate(-90 8 70)" text-anchor="middle">應力</text>'+
+    '<path d="'+pts+'" fill="none" style="stroke:var(--s4)" stroke-width="2"/><path class="trail" fill="none" style="stroke:var(--red)" stroke-width="3"/>'+
+    '<circle class="dot" r="6" style="fill:var(--red)"/>';
+  const ctl=document.createElement('div');ctl.className='ctl';
+  ctl.innerHTML='<button class="tg" type="button">▶ 播放</button><label>進度 <input type="range" min="0" max="1000" value="600" aria-label="拉伸進度"></label>';
+  const st=document.createElement('p');st.className='stage';const ds=document.createElement('p');ds.className='desc';
+  box.append(svg,c,ctl,st,ds);
+  const btn=ctl.querySelector('button'),rng=ctl.querySelector('input');
+  function draw(p){
+    /* 試片：夾頭 + 標距段；細腰 [L,R] */
+    const e=p<.15?p/.15*6:(p<.85?6+(p-.15)/.7*120:126); /* 總伸長 px */
+    const right=540+e, cx=(100+right)/2;
+    let half=0,depth=0;
+    if(p>=.15){depth=Math.min(1,(p-.15)/.1)*14; half=p<.25?(p-.15)/.1*14:14+(Math.min(p,.85)-.25)/.6*(right-100)/2;}
+    half=Math.min(half,(right-100)/2);
+    const L=Math.max(100,cx-half),R=Math.min(right,cx+half),tr=depth?10:0;
+    const top=60,bot=120;
+    const tp=depth?`L${Math.max(100,L-tr)} ${top} L${L} ${top+depth} L${R} ${top+depth} L${Math.min(right,R+tr)} ${top}`:'';
+    const bp=depth?`L${Math.min(right,R+tr)} ${bot} L${R} ${bot-depth} L${L} ${bot-depth} L${Math.max(100,L-tr)} ${bot}`:'';
+    const broken=p>=.97;
+    let s=`<rect x="30" y="40" width="70" height="100" style="fill:var(--s4)"/><rect x="${right}" y="40" width="70" height="100" style="fill:var(--s4)"/>`;
+    s+=`<path d="M100 ${top} ${tp} L${right} ${top} L${right} ${bot} ${bp} L100 ${bot} Z" style="fill:var(--teal-soft);stroke:var(--teal)" stroke-width="2"/>`;
+    if(depth&&R-L>4){for(let x=L+6;x<R-4;x+=10)s+=`<line x1="${x}" y1="${top+depth+4}" x2="${x+6}" y2="${top+depth+4}" style="stroke:var(--teal)" stroke-width="1"/><line x1="${x}" y1="${bot-depth-4}" x2="${x+6}" y2="${bot-depth-4}" style="stroke:var(--teal)" stroke-width="1"/>`;}
+    if(broken)s+=`<path d="M${cx-4} ${top-6} L${cx+4} ${(top+bot)/2} L${cx-4} ${bot+6}" fill="none" style="stroke:var(--red)" stroke-width="4"/>`;
+    s+=`<text x="65" y="160" text-anchor="middle" class="svgsm">夾頭</text><text x="${right+35}" y="160" text-anchor="middle" class="svgsm">夾頭 →</text>`;
+    if(depth)s+=`<text x="${cx}" y="34" text-anchor="middle" class="svgsm" style="fill:var(--red)">細腰（已抽伸、鏈排成微纖維）</text>`;
+    svg.innerHTML=s;
+    const q=curvePt(Math.min(p,.97));c.querySelector('.dot').setAttribute('cx',q[0]);c.querySelector('.dot').setAttribute('cy',q[1]);
+    let tr2='';for(let i=0;i<=60;i++){const k=curvePt(Math.min(p,.97)*i/60);tr2+=(i?'L':'M')+k[0].toFixed(1)+' '+k[1].toFixed(1);}c.querySelector('.trail').setAttribute('d',tr2);
+    const g=ST.find(a=>p>=a[0]&&p<a[1])||ST[4];st.textContent=g[2];ds.textContent=g[3];
+  }
+  let playing=false,raf=0,last=0;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(ts){if(!playing)return;if(!last)last=ts;let v=+rng.value+(ts-last)*0.12;last=ts;if(v>=1000){v=1000;playing=false;btn.textContent='▶ 重播';}rng.value=v;draw(v/1000);if(playing)raf=requestAnimationFrame(tick);}
+  btn.addEventListener('click',()=>{if(playing){playing=false;btn.textContent='▶ 播放';return;}if(+rng.value>=1000)rng.value=0;if(reduce){rng.value=600;draw(.6);return;}playing=true;last=0;btn.textContent='⏸ 暫停';raf=requestAnimationFrame(tick);});
+  rng.addEventListener('input',()=>{playing=false;btn.textContent='▶ 播放';draw(rng.value/1000);});
+  draw(.6);
+}
+document.querySelectorAll('.neckanim').forEach(b=>{try{build(b);}catch(e){}});
 })();
 </script>
 
