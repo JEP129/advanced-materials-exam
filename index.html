@@ -3250,8 +3250,8 @@ function build(box){
   const btn=ctl.querySelector('button'),rng=ctl.querySelector('input');
   function draw(p){
     /* 試片：夾頭 + 標距段；細腰 [L,R] */
-    const e=p<.15?p/.15*6:(p<.85?6+(p-.15)/.7*120:126); /* 總伸長 px */
-    const right=540+e, cx=(100+right)/2;
+    const e=p<.15?p/.15*6:(p<.85?6+(p-.15)/.7*74:80); /* 總伸長 px */
+    const right=440+e, cx=(100+right)/2;
     let half=0,depth=0;
     if(p>=.15){depth=Math.min(1,(p-.15)/.1)*14; half=p<.25?(p-.15)/.1*14:14+(Math.min(p,.85)-.25)/.6*(right-100)/2;}
     half=Math.min(half,(right-100)/2);
