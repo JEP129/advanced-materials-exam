@@ -209,13 +209,17 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q21">
     <div class="qhead"><span class="qno">Q21</span><div class="qen">What's the definition of state function? Give the physical meaning of the second-order transition in terms of ΔV and ΔH?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>State function：值只由目前狀態決定、與路徑無關（H, S, U, A, G, P, V, T）；W、Q 與路徑有關，不是（s046）。<br>Tm = 1st order（V 跳）；Tg = 2nd order（V 連續、只有斜率變）。編號同下方 V–T 圖。<br>① 晶體：斜率小 → 排列整齊，升溫只增加振動 → α 小。<br>② Tm：V 垂直跳 → first derivative of G（V、H、S）不連續、有潛熱 → 1st order（補充）。<br>③ 液體：斜率大 → 鏈段能動，free volume 增加快 → α 大。<br>④ 急冷：沿液體線往下延伸 → 來不及結晶，成過冷液體。<br>⑤ Tg：線不斷開，斜率由 ④ 的陡變成 ⑤ 的緩（轉彎）→ ΔV = 0、ΔH = 0；二次微分 α、Cp、κ 才出現階躍 → 2nd order phase transition（s048）；實為表觀二階，冷得越快 Tg 越高（補充）。<br><b>English：</b>A state function depends only on the state, not the path (U, H, S, G, V; not Q or W). ① The crystal expands slowly. ② At Tm, V, H and S jump: a first-order transition with latent heat. ③ The liquid expands faster. ④ On fast cooling the liquid line extends below Tm (supercooled liquid). ⑤ At Tg, V and H stay continuous (ΔV = ΔH = 0) while α, Cp and κ step, so Tg is called second order.</div>
-<!--draw--><div class="drawq" data-def="q21"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>State function</b>: depends only on the current state, not on the path (U, H, S, G, V; not Q or W).<br><b>Second order (Tg)</b>: ΔV = 0 and ΔH = 0 — no volume jump and no latent heat, because the chains are only frozen in place without rearranging; their slopes <span class="m">α = (1/V)(dV/dT)</span> and <span class="m">Cp = dH/dT</span> change discontinuously. <b>First order (Tm)</b>: ΔV ≠ 0 and ΔH ≠ 0.</p>
+<p class="zh">中文：狀態函數只看狀態、不看路徑；Tg 二階 → ΔV = 0、ΔH = 0（鏈段原地凍住、沒重排），只有斜率 α、Cp 跳；Tm 一階 → ΔV ≠ 0、ΔH ≠ 0（有潛熱）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 046 張</b>（中文文字頁）：狀態函數 H、S、U、A、G、P、V、T 只由狀態決定、與路徑無關；W 與 Q 與路徑有關，不是狀態函數</li><li><b>Polym Solid 第 048 張</b>「What’s this all good for?」：Tm 處 V、H、S（G 的一次微分）跳躍 = 1st order phase transition；Tg 處 V、H、S 連續只有斜率改變，α、Cp、κ（二次微分）出現階躍 = 2nd order phase transition</li><li><b>Polym Solid 第 083 張</b>、<b>第 090 張</b>：Tg 為 V–T 斜率轉折與 ΔCp 階躍，並隨 Cool Quickly / Cool Slowly 而移動</li></ul>
 <blockquote>"Properties related to the first derivative of the free energy V, H, S … 1st order phase transition"</blockquote>
 <p><b>老師的邏輯：</b>state function 與路徑無關；Tm 為 1st order：first derivative of G（V、H、S）跳躍；Tg 處 V、H、S 連續，只有 α、Cp、κ 階躍 → 2nd order phase transition。</p>
 <p class="supp"><b>講義無，補充：</b>「潛熱」一詞與稱 Tg 為「表觀（偽）二階轉變」講義沒有（s090 只暗示 Tg 與冷卻速率有關）。</p>
 <div class="slideimgs"><figure><a href="slides/Chap_3_b1_Polym_Solid_s046.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s046.webp" alt="Polym Solid 第 46 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 46 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s048.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s048.webp" alt="Polym Solid 第 48 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 48 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s083.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s083.webp" alt="Polym Solid 第 83 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 83 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q21"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b>轉變（transition）是物質在某個溫度突然換一種狀態，例如冰在 0 °C 變成水。高分子有兩個重要轉變：<b>Tm（熔點）</b>是晶體融化成液體；<b>Tg（玻璃轉移溫度）</b>是硬脆的玻璃態變成軟的橡膠態，像保鮮膜一加熱就變軟。V 是體積，H 是焓（吸放熱的量），S 是熵。<b>α（熱膨脹係數）</b>是 V 的斜率，升 1 度體積變大多少；<b>Cp（熱容）</b>是 H 的斜率，升 1 度要吸多少熱；κ 是壓縮率，加壓時體積縮多少。「一階、二階」只看一件事：<b>跨過轉變點時，什麼東西「跳」了？</b></p>
@@ -256,6 +260,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q9">
     <div class="qhead"><span class="qno">Q9</span><div class="qen">How to determine the Tg of an amorphous polymer (give at least 2 ways)? Why a peak appears at the Tg point as the DMA spectrum was shown?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>Tg 的方法（至少兩種）：V–T、DSC、DMA；DMA 的峰 = glass transition region 耗能最大<br>① V–T：比容對溫度作圖 → Tg 處斜率轉折（free volume 膨脹變快，s083）<br>② DSC：specific heat 出現 ΔCp 階躍 → baseline 下移（鏈段開始動，s083）<br>③ DMA：G′ 由 glassy 降到 rubbery（約 10³ 倍，s124）→ G″ / tan δ 出現峰<br>④ 為何有峰：glass transition region 鏈段 cooperative motions 剛開始但 sluggish → modulus 在 rubber ↔ glass 之間轉換 → tan δ = G″/G′ 出現 maximum（s045）；τ ≈ 1/ω 時耗能最大（補充）<br><b>English：</b>① V–T: the slope of volume versus temperature changes at Tg. ② DSC: the specific heat shows a ΔCp step at Tg. ③ DMA: G′ drops from the glassy to the rubbery value (about 10³-fold). ④ Tan δ = G″/G′ peaks because, in the glass transition region, cooperative segmental motions have just started but are sluggish, so energy loss is largest.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Three ways</b>: V–T (slope of volume vs temperature changes at Tg), DSC (ΔCp step in specific heat), DMA (G′ drops from glassy to rubbery, about 10³-fold). <b>Why the DMA peak</b>: in the glass transition region cooperative segmental motions have just started but are sluggish, so energy loss is largest and <span class="m">tan δ = G″/G′</span> shows a maximum.</p>
+<p class="zh">中文：V–T 斜率轉折、DSC 的 ΔCp 階躍、DMA 的 G′ 大降；峰 = 鏈段剛開始協同運動但遲緩 → 耗能最大 → tan δ = G″/G′ 最大。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 083 張</b>「The glass transition」：V–T 圖（Tg 處斜率轉折）與 Endotherm–T 圖（specific heat 的 ΔCp 階躍）</li><li><b>Polym Solid 第 124 張</b>「The four regions of viscoelastic behavior」：glassy 約 10¹⁰ → glass transition 下降 → rubbery plateau 約 10⁶–10⁷；glass transition region 中 "maximum in tan δ"</li><li><b>Mechanical Properties 1 第 045、046 張</b>「Viscoelastic materials – DMA」：量 G′、G″，tan δ = G″/G′，G′ 由橡膠值降到玻璃值時 tan δ 有最大值</li></ul>
 <blockquote>"This shows a maximum when the storage modulus changes from a value characteristic of rubbers to one characteristic of the glassy state"</blockquote>
@@ -323,6 +331,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q37">
     <div class="qhead"><span class="qno">Q37</span><div class="qen">Why a peak appears at the Tg point as the DMA spectrum was shown?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>同 Q9。DMA 在 Tg 出現 tan δ（及 G″）peak：glass transition region 鏈段 cooperative motions 開始但 sluggish → 耗能最多<br>① Tg 以下 glassy：conformational changes severely inhibited → G′ 高、損耗小<br>② glass transition region：cooperative motions of segments 開始但 sluggish → 能量以熱耗散最多 → G″、tan δ = G″/G′ 有 maximum；同時 G′ 由 glassy 降到 rubbery 值<br>③ Tg 以上 rubbery：鏈段馬上跟上外力 → 損耗又變小，所以是峰不是階梯（補充）<br>④ 鏈段鬆弛時間 τ ≈ 1/ω 時耗散最大（補充）；time-temperature equivalence：變 T 或變 ω 皆可看到<br><b>English：</b>① Below Tg the polymer is glassy: conformational changes are severely inhibited, so G′ is high and loss is small. ② In the glass transition region, cooperative segmental motions are sluggish, so energy is dissipated and tan δ = G″/G′ shows a maximum while G′ drops from glassy to rubbery. ③ Above Tg the segments follow the load, so loss falls again. ④ The loss is largest when τ ≈ 1/ω.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Segmental motion is cooperative but sluggish in the glass transition region</b>, so energy is dissipated as heat most strongly there: tan δ = G″/G′ passes through a maximum (a peak) while G′ drops from glassy to rubbery. Below Tg motions are inhibited and above Tg the segments follow the load, so loss is small on both sides; the loss is largest at <span class="m">τ ≈ 1/ω</span>.</p>
+<p class="zh">中文：Tg 區鏈段協同運動但遲緩 → 耗能最多 → G″、tan δ 出現峰（G′ 同時由 glassy 降到 rubbery）；Tg 以下動不了、以上跟得上，損耗都小；τ ≈ 1/ω 時最大。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 124 張</b>「Amorphous polymers: The four regions of viscoelastic behavior」：glass transition region 鏈段 cooperative motions 但很 sluggish；log E(t) 在 glass transition 急降</li><li><b>Mechanical Properties 1 第 45–46 張</b>「Viscoelastic materials – DMA」：G'(ω)、G"(ω)，δ = G"/G'，tan δ 在 storage modulus 由 rubbery 變 glassy 值時出現 maximum；time-temperature equivalence</li><li><b>Polym Solid 第 107 張</b>「Fig 15.15」：PS 的 tan δ 峰約 370 K（≈ Tg）</li></ul>
 <blockquote>"This shows a maximum when the storage modulus changes from a value characteristic of rubbers to one characteristic of the glassy state"</blockquote>
@@ -378,6 +390,10 @@ ul.tight li{margin:3px 0}
 ② ½ 端：Tg ≈ ½ × 447 ≈ <b>224 K ≈ −49 °C</b>；⅔ 端約 298 K（+25 °C）；PVDF 對稱，取 ½（補充）。<br>
 ③ 對照：講義 Table 4-3 實測 Tg = −45 °C，與 ½ 端吻合。<br>
 <b>English：</b>For crystalline polymers Tg is 1/2 to 2/3 of Tm (in K). ① Tm = 174 + 273 = 447 K. ② Taking 1/2 for symmetric PVDF, Tg ≈ 224 K (−49 °C). ③ This is close to the tabulated value of −45 °C.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Tg ≈ 224 K ≈ −49 °C</b>. Crystalline polymers follow <span class="m">Tg ≈ ½–⅔ Tm (in K)</span>; Tm = 174 + 273 = 447 K, and taking ½ gives Tg ≈ 224 K, close to the tabulated −45 °C.</p>
+<p class="zh">中文：Tg ≈ ½–⅔ Tm（用 K）→ Tm = 447 K，取 ½ → Tg ≈ 224 K ≈ −49 °C（講義實測 −45 °C）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 080 張</b>「Crystalline polymers: Tg &amp; Tm」："Tg : 1/2 to 2/3 Tm (in K)"；Table 4-3 中 PVDF：Tg −45 °C、Tm 172 °C</li><li><b>Polym Solid 第 138 張</b>「FIGURE 15.2」：Tm 對 Tg 作圖，線型均聚物 Tg/Tm 約 0.5–0.8</li></ul>
 <blockquote>"Tg : 1/2 to 2/3 Tm (in K)"</blockquote>
@@ -409,6 +425,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q8">
     <div class="qhead"><span class="qno">Q8</span><div class="qen">Please use Simha-Boyer equation to estimate the thermal expansion coefficient α<sub>g</sub> of PS below Tg (Tg = 373 K, α<sub>l</sub> = 5.5×10<sup>−4</sup> K<sup>−1</sup>)</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>αg ≈ <b>2.47×10⁻⁴ K⁻¹</b>（Simha–Boyer，s121，常數 0.113）。<br>① 公式：(αl − αg)Tg = 0.113 → αg = αl − 0.113/Tg。<br>② 代入：αg = 5.5×10⁻⁴ − 0.113/373 = 5.5×10⁻⁴ − 3.03×10⁻⁴。<br>③ 結果：αg ≈ 2.47×10⁻⁴ K⁻¹（小於 αl，玻璃態膨脹較慢）。<br>（用 Flory–Fox 0.025 會得 4.83×10⁻⁴，不是本題要的。）<br><b>English：</b>① By the Simha–Boyer rule, (αl − αg)Tg = 0.113, so αg = αl − 0.113/Tg. ② αg = 5.5×10⁻⁴ − 0.113/373 = 5.5×10⁻⁴ − 3.03×10⁻⁴. ③ αg ≈ 2.47×10⁻⁴ K⁻¹, smaller than αl.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>αg ≈ 2.47×10⁻⁴ K⁻¹</b>: Simha–Boyer rule <span class="m">(αl − αg)Tg = 0.113</span> → αg = 5.5×10⁻⁴ − 0.113/373 = 5.5×10⁻⁴ − 3.03×10⁻⁴ = 2.47×10⁻⁴ K⁻¹ (smaller than αl).</p>
+<p class="zh">中文：Simha–Boyer：(αl − αg)Tg = 0.113 → αg = 5.5×10⁻⁴ − 0.113/373 ≈ 2.47×10⁻⁴ K⁻¹。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 121 張</b>「FIGURE 12.5」：V = V₀ + V_f (12.1)；V–T 圖，Tg 以下斜率 αg、以上 αl，陰影為 free volume 膨脹；Flory–Fox 0.025、Simha–Boyer 0.113</li><li><b>Polym Solid 第 086 張</b>「The concept of free volume」：glass vs liquid，occupied volume 與 unoccupied volume（背景，無數字）</li></ul>
 <blockquote>"FIGURE 12.5 Schematic representation of the free volume as defined by Flory and Fox (0.025) and by Simha and Boyer (0.113)."</blockquote>
@@ -453,6 +473,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q4">
     <div class="qhead"><span class="qno">Q4</span><div class="qen">Which one of the following polymers has the highest T<sub>g</sub> (1) PS (2) Poly(vinyl biphenyl) (3) Poly(vinyl naphthalene), explain.</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(2) poly(vinyl biphenyl)，Tg ≈ 145 °C（s098）；順序 PS 100 &lt; PVN 135 &lt; PVBP 145 °C。<br>① PS：側基是單一苯環 → bulky pendant group → 已阻礙轉動 → 100 °C。<br>② PVN：側基萘基（兩環併在一起）更大 → steric hindrance 更強 → 135 °C。<br>③ PVBP：側基聯苯基（兩環串成一長條）最大 → steric hindrance to bond rotation 最強 → 145 °C 最高。<br><b>English：</b>The bulkier the pendant group, the greater the steric hindrance to bond rotation, and the higher the Tg. ① PS (one phenyl ring) is 100 °C. ② The naphthyl group of PVN is larger, so 135 °C. ③ The biphenyl group is the bulkiest, so poly(vinyl biphenyl) has the highest Tg, about 145 °C.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(2) poly(vinyl biphenyl)</b>, Tg ≈ 145 °C: the bulkier the pendant group (phenyl → naphthyl → biphenyl), the greater the steric hindrance to bond rotation, so Tg rises: PS 100 &lt; PVN 135 &lt; PVBP 145 °C.</p>
+<p class="zh">中文：(2) 聯苯基最大 → 對鏈旋轉的立體阻礙最強 → Tg 最高（PS 100 &lt; PVN 135 &lt; PVBP 145 °C）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 098 張</b>「Factors that affect the Tg / 4. Bulky substituents」：側基越大，Tg 越高；PE −80、aPP −10、aPS 100、poly(vinyl naphthalene) 135、poly(vinyl biphenyl) 145 °C</li><li><b>Polym Solid 第 119 張</b>「TABLE 12.2 (continued)」：PS 373 K、poly(α-vinylnaphthalene) 408 K（與 s098 的 100、135 °C 相同）</li></ul>
 <blockquote>"The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."</blockquote>
@@ -521,6 +545,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q5">
     <div class="qhead"><span class="qno">Q5</span><div class="qen">Which one of the following polymers has the highest T<sub>g</sub> (1) poly(methyl acrylate) (2) poly(methyl methacrylate) (3) poly(pentyl acrylate)</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(2) PMMA，Tg = 378 K（約 105 °C）；順序 PMMA 378 &gt; PMA 279 &gt; poly(pentyl acrylate)。<br>① PMA 279 K → PMMA 378 K：多了 α-CH₃ → 主鏈旋轉受阻（補充）→ Tg 升高（Table 12.2）。<br>② acrylate 系列：ethyl 249 &gt; propyl 225 &gt; butyl 218 K → 酯基烷基越長 = flexible side chain → free volume 增加 → Tg is lowered。<br>③ poly(pentyl acrylate)：側鏈比 butyl 更長 → 低於 PMA，最低（趨勢外推，補充）。<br><b>English：</b>① PMMA has an extra α-methyl group, which hinders backbone rotation, so its Tg (378 K) is higher than that of PMA (279 K). ② In the acrylate series a longer flexible side chain increases the free volume and lowers Tg. ③ Poly(pentyl acrylate) has an even longer side chain, so its Tg is lower than that of PMA.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(2) PMMA</b>, Tg = 378 K (about 105 °C): the extra α-methyl group hinders backbone rotation, so PMMA is above PMA (279 K); the long flexible pentyl side chain of poly(pentyl acrylate) increases free volume → Tg is lowered, so it is the lowest.</p>
+<p class="zh">中文：(2) PMMA：多了 α-CH₃ → 主鏈旋轉受阻 → Tg 高（378 K &gt; PMA 279 K）；pentyl 側鏈長而柔 → free volume↑ → Tg 最低。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 118 張</b>「TABLE 12.2」：poly(methyl acrylate) 279 K；ethyl 249、propyl 225、butyl 218 K（酯基烷基越長，Tg 越低）</li><li><b>Polym Solid 第 119 張</b>「TABLE 12.2 (continued)」：PMMA 378 K（主鏈多一個 α-CH₃）</li><li><b>Polym Solid 第 099 張</b>「Factors that affect the Tg / 4. Flexible substituents」：PMMA 約 105 °C，側鏈變長 Tg 下降</li></ul>
 <blockquote>"These side chains increase the free volume through their effect on the packing of the chains, the Tg is lowered."</blockquote>
@@ -589,6 +617,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q6">
     <div class="qhead"><span class="qno">Q6</span><div class="qen">Which one of the following polymers has the highest T<sub>g</sub> (1) polyethylene (2) polypropylene (3) polybutylene (4) polyhexylene (5) poly(4-methyl pentene)</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(5) poly(4-methyl pentene)，Tg = 302 K（Table 12.2，s118）；順序 302 &gt; PP 253 &gt; butene 249 &gt; hexene 223 &gt; PE 188 K。<br>① PE 188 K：無側基 → 沒有阻礙，也沒有東西撐開鏈，作基準。<br>② PP 253 → butene 249 → pentene 233 → hexene 223 K：直鏈烷基 = flexible side chain → free volume 增加 → Tg 降低（長度越長越低）。<br>③ P4MP：分枝的 bulky pendant group → steric hindrance to bond rotations → 302 K 最高。<br><b>English：</b>① PE has no side group (188 K). ② Linear alkyl side chains are flexible and increase the free volume, so Tg falls as they get longer. ③ The branched, bulky pendant group of poly(4-methyl pentene) hinders bond rotation, so it has the highest Tg (302 K).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(5) poly(4-methyl pentene)</b>, Tg = 302 K: its branched, bulky pendant group causes steric hindrance to bond rotation, while the linear alkyl side chains of the other polyolefins are flexible and increase the free volume (Tg falls with length: PP 253 &gt; butene 249 &gt; hexene 223 K; PE 188 K has no side group).</p>
+<p class="zh">中文：(5) 分枝的大側基 → 阻礙旋轉 → Tg 最高（302 K）；直鏈烷基柔軟 → free volume↑ → Tg 隨長度下降。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 118 張</b>「TABLE 12.2」：PE 188、PP 253、poly(but-1-ene) 249、poly(pent-1-ene) 233、poly(hex-1-ene) 223、poly(4-methyl pent-1-ene) 302 K</li><li><b>Polym Solid 第 098 張</b>「Bulky substituents」：bulky pendant group → steric hindrance → Tg 升高</li><li><b>Polym Solid 第 099 張</b>「Flexible substituents」：flexible side chain → free volume 增加 → Tg 降低</li></ul>
 <blockquote>"The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."</blockquote>
@@ -659,6 +691,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q7">
     <div class="qhead"><span class="qno">Q7</span><div class="qen">Which one of the following polymers has the lowest T<sub>g</sub> (1) PMMA (2) PEMA (3) PPMA (4) PBMA</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(4) PBMA，Tg ≈ −2 °C（s099）；順序 PMMA 105 &gt; PEMA 65 &gt; PPMA 38 &gt; PBMA −2 °C。<br>① 數據：PMMA 105 → PEMA 65 → PPMA 38 → PBMA −2 °C，酯基 R 每次多一個 CH₂，Tg 每次下降。<br>② 原因：side chain R 越長 = flexible substituents → 影響 packing of the chains → free volume 增加 → Tg is lowered。<br>③ 結論：butyl 最長 → free volume 最大 → Tg 最低。<br><b>English：</b>① Each extra CH₂ in the ester group lowers Tg: PMMA 105, PEMA 65, PPMA 38, PBMA about −2 °C. ② Longer flexible side chains loosen the packing of the chains and increase the free volume, so the Tg is lowered. ③ Butyl is the longest, so PBMA has the lowest Tg.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(4) PBMA</b>, Tg ≈ −2 °C: each extra CH₂ in the ester group lowers Tg (PMMA 105 &gt; PEMA 65 &gt; PPMA 38 &gt; PBMA −2 °C), because longer flexible side chains loosen the packing of the chains and increase the free volume, so the Tg is lowered.</p>
+<p class="zh">中文：(4) PBMA：酯基 R 越長 → 柔性側鏈 → free volume↑ → Tg 越低（105 &gt; 65 &gt; 38 &gt; −2 °C）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 099 張</b>「Factors that affect the Tg / 4. Flexible substituents」：酯基 R = CH₃、C₂H₅、C₃H₇、C₄H₉…；PMMA 105、PEMA 65、PPMA 38、PBMA −2、octyl −42、dodecyl −62 °C</li><li><b>Polym Solid 第 100 張</b>「Flexible Substituents」：R = methyl、ethyl、propyl、butyl… 的結構圖</li><li><b>Polym Solid 第 119 張</b>「TABLE 12.2 (continued)」：PMMA 378、PEMA 338、PPMA 308 K（butyl 未列）</li></ul>
 <blockquote>"These side chains increase the free volume through their effect on the packing of the chains, the Tg is lowered."</blockquote>
@@ -713,6 +749,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q25">
     <div class="qhead"><span class="qno">Q25</span><div class="qen">Which one of the following PU (with the same MW and diol content) should have the lowest Tg (1) HMI (2) H<sub>12</sub>MDI (3) MDI (4) TDI</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(1) HMI（hexamethylene diisocyanate，Table 9-7）Tg 最低；排序 HMI &lt; H12MDI &lt; MDI ≈ TDI（補充）<br>① HMI：–(CH₂)₆– 直鏈脂肪族、無環 → 單鍵都能轉 → flexible → Tg 最低<br>② H12MDI：脂環 → 環在主鏈，限制旋轉 → 較硬；仍比芳香環軟（補充）<br>③ MDI、TDI：aromatic ring → hard segment 最剛硬 → Tg 較高（chain stiffness，s096）；兩者不細分（補充）<br><b>English：</b>① HMI is aliphatic and has no ring, so its chain is the most flexible and its PU has the lowest Tg. ② H12MDI has cycloaliphatic rings that stiffen the hard segment. ③ MDI and TDI have aromatic rings, the stiffest hard segments, so their Tg is higher.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(1) HMI</b> has the lowest Tg (HMI &lt; H₁₂MDI &lt; MDI ≈ TDI). HMI is aliphatic –(CH₂)₆– with no ring, so the chain is the most flexible; cycloaliphatic (H₁₂MDI) and aromatic (MDI, TDI) rings stiffen the hard segment (chain stiffness) and raise Tg.</p>
+<p class="zh">中文：(1) HMI；直鏈脂肪族、無環 → 最柔 → Tg 最低；環（脂環、芳香環）使硬段變硬 → Tg 較高。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Condensation polymerization 第 045 張</b>「Table 9-7 Examples of Typical Diisocyanates」：HMI（–(CH₂)₆– 無環）、H12MDI（兩個環己烷環）、MDI（兩個苯環）、NDI、TDI（一個苯環）</li><li><b>Condensation polymerization 第 044、051 張</b>：polyurethane 由 diisocyanate + diol 形成，hard block 與 soft block 相分離</li><li><b>Polym Solid 第 096 張</b>「Chain stiffness」：主鏈含環（benzene ring）→ 旋轉能障高 → Tg 高</li></ul>
 <blockquote>"If there are bulky groups, such as benzene rings, in the backbone of the polymer chain, there is a high energy barrier to rotations, which then only occur at higher temperatures."</blockquote>
@@ -780,6 +820,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q10">
     <div class="qhead"><span class="qno">Q10</span><div class="qen">Estimate the Tg of 30 wt% di-n-butylphthalate (DBP) (Tg = 178 K) compounded with 70 wt% PVC (Tg = 355 K)?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>Tg ≈ <b>273 K ≈ 0 °C</b>（Fox equation，s105）。<br>① 公式：1/Tg = w₁/Tg₁ + w₂/Tg₂（Tg 用 K，w = weight fraction）。<br>② 代入：1/Tg = 0.30/178 + 0.70/355 = 1.685×10⁻³ + 1.972×10⁻³ = 3.657×10⁻³。<br>③ 結果：Tg ≈ 273 K ≈ 0 °C；diluent (plasticizer) 使 PVC 的 Tg 由 355 K 降到 178–355 K 之間，低於室溫而變軟。<br><b>English：</b>① Fox equation with weight fractions: 1/Tg = w₁/Tg₁ + w₂/Tg₂. ② 1/Tg = 0.30/178 + 0.70/355 = 3.657×10⁻³. ③ Tg ≈ 273 K (0 °C), so the plasticizer lowers the Tg of PVC from 355 K to about 273 K.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Tg ≈ 273 K (0 °C)</b>: Fox equation <span class="m">1/Tg = w₁/Tg₁ + w₂/Tg₂</span> → 1/Tg = 0.30/178 + 0.70/355 = 3.657×10⁻³ → Tg ≈ 273 K; the plasticizer lowers the Tg of PVC from 355 K.</p>
+<p class="zh">中文：Fox 方程：1/Tg = 0.30/178 + 0.70/355 = 3.657×10⁻³ → Tg ≈ 273 K（0 °C）；塑化劑使 PVC 的 Tg 下降。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 105 張</b>「Random copolymers &amp; blends」：Fox equation 1/Tg = w₁/(Tg)₁ + w₂/(Tg)₂，由 free volume 論證導出</li><li><b>Polym Solid 第 104 張</b>「Factors that affect the Tg / 6. Diluents」：polymer + solvent（plasticizer）示意圖，加入小分子使 Tg 降低</li><li><b>Polym Solid 第 112 張</b>「Miscible blends have a single Tg」：混合物 Tg 落在兩成分 Tg 之間</li></ul>
 <blockquote>"The Tg of a mixture can be simply rationalized on the basis of free volume arguments to give the Fox equation"</blockquote>
@@ -806,6 +850,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q11">
     <div class="qhead"><span class="qno">Q11</span><div class="qen">Which ones of the followings are miscible blends (multiple choices) (1) PC/PBT (2) PS/PPO (3) PVDF/PMA (4) PEO/PMMA</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(2)(3)(4) miscible：PS/PPO、PVDF/PMA、PEO/PMMA；(1) PC/PBT immiscible<br>① (2)(3)(4) 在 s108 miscible 列表 → 單相 → single Tg（s106、s112）<br>② (1) PC/PBT immiscible：phase separated → 仍有兩個 Tg（155 °C 與約 35 °C）及 sharp Tm（s115）<br>③ 為何能互溶：ΔGm = ΔHm − TΔSm &lt; 0；高分子 ΔSm 小，需特殊作用力使 ΔHm 為負（補充）<br><b>English：</b>① PS/PPO, PVDF/PMA and PEO/PMMA are miscible: one phase, so a single Tg. ② PC/PBT is immiscible: it is phase separated and still shows two Tgs and a sharp melting point. ③ Mixing needs ΔGm = ΔHm − TΔSm &lt; 0; because polymers have small ΔSm, specific interactions must make ΔHm negative.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(2)(3)(4)</b> are miscible: PS/PPO, PVDF/PMA and PEO/PMMA form one phase, so a single Tg. <b>(1) PC/PBT</b> is immiscible: it is phase separated and still shows two Tgs and a sharp melting point.</p>
+<p class="zh">中文：(2)(3)(4) 互溶 → 單相 → single Tg；(1) PC/PBT 不互溶 → 相分離 → 仍有兩個 Tg 與尖銳 Tm。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 108 張</b>「Miscible Blends」：列表含 PS/PPO、PVDF/PMA、PEO/PMMA；PC/PBT 不在列</li><li><b>Polym Solid 第 115 張</b>「PC / PBT」：PC Tg = 155 °C，PBT Tg 約 35 °C、Tm 220 °C；"still has two Tgs and sharp melting point"</li><li><b>Polym Solid 第 106 張</b>「Miscible &amp; immiscible blends」：單相只有一個 (Tg)mixture，兩相有 (Tg)₁ 與 (Tg)₂</li><li><b>Polym Solid 第 112 張</b>「Miscible blends have a single Tg」；<b>第 114、117 張</b>：PC/PBT 為 Immiscible Blend、"Disaster Blends"</li></ul>
 <blockquote>"Well blending but still has two Tgs and sharp melting point"</blockquote>
@@ -1217,6 +1265,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q16">
     <div class="qhead"><span class="qno">Q16</span><div class="qen">The PTFE has lower melt energy than the PE does. (2860 J/mole of PTFE vs. 3870 J/mole of PE) How come the Tm of PTFE is much higher than PE? (645 K vs. 410 K) (Hint: Table 11.1 can help you)</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>PTFE 的 ΔSf 只有 PE 的一半左右，所以 ΔHf 較小、Tm 仍較高（645 K &gt; 410 K）。<br>① 公式：<span class="m">Tm = ΔHf/ΔSf</span> → ΔSf = ΔHf/Tm<br>② 代數字：PE：ΔSf = 3870/410 = 9.44 J/mol·K（講義 s016 印 3970、9.70）；PTFE：ΔSf = 2860/645 = 4.43 J/mol·K（講義 4.76）<br>③ 結果：PTFE 的 ΔSf 約為 PE 的一半 → 原因：chain stiffness 高（Teflon vs PE 能量曲線：trans/gauche 差大、能障高）→ 熔融時 ΔSf small → ΔHf 雖小，Tm 仍高。（補充：F 原子大、互斥、呈螺旋）<br><b>English：</b>① Tm = ΔHf/ΔSf, so ΔSf = ΔHf/Tm. ② PE: 3870/410 = 9.44 J/mol·K; PTFE: 2860/645 = 4.43 J/mol·K. ③ PTFE has a much stiffer chain (larger trans-gauche energy gap), so its melting entropy is about half that of PE, giving a higher Tm despite a lower ΔHf.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en">PTFE has a much smaller melting entropy: <span class="m">ΔSf = ΔHf/Tm</span> → PE 3870/410 = 9.44, PTFE 2860/645 = 4.43 J/mol·K (about half). PTFE is a stiffer chain (larger trans–gauche energy gap, higher barriers), so ΔSf is small and <span class="m">Tm = ΔHf/ΔSf</span> is higher (645 K &gt; 410 K) despite the lower ΔHf.</p>
+<p class="zh">中文：ΔSf = ΔHf/Tm → PE 9.44、PTFE 4.43 J/mol·K（約一半）；PTFE 鏈更硬（trans/gauche 能差大）→ ΔSf 小 → Tm 高。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid（綜合版）第 16 張</b>「PE vs PTFE Melting Thermodynamics」：PE Tm 410 K、ΔHf 3970 J/mol、ΔSf 9.70 J/mol·K；PTFE Tm 645 K、ΔHf 約 2860 J/mol、ΔSf 4.76 J/mol·K</li><li><b>Polym Solid（綜合版）第 15 張</b>「Teflon vs. Polyethylene Chain Stiffness」：能量對旋轉角 φ，PTFE 的 trans 與 gauche 能量差、能障都比 PE 大</li><li><b>Polym Solid 第 64 張</b>「Hence: Tm = ΔHf/ΔSf」；第 67–68 張 Stiff → ΔSf small</li></ul>
 <blockquote>"Hence: Tm = ΔHf/ΔSf"</blockquote>
@@ -1284,6 +1336,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q12">
     <div class="qhead"><span class="qno">Q12</span><div class="qen">Why is the Tm of isotactic PP higher than that of syndiotactic PP (187 vs. 150)?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>iPP 187 °C &gt; sPP 150 °C；Tm = ΔHf/ΔSf（講義）。<br>① 兩者都是規則鏈（regular chain）→ 都能結晶；差別不在能不能結晶，在晶體排得多好。<br>② iPP 立體規則 → 3₁ helix 堆積緊密（補充）→ 鏈間接觸多 → ΔHf 較大（補充）。<br>③ sPP 堆積較鬆、結晶較不完美（補充）→ 晶片較薄 → Thompson-Gibbs：l 小 → Tm 低。<br><b>English：</b>Tm = ΔHf/ΔSf. ① Both are regular chains, so both crystallize. ② Isotactic PP packs its 3₁ helices more tightly → larger ΔHf. ③ Syndiotactic PP forms thinner, less perfect lamellae → by Thompson-Gibbs, smaller l means lower Tm, so 187 °C &gt; 150 °C.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>iPP (187 °C) &gt; sPP (150 °C)</b>, from Tm = ΔHf/ΔSf: both iPP and sPP are regular chains and crystallize, but isotactic PP packs its 3₁ helices more tightly → larger ΔHf, while sPP forms thinner, less perfect lamellae → by Thompson-Gibbs <span class="m">Tm = Tm°[1 − 2σe/(l·Δhf)]</span> smaller l means lower Tm.</p>
+<p class="zh">中文：iPP &gt; sPP；兩者都是規則鏈能結晶；iPP 螺旋堆積緊密 → ΔHf 大；sPP 晶片較薄、較不完美 → Tm 較低。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 15 張</b>「Isotactic Polypropylene」：iPP 螺旋在晶胞中堆積；問「What is the Basic Requirement for Crystallization?」</li><li><b>Polym Solid 第 64 張</b>「The effect of chemical structure」：ΔGf = ΔHf − T·ΔSf，平衡時 ΔGf = 0，故 Tm = ΔHf/ΔSf</li><li><b>Polym Solid 第 58 張</b>「Melting temperature of polymer crystals」：Thompson-Gibbs rule，Tm 隨 lamella 厚度 l 上升</li><li><b>Polym Solid 第 153 張</b>「Stereochemistry and Polymer Properties」：isotactic / syndiotactic / atactic 鏈圖（無數字）</li></ul>
 <blockquote>"Tm = Tm°[1 − 2σe/(l·Δhf)]"</blockquote>
@@ -1352,6 +1408,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q22">
     <div class="qhead"><span class="qno">Q22</span><div class="qen">Will the "regularity of configuration" affect more on Tg or Tm? Please use PP as an example to illustrate your point.</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>對 Tm 影響大，對 Tg 影響小。<br>① Tm：需要 regular chain 才能 crystallize（講義 s015）→ iPP、sPP 規則 → 可結晶、有 Tm（iPP 187、sPP 150 °C，考卷）；aPP 不規則 → 不能結晶、無 Tm（補充）。<br>② Tg：由 chain stiffness 與 bulky pendant group 決定（s098：aPP 約 −10 °C）→ 三種立構同為 CH₃ 側基 → Tg 相近約 −10 °C（補充）。<br>③ （補充）例外：PMMA 立構對 Tg 影響也大 → 同一碳上有兩個取代基，立構改變旋轉阻礙。<br><b>English：</b>Stereoregularity matters more for Tm. ① Isotactic and syndiotactic PP are regular, so they can crystallize and show a Tm; atactic PP cannot. ② Tg depends mainly on chain stiffness and bulky pendant groups, and all three PP share the same CH₃ side group, so Tg is about −10 °C. ③ Exception: in PMMA, tacticity also changes Tg a lot.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en">Regularity of configuration (tacticity) affects <b>Tm</b> much more than Tg. Isotactic and syndiotactic PP are regular, so they can crystallize and show a Tm; atactic PP cannot crystallize and has no Tm. Tg depends mainly on chain stiffness and bulky pendant groups, and all three PP share the same CH₃ side group, so Tg stays about −10 °C.</p>
+<p class="zh">中文：對 Tm 影響大、Tg 影響小；iPP、sPP 規則 → 可結晶、有 Tm，aPP 不能結晶；Tg 由側基（都是 CH₃）決定 → 約 −10 °C。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 15 張</b>「Isotactic Polypropylene」：問「Would Atactic Polypropylene Be Able to Crystallize?」「What is the Basic Requirement for Crystallization?」</li><li><b>Polym Solid 第 153 張</b>「Stereochemistry and Polymer Properties」：isotactic、syndiotactic、atactic 鏈圖</li><li><b>Polym Solid 第 98 張</b>「Factors that affect the Tg 4. Bulky substituents」：atactic PP Tg 約 −10 °C；PE 約 −80 °C；aPS 約 100 °C</li><li><b>Polym Solid 第 70 張、第 80 張</b>：PE Tm 約 135 °C；Table 4-3 與「Tg : 1/2 to 2/3 Tm (in K)」</li></ul>
 <blockquote>"The presence of bulky pendant groups attached to the polymer backbone raises the Tg, through steric hindrance to bond rotations."</blockquote>
@@ -1421,6 +1481,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q13">
     <div class="qhead"><span class="qno">Q13</span><div class="qen">Place the following polyurethane structures in order of decreasing Tm? (1) –HN–(CH<sub>2</sub>)<sub>6</sub>–NH–CO–O–(CH<sub>2</sub>)<sub>3</sub>–C<sub>6</sub>H<sub>4</sub>–(CH<sub>2</sub>)<sub>3</sub>–O–CO– (2) –HN–(CH<sub>2</sub>)<sub>8</sub>–NH–CO–O–(CH<sub>2</sub>)<sub>2</sub>–C<sub>6</sub>H<sub>4</sub>–(CH<sub>2</sub>)<sub>2</sub>–O–CO– (3) –HN–(CH<sub>2</sub>)<sub>8</sub>–NH–CO–O–(CH<sub>2</sub>)<sub>10</sub>–O–CO–</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(1) &gt; (2) &gt; (3)（約 513 K &gt; 481–485 K &gt; 406 K）；Tm = ΔHf/ΔSf<br>① (1)(2) 有苯環 → 鏈剛硬（stiff）→ ΔSf small → Tm 高。<br>② (3) 無苯環、18 個 CH₂ → flexible、ΔSf large；單元最長 → 胺酯基 N–H···O=C 氫鍵最稀 → ΔHf 小 → Tm 最低。<br>③ (1) &gt; (2)：CH₂ 總數、苯環都相同 → 平均氫鍵密度與剛性相同；只差 CH₂ 分配：(1) 二胺段較短 (CH₂)₆ → 胺酯基兩兩靠近、氫鍵集中 → ΔHf 大（補充）。<br><b>English：</b>Tm = ΔHf/ΔSf. ① The phenylene ring in (1) and (2) stiffens the chain → small ΔSf. ② (3) has no ring and 18 flexible CH₂ → large ΔSf, and the longest repeat unit → fewest urethane H-bonds → small ΔHf → lowest Tm. ③ (1) and (2) have the same CH₂ count and ring; the shorter (CH₂)₆ diamine in (1) pairs the urethane groups closely → concentrated H-bonding → larger ΔHf → (1) &gt; (2).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(1) &gt; (2) &gt; (3)</b> (about 513 K &gt; 481–485 K &gt; 406 K), from <span class="m">Tm = ΔHf/ΔSf</span>: the phenylene ring in (1) and (2) stiffens the chain → small ΔSf → high Tm; (3) has no ring and 18 flexible CH₂ (large ΔSf) and the fewest urethane H-bonds (small ΔHf) → lowest; in (1) the shorter (CH₂)₆ diamine concentrates H-bonding → larger ΔHf than (2).</p>
+<p class="zh">中文：(1) &gt; (2) &gt; (3)；有苯環 → 鏈硬 → ΔSf 小 → Tm 高；(3) 全是柔軟 CH₂、氫鍵最稀 → 最低；(1) 的 (CH₂)₆ 氫鍵較集中 → ΔHf 大於 (2)。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 63 張</b>「Intermolecular interactions」：-CH2- 鏈 Tm 約 135 °C，含 -C(=O)NH- 的鏈約 265 °C（H bond）</li><li><b>Polym Solid 第 67–68 張</b>「Entropy &amp; chain flexibility」：Flexible → ΔSf large；Stiff → ΔSf small</li><li><b>Polym Solid 第 69 張</b>「The entropy &amp; melting point」：PE 約 135 °C，poly(ethylene oxide) 約 65 °C，poly(p-xylene) 約 400 °C</li><li><b>Polym Solid 第 93 張</b>「Table 4-8」：聚酯主鏈 (CH2)4 50 °C，p-phenylene 270 °C，biphenylene 355 °C</li></ul>
 <blockquote>"Flexible ... ΔSf large"，"Stiff ... ΔSf small"</blockquote>
@@ -1480,6 +1544,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q14">
     <div class="qhead"><span class="qno">Q14</span><div class="qen">Place the following Tm of the polyolefins with different side chain structures in a decreasing order and give a brief explanation (1) –CH<sub>3</sub> (2) –CH<sub>2</sub>–C(CH<sub>3</sub>)<sub>2</sub>–CH<sub>2</sub>CH<sub>3</sub> (3) –CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> (4) –CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> (5) –CH<sub>2</sub>–CH(CH<sub>3</sub>)–CH<sub>2</sub>CH<sub>3</sub></div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(2) &gt; (5) &gt; (1) &gt; (3) &gt; (4)；Tm = ΔHf/ΔSf（講義）。<br>① (1) &gt; (3) &gt; (4)：側基是柔性直鏈，越長 → flexible、ΔSf large → Tm 下降（Fig. 7-4：PP &gt; butene-1 &gt; pentene-1）。<br>② (2)、(5) 高於直鏈：大而靠近主鏈的分枝側基 → 限制旋轉、鏈 stiff、ΔSf small → Tm 高（Fig. 7-4：3-methyl-1-butene、4-methyl-1-pentene 最高）。<br>③ (2) &gt; (5)：（補充）(2) 有季碳、分枝點更擠、更剛 → ΔSf 更小。<br><b>English：</b>Tm = ΔHf/ΔSf. ① Longer flexible linear side chains increase ΔSf and lower Tm. ② Bulky branched side groups close to the backbone hinder rotation, so the chain is stiff (small ΔSf) and Tm is high. ③ (2) has a quaternary carbon and is more crowded than (5), so (2) &gt; (5).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(2) &gt; (5) &gt; (1) &gt; (3) &gt; (4)</b>. Bulky branched side groups close to the backbone hinder rotation → stiff chain → small ΔSf → Tm↑ ((2) has a quaternary carbon, more crowded than (5)); longer flexible linear side chains → ΔSf large → Tm↓ (CH₃ &gt; propyl &gt; butyl), by <span class="m">Tm = ΔHf/ΔSf</span>.</p>
+<p class="zh">中文：(2) &gt; (5) &gt; (1) &gt; (3) &gt; (4)；大而近主鏈的分枝 → 鏈硬、ΔSf 小 → Tm 高；直鏈側基越長越柔 → ΔSf 大 → Tm 低。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 79 張</b>「From Billmeyer」Fig. 7-4：Tm vs Tg；靠近主鏈的分枝側基（poly(3-methyl-1-butene)、poly(4-methyl-1-pentene)）Tm 最高，長直鏈側基（butene-1、pentene-1）較低</li><li><b>Polym Solid 第 67–68 張</b>「Entropy &amp; chain flexibility」：Flexible → ΔSf large；Stiff → ΔSf small</li><li><b>Polym Solid 第 64 張</b>「The effect of chemical structure」：Tm = ΔHf/ΔSf</li></ul>
 <blockquote>"Fig. 7-4. Relation between Tm and Tg for various polymers (Boyer 1963)."</blockquote>
@@ -1559,6 +1627,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q15">
     <div class="qhead"><span class="qno">Q15</span><div class="qen">Please list the Tm of the followings with the same MW in a decreasing order: (a) –[Ph–CO–Ph–O]– (b) –[Ph–CO–Ph–CO–Ph–O]– (c) –[Ph–O–Ph–CO–Ph–O]– (d) –[Ph–Ph–O–Ph–CO–Ph–O]–</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(d) &gt; (b) &gt; (a) &gt; (c)（689 &gt; 657 &gt; 640 &gt; 628 K，Table 15.11）；Tm = ΔHf/ΔSf。<br>① (d) 最高：含聯苯 Ph–Ph 直接連結 → 最 stiff、ΔSf small。<br>② (b) &gt; (a)：(b) 多一個酮基 –CO–（兩個 CO、一個 O）→ 鏈較剛、極性 → 657 K。<br>③ (a) &gt; (c)：(c) 含兩個醚 –O–，較 flexible、ΔSf 大 → Tm 最低（628 K）。<br><b>English：</b>Tm = ΔHf/ΔSf. ① (d) contains a directly linked biphenyl, the stiffest unit (smallest ΔSf), so it is highest. ② (b) has one more ketone C=O than (a), so the chain is stiffer. ③ (c) has two flexible ether linkages (larger ΔSf), so it is lowest: (d) &gt; (b) &gt; (a) &gt; (c).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(d) &gt; (b) &gt; (a) &gt; (c)</b> (689 &gt; 657 &gt; 640 &gt; 628 K): the stiffer the backbone, the smaller ΔSf and the higher Tm = ΔHf/ΔSf. (d) has a directly linked biphenyl (stiffest); (b) has one more rigid ketone C=O than (a); (c) has two flexible ether –O– links (larger ΔSf), so it is lowest.</p>
+<p class="zh">中文：(d) &gt; (b) &gt; (a) &gt; (c)；聯苯最硬、酮基多 → 鏈硬、ΔSf 小 → Tm 高；醚鍵多 → 柔 → ΔSf 大 → Tm 最低。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 163–164 張</b>「Table 15.11 Typical Aromatic Poly(ether ketone)s」：(I) Tm 640 K、(II) 657 K、(III) 628 K、(IV) 689 K</li><li><b>Polym Solid 第 93 張</b>「Table 4-8」：p-phenylene 270 °C、biphenylene 355 °C，環越剛 Tm 越高</li><li><b>Polym Solid 第 67–68 張</b>「Entropy &amp; chain flexibility」：Stiff → ΔSf small</li></ul>
 <blockquote>"Flexible ... ΔSf large"，"Stiff ... ΔSf small"</blockquote>
@@ -1639,6 +1711,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q17">
     <div class="qhead"><span class="qno">Q17</span><div class="qen">Place the following Tm of nylon in a decreasing order and give brief explanation, Nylon 8, Nylon 9, Nylon 10, and Nylon 11.</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>Nylon 9 &gt; 8 &gt; 11 &gt; 10（482 &gt; 473 &gt; 463 &gt; 461 K，Table 15.3）。<br>① 8 &gt; 10、9 &gt; 11：n 越大 → amide 密度低、interchain hydrogen-bonding 少 → ΔHf 小 → Tm 整體下降。<br>② 9 &gt; 8：奇數 n 的氫鍵對位較完整 → 抵過密度劣勢（odd–even，補充）。<br>③ 11 &gt; 10 僅差 2 K（s019 以 °C 表則 10 &gt; 11），差異在誤差內；兩表都是 9 &gt; 8 &gt; {10, 11}。<br><b>English：</b>① As n increases, the density of amide groups (interchain hydrogen bonds) falls, so Tm decreases. ② Odd-n nylon 9 aligns its hydrogen bonds better, so 9 &gt; 8. ③ Nylon 11 and 10 differ by only about 2 K. The order is 9 &gt; 8 &gt; 11 &gt; 10 (Table 15.3).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Nylon 9 &gt; 8 &gt; 11 &gt; 10</b> (482 &gt; 473 &gt; 463 &gt; 461 K, Table 15.3). Larger n → lower amide density → fewer interchain hydrogen bonds → ΔHf↓ → Tm↓; odd n (nylon 9) aligns its hydrogen bonds better, so 9 &gt; 8; 11 vs 10 differ by only about 2 K.</p>
+<p class="zh">中文：9 &gt; 8 &gt; 11 &gt; 10；n 越大 → 醯胺基密度低、氫鍵少 → Tm 下降；奇數 n 氫鍵對位好，所以 9 &gt; 8；11 與 10 只差約 2 K。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 136 張</b>「Table 15.3 Melting Temperatures Tm of Linear Aliphatic Polyamides」：nylon 8 473 K、9 482 K、10 461 K、11 463 K</li><li><b>Polym Solid 第 19 張</b>「Interchain hydrogen-bonding」：nylon n 的 Tm（°C）：8 200、9 209、10 192、11 187，Tm 對 1/n 約成直線</li><li><b>Polym Solid 第 20 張</b>「Figure 11.4」：nylon-6,6 與 nylon-7,7 的 zigzag 結構與允許的氫鍵</li></ul>
 <blockquote>"Interchain hydrogen-bonding"</blockquote>
@@ -1725,6 +1801,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q18">
     <div class="qhead"><span class="qno">Q18</span><div class="qen">Place the following Tm of polyester in a decreasing order [(CH<sub>2</sub>)<sub>m</sub>COO]; m = 2, 3, 4, 5, 6</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>m = 2 &gt; 3 = 5 &gt; 4 &gt; 6（395 &gt; 335 = 335 &gt; 329 &gt; 325 K，Table 15.1）。<br>① m 越大 → 酯基密度低、flexible CH2 多 → ΔHf 降、ΔSf 升 → Tm 趨勢下降（2 最高、6 最低）。<br>② m = 3 與 5 同為 335 K，m = 4（329）較低 → 奇偶起伏（odd–even）：奇數 m 堆積略有利（補充）。<br>③ 對照：polyamide 同表 Tm 高很多（598 對 395 K），因 hydrogen bonding；（補充）酯基只有偶極作用。<br><b>English：</b>In Table 15.1 the polyester Tm: ① falls as m increases (lower ester density, more flexible CH2), so m = 2 is highest and m = 6 lowest. ② m = 3 and 5 are both 335 K and m = 4 is lower because of the odd–even effect: 2 &gt; 3 = 5 &gt; 4 &gt; 6. ③ Polyamides melt much higher because of hydrogen bonding.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>m = 2 &gt; 3 = 5 &gt; 4 &gt; 6</b> (395 &gt; 335 = 335 &gt; 329 &gt; 325 K, Table 15.1). Larger m → lower ester density and more flexible CH₂ → ΔHf↓, ΔSf↑ → Tm falls; m = 4 dips below 3 and 5 by the odd–even effect. Polyamides melt far higher (598 K at m = 2) because of hydrogen bonding.</p>
+<p class="zh">中文：2 &gt; 3 = 5 &gt; 4 &gt; 6；m 越大 → 酯基密度低、CH₂ 柔 → Tm 下降；4 偏低是奇偶效應；聚醯胺有氫鍵所以高很多。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 135 張</b>「Table 15.1 Influence of Various Links on Tm when Incorporated in an All-Carbon Chain」：聚酯 -(CH2)m COO- 在 m = 2…6 為 395 / 335 / 329 / 335 / 325 K</li><li><b>Polym Solid 第 62–63 張</b>「Intermolecular interactions」：含 amide 的鏈 Tm 約 265 °C，遠高於 PE 的 135 °C</li></ul>
 <blockquote>"Table 15.1 Influence of Various Links on Tm"</blockquote>
@@ -1816,6 +1896,10 @@ ul.tight li{margin:3px 0}
 ② WAXD：晶體給尖峰、非晶給寬 halo（第 10 張）→ Xc = Ac/(Ac+Aa)（補充：面積比公式）。<br>
 ③ DSC：晶體熔化要吸熱（第 50 張 melting endotherm）→ Xc = ΔHm/ΔHm°（補充：有 cold crystallization 時扣 ΔHcc）。<br>
 <b>English：</b>Crystallinity is found from ① density, φc = (ρ − ρa)/(ρc − ρa), because crystals are denser than the amorphous phase; ② X-ray diffraction, comparing the sharp crystalline peaks with the amorphous halo; and ③ DSC, from the area of the melting endotherm.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Density, X-ray diffraction and DSC</b>. Density: crystals are denser than the amorphous phase, so <span class="m">φc = (ρ − ρa)/(ρc − ρa)</span>. X-ray diffraction: sharp crystalline peaks versus the broad amorphous halo. DSC: the area of the melting endotherm.</p>
+<p class="zh">中文：密度（φc = (ρ − ρa)/(ρc − ρa)）、X 光繞射（尖峰 vs 非晶 halo）、DSC（熔化吸熱峰面積）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 4 張</b>「Table 4-5 Amorphous and Crystalline Densities」：給 φ = (ρ − ρa)/(ρc − ρa) 與各聚合物 ρa、ρc（PET 1.335 / 1.515）</li><li><b>Polym Solid 第 10 張</b>「X-Ray Diffraction」：diffractogram 上尖銳結晶峰疊在寬的 Amorphous 隆起上</li><li><b>Polym Solid 第 50 張</b>「Figure 4-14」：PET 的 DSC thermogram，Tg 約 75 °C、結晶放熱峰、crystalline-melting endotherm 約 250 °C</li></ul>
 <blockquote>"φ = (ρ − ρa)/(ρc − ρa)   (4.6)"</blockquote>
@@ -1875,6 +1959,10 @@ ul.tight li{margin:3px 0}
 ④ 方法三（補充）：TEM／AFM 直接看厚度，Raman LAM 由振動頻率估。<br>
 典型 lc ≈ 10–20 nm（講義：約 150 Å、chain folding 20 nm，第 34–35 張）。<br>
 <b>English：</b>① Crystallinity: density, X-ray diffraction, DSC. ② Lamellar thickness from the melting-point depression, Tm = Tm°[1 − 2σe/(l·Δhf)] (Thompson-Gibbs): thinner lamellae melt lower. ③ By SAXS: lc ≈ φcL, with L = λ/(2 sin θ). ④ By TEM, AFM or Raman LAM. Typical lc is 10–20 nm.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Crystallinity</b>: density, X-ray diffraction (WAXD), DSC (melting endotherm). <b>Lamellar thickness</b>: DSC Tm with the Thompson–Gibbs rule <span class="m">Tm = Tm°[1 − 2σe/(l·Δhf)]</span> (thinner lamellae melt lower), or SAXS long period <span class="m">L = λ/(2 sin θ)</span>, lc ≈ φcL; also TEM, AFM or Raman LAM. Typical lc ≈ 10–20 nm.</p>
+<p class="zh">中文：結晶度：密度、WAXD、DSC；晶片厚度：Tm + Thompson–Gibbs（越薄 Tm 越低）、SAXS（lc ≈ φcL）、TEM／AFM／Raman LAM；lc 約 10–20 nm。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 4、10、50 張</b>：結晶度三法，密度 (eq. 4.6, Table 4-5)、X-Ray Diffraction、DSC 的 crystalline-melting endotherm（見 Q3）</li><li><b>Polym Solid 第 58 張</b>「Melting temperature of polymer crystals」：<b>Thompson-Gibbs rule</b> Tm = Tm°[1 − 2σe/(l·Δhf)]，附 Tm 對 l 的圖（l 越厚越逼近 Tm°）→ <b>考試寫這條</b></li><li><b>Polym Solid 第 57 張</b>：同一條式子的來源：令 ΔGcryst = 0 「after little algebra」得到</li><li><b>Polym Solid 第 54–56 張</b>：推導前置：第 54 張晶片自由能（表面 σe 與體積 Δg）；第 55 張 x ≫ l 時 ΔGcryst = 2x²σe − x²l·Δg、定義 Tm°；第 56 張 Δg = Δhf(1 − T/Tm°)</li><li><b>Polym Solid 第 59 張</b>：「folded chains increase their fold period upon annealing」</li><li><b>Polym Solid 第 34–35 張</b>：溶液生長單晶厚度約 150 Å；「20 nm Chain folding」</li></ul>
 <blockquote>"Tm = Tm°[1 − 2σe/(l·Δhf)]"</blockquote>
@@ -1926,6 +2014,10 @@ ul.tight li{margin:3px 0}
 ③ （補充）晶片使擴散路徑曲折 → 擴散係數 D ↓ → 滲透率 P = D·S 最低。<br>
 ④ （補充）(1) aPS、(2) 隨機共聚物皆非晶；(3) mCOC 也是非晶 → 沒有晶區擋氣體 → 阻隔較差。<br>
 <b>English：</b>(4) HDPE. ① It has the highest density and crystallinity. ② Crystals are impermeable, so there is less amorphous volume for gas to dissolve in (lower S). ③ The crystallites force a tortuous path (lower D), so P = D·S is lowest. ④ The other three are amorphous.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(4) HDPE</b> has the highest crystallinity (density 0.94–0.97 g/cm³), so it is the best barrier: crystals are impermeable (less amorphous volume → lower solubility S) and force a tortuous path (lower diffusion D), so <span class="m">P = D·S</span> is lowest. The other three are amorphous.</p>
+<p class="zh">中文：(4) HDPE：結晶度最高 → 晶區擋氣體（S↓）、擴散路徑曲折（D↓）→ P = D·S 最低；其餘三者為非晶。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 150 張</b>「The effect of crystallinity on properties」：milk jug 用的 PE 較 stronger、stiffer、較 opaque（高密度）</li><li><b>Polym Solid 第 156 張</b>「Table 15.7 Comparison of Various Polyethylene Grades」：Tm LDPE 383、HDPE &gt; 403 K；density 0.92 vs 0.94–0.97 g/cm³</li></ul>
 <blockquote>"stronger, stiffer, but more opaque"</blockquote>
@@ -2013,7 +2105,10 @@ ul.tight li{margin:3px 0}
 ④ 應力再上升：全條已取向 → 取向鏈承載，只能拉主鏈（應變硬化 strain hardening，補充；連結鏈 tie chain，補充）。<br>
 ⑤ plastic failure：局部破壞累積 → 斷裂；經 drawing 的材料沿拉伸方向 E、TS ↑、延性 ↓（講義 Mech. Prop. 1 第 27 張）。<br>
 <b>English：</b>Semi-crystalline polymer above Tg. ① Amorphous regions elongate (elastic). ② At the yield point a neck begins as crystalline regions slide. ③ The neck propagates at nearly constant stress while crystalline regions align along the load. ④ Stress rises again as the oriented chains carry the load. ⑤ Plastic failure.</div>
-<!--draw--><div class="drawq" data-def="q1"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Five stages (semi-crystalline polymer above Tg)</b>: ① amorphous regions elongate (elastic) → ② yield point: neck forms as crystalline regions slide → ③ neck propagates at nearly constant stress while crystalline regions align along the load → ④ stress rises again as the oriented chains carry the load → ⑤ plastic failure.</p>
+<p class="zh">中文：① 非晶區先被拉長（彈性）→ ② 降伏、頸縮，晶區滑動 → ③ neck 延伸（平台），晶區沿拉伸方向排列 → ④ 取向鏈承載，應力再上升 → ⑤ 斷裂。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Mechanical Properties 1 第 26 張</b>「TENSILE RESPONSE: BRITTLE &amp; PLASTIC」：半結晶高分子的塑性曲線，每一段下方配晶片卡通（amorphous regions elongate → crystalline regions align → crystalline regions slide → near failure）</li>
@@ -2026,6 +2121,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>semi-crystalline 高於 Tg：amorphous regions elongate（彈性）→ yield point / onset of necking（crystalline regions slide）→ 頸部沿近乎定應力的平台延伸 → crystalline regions align（鏈沿負載方向取向）→ 應力上升 → plastic failure。</p>
 <p class="supp"><b>講義無，補充：</b>tie chain、cold drawing、microfibril、strain hardening、spherulite 等詞投影片沒有印出（只以卡通呈現晶塊排成纖維束）。</p>
 <div class="slideimgs"><figure><a href="slides/1_Mechanical_Properties_1_s026.webp" class="slidelink"><img src="slides/1_Mechanical_Properties_1_s026.webp" alt="Mechanical Properties 1 第 26 張" loading="lazy" width="900" height="675"></a><figcaption>Mechanical Properties 1 第 26 張</figcaption></figure><figure><a href="slides/1_Mechanical_Properties_1_s024.webp" class="slidelink"><img src="slides/1_Mechanical_Properties_1_s024.webp" alt="Mechanical Properties 1 第 24 張" loading="lazy" width="900" height="675"></a><figcaption>Mechanical Properties 1 第 24 張</figcaption></figure><figure><a href="slides/1_Mechanical_Properties_1_s025.webp" class="slidelink"><img src="slides/1_Mechanical_Properties_1_s025.webp" alt="Mechanical Properties 1 第 25 張" loading="lazy" width="900" height="675"></a><figcaption>Mechanical Properties 1 第 25 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s042.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s042.webp" alt="Polym Solid 第 42 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 42 張</figcaption></figure><figure><a href="slides/1_Mechanical_Properties_1_s027.webp" class="slidelink"><img src="slides/1_Mechanical_Properties_1_s027.webp" alt="Mechanical Properties 1 第 27 張" loading="lazy" width="900" height="675"></a><figcaption>Mechanical Properties 1 第 27 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q1"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b>應力（stress）σ = F/A₀：拉力除以原始截面積。應變（strain）ε = (L − L₀)/L₀：拉長量占原長的比例。半結晶高分子（semicrystalline polymer）同時有規則排列的晶相和較無序的非晶相。晶相常是薄片，叫晶片（lamella）；跨接不同晶片的非晶長鏈叫連結鏈（tie chain）。
@@ -2059,7 +2155,10 @@ ul.tight li{margin:3px 0}
 ③ 大延伸：陡升 → chains are straight, still cross-linked，鏈接近拉直、沒有長度可再展開（第 53 張；有限伸展性，補充）；天然橡膠的應變誘發結晶（補充）。<br>
 ④ 斷裂：網路鏈斷；斷裂前變形 reversible，無降伏、無頸縮 → 交聯防止鏈滑走（第 47、53 張）。<br>
 <b>English：</b>Entropic elasticity: stretching lowers conformational entropy, so the restoring force rises. ① At low extension rubber obeys Hooke's law, f = NkT(λ − 1/λ²), with a low modulus. ② At high strain the stress deviates upward from the Gaussian theory; the Mooney–Rivlin equation fits better. ③ The chains become straight but are still cross-linked, so the curve rises steeply. ④ The network chains break; deformation is reversible, with no yield or necking.</div>
-<!--draw--><div class="drawq" data-def="q2"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Entropic elasticity</b>: stretching lowers conformational entropy, so the restoring force rises as <span class="m">f = NkT(λ − 1/λ²)</span> (low modulus, Hooke's law at low extension). At high strain the stress deviates upward from the Gaussian theory (Mooney–Rivlin fits better) and rises steeply as the chains become straight but are still cross-linked, then breaks; the deformation is reversible with no yield or necking.</p>
+<p class="zh">中文：熵彈性：拉伸 → 構形熵↓ → 回復力 f = NkT(λ − 1/λ²)；高應變高於 Gaussian 理論（Mooney–Rivlin）、鏈拉直仍交聯 → 陡升 → 斷裂；全程可回復、無降伏無頸縮。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 38 張</b>「Comparison to experiment」：Treloar 數據在低 λ 貼著 Gaussian 虛線，λ 超過約 3 後明顯高於理論線；Mooney–Rivlin 式擬合較好</li>
@@ -2077,6 +2176,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較橡膠與實驗：低延伸遵守 Hooke's law（Gaussian 理論成立）→ 高應變偏離理論、曲線上翹（chains are straight, still cross-linked）；全程 reversible、無 yield（s047 對照）。</p>
 <p class="supp"><b>講義無，補充：</b>strain-induced crystallization、finite extensibility 等解釋投影片沒有印出；投影片只說「高應變偏離」與「鏈拉直」。</p>
 <div class="slideimgs"><figure><a href="slides/1_Elasticity_s038.webp" class="slidelink"><img src="slides/1_Elasticity_s038.webp" alt="Elasticity 第 38 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 38 張</figcaption></figure><figure><a href="slides/1_Elasticity_s047.webp" class="slidelink"><img src="slides/1_Elasticity_s047.webp" alt="Elasticity 第 47 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 47 張</figcaption></figure><figure><a href="slides/1_Elasticity_s053.webp" class="slidelink"><img src="slides/1_Elasticity_s053.webp" alt="Elasticity 第 53 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 53 張</figcaption></figure><figure><a href="slides/1_Elasticity_s063.webp" class="slidelink"><img src="slides/1_Elasticity_s063.webp" alt="Elasticity 第 63 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 63 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q2"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b>構形（conformation）：同一條長鏈靠單鍵轉動形成的不同捲曲形狀，不必打斷化學鍵。橡膠態：溫度高於玻璃轉移溫度（Tg），鏈段能活動。交聯（crosslink）：把不同鏈接成網路的連接點，阻止整條鏈滑走。應力（stress）：單位面積承受的力。
@@ -2130,6 +2230,10 @@ ul.tight li{margin:3px 0}
 ⑤ model network → 交聯點 functionality 相同、no dangling ends、各交聯點間 segments 數相同（s032）<br>
 ⑥ 等溫可逆（補充，講義隱含）→ 溫度固定、鏈來得及調整<br>
 <b>English：</b>① Gaussian chains (large N). ② Entropy-only force: internal energy ignored (ΔU = 0). ③ Affine deformation. ④ No volume change (λ1λ2λ3 = 1). ⑤ A model network with no dangling ends. ⑥ Isothermal and reversible. Result: f = NkT(λ − 1/λ²).</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Six assumptions</b>: (1) Gaussian chains; (2) entropy-only force, internal energy ignored (ΔU = 0); (3) affine deformation; (4) constant volume, λ₁λ₂λ₃ = 1; (5) model network (same functionality, no dangling ends); (6) isothermal and reversible. Result: <span class="m">f = NkT(λ − λ⁻²)</span>.</p>
+<p class="zh">中文：Gaussian 鏈、只有熵項（ΔU = 0）、affine 變形、體積不變（λ₁λ₂λ₃ = 1）、model network（無 dangling ends）、等溫可逆 → f = NkT(λ − λ⁻²)。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 32 張</b>「A few words on networks…」：model network，所有交聯點 functionality 相同，no dangling ends，各交聯點間的 segments 數相同</li>
@@ -2208,6 +2312,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q33">
     <div class="qhead"><span class="qno">Q33</span><div class="qen">Pick up the right choices as follows (multiple choices) (1) Endothermic under tension (2) Modulus increases with temperature (3) Elasticity comes mainly from the entropy change (4) Adiabatic process is suitable to describe rubber under a large deformation?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(2)(3)(4)。<br>(1) 錯：拉伸使構形熵下降 → 等溫下要放熱，不是吸熱（放熱推導為補充，講義未明說）。<br>(2) 對：f ≈ −T(dS/dl)，T↑ → Gr↑，df/dT 為正（s079，與 Hookean solid 的 Gh↓ 相反）；適用中、高延伸，低延伸有 thermoelastic inversion（f 隨 T 下降，s075–s076）。<br>(3) 對：elastomer networks f ≈ −T(dS/dl) → conformational entropy 的 reduction 產生回復力，內能貢獻小。<br>(4) 對：Rubber: Reversible adiabatic extension（s079 原文）→ 大變形來不及換熱，視為可逆絕熱。<br><b>English：</b>(2), (3) and (4) are correct. (1) Stretching lowers the conformational entropy, so it is exothermic, not endothermic. (2) f ≈ −T(dS/dl), so the modulus rises with T, unlike a Hookean solid. (3) The restoring force comes from the entropy decrease. (4) Rubber extension is a reversible adiabatic process because there is no time for heat exchange.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(2)(3)(4)</b>.<br>(1) Wrong: stretching lowers the conformational entropy → exothermic, not endothermic.<br>(2) Right: <span class="m">f ≈ −T(∂S/∂l)</span> → modulus rises with T (unlike a Hookean solid).<br>(3) Right: the restoring force comes from the entropy decrease.<br>(4) Right: large rubber extension is reversible adiabatic (no time for heat exchange).</p>
+<p class="zh">中文：(2)(3)(4)。(1) 錯：拉伸熵下降 → 放熱；(2) f ≈ −T(∂S/∂l)，T↑ 模數↑；(3) 彈性來自熵；(4) 大變形視為可逆絕熱。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 79 張</b>「橡膠力學 vs. 虎克力學（溫度 vs. 彈力）」：T↑ → Gr↑（橡膠）、T↑ → Gh↓（硬固體）；T↑ → Gr↑ → Material Shrink；df/dT 為正；最後一行 Rubber: Reversible adiabatic extension</li>
@@ -2254,6 +2362,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q34">
     <div class="qhead"><span class="qno">Q34</span><div class="qen">Pick up the right choices as follows (multiple choices) for f = (∂U/∂l)<sub>T</sub> − T(∂S/∂l)<sub>T</sub> (1) (∂U/∂l)<sub>T</sub> is valid for crystalline and glassy state (2) (∂U/∂l)<sub>T</sub> represents the Hook's elasticity (3) T(∂S/∂l)<sub>T</sub> represents the Rubber elasticity (4) (∂U/∂l)<sub>T</sub> increases with temperature (5) For a given elongation, the (∂U/∂l)<sub>T</sub> is 10<sup>4</sup> higher than the T(∂S/∂l)<sub>T</sub>.</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>(1)(2)(3) 對，(4)(5) 錯。<br>f = fU + fS：能量項 (∂U/∂l) 主導硬固體，熵項 −T(∂S/∂l) 主導橡膠。<br>(1) 對：For crystalline &amp; glassy solids f ≈ (∂U/∂l) → 能量項主導（s028）。<br>(2) 對：硬固體 internal energy predominates → 即 Hooke 彈性（s027–s028，此標籤由推論）。<br>(3) 對：elastomer networks f ≈ −T(∂S/∂l) → 熵項主導。<br>(4) 錯：fS = T(∂f/∂T) 隨 T 增加；fU 幾乎持平、與 T 無關（s077）。<br>(5) 錯：橡膠的 fU/f 只有約 0.10–0.17（s078，NR 0.12、PBD 0.10）→ 能量項比熵項小，不是大 10⁴ 倍。<br><b>English：</b>(1), (2) and (3) are correct; (4) and (5) are wrong. (1) For crystalline and glassy solids f ≈ (∂U/∂l). (2) That energy term is Hookean elasticity. (3) For elastomer networks f ≈ −T(∂S/∂l). (4) The energy term fU is nearly independent of T, while fS = T(∂f/∂T) grows with T. (5) In rubber fU/f is only about 0.10–0.17, so the energy term is the smaller one.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>(1)(2)(3)</b> are correct; (4) and (5) are wrong.<br>(1)(2) For crystalline and glassy solids f ≈ (∂U/∂l): the energy term is Hookean elasticity.<br>(3) For elastomer networks <span class="m">f ≈ −T(∂S/∂l)</span>: the entropy term is rubber elasticity.<br>(4) fU is nearly independent of T (only fS = T(∂f/∂T) grows with T).<br>(5) In rubber fU/f is only about 0.10–0.17, so the energy term is the smaller one.</p>
+<p class="zh">中文：(1)(2)(3) 對，(4)(5) 錯：硬固體 f ≈ ∂U/∂l（Hooke）；橡膠 f ≈ −T(∂S/∂l)（熵）；fU 與 T 無關；橡膠 fU/f 只有 0.10–0.17，能量項較小。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 28 張</b>「Rubber elasticity Thermodynamics revisited」：f = (dU/dl) − T(dS/dl)；For crystalline &amp; glassy solids f ≈ (dU/dl)；For elastomer networks f ≈ −T(dS/dl)</li>
@@ -2307,6 +2419,10 @@ ul.tight li{margin:3px 0}
 ③ (3) 錯 → cis repeat distance 是 0.81 nm，0.88 nm 屬 trans（s006）<br>
 ④ (4) 對 → trans-1,4-polyisoprene（balata／gutta-percha）易結晶、較硬，可做高爾夫球皮（補充，講義無此內容）<br>
 <b>English：</b>Only (4) is right. ① Natural rubber is cis-1,4-polyisoprene, not trans. ② The trans form has the higher Tg (220 K vs 200 K) and Tm (347 K vs 301 K). ③ The cis repeat distance is 0.81 nm; 0.88 nm belongs to trans. ④ The harder, crystallizable trans form is used for golf-ball covers.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Only (4) is right</b>: the harder, crystallizable trans-1,4-polyisoprene (gutta-percha) is used for golf-ball covers. (1) is wrong: natural rubber is cis-1,4-polyisoprene. (2) is wrong: trans has the higher Tg (220 K vs 200 K) and Tm. (3) is wrong: the cis repeat distance is 0.81 nm; 0.88 nm is trans.</p>
+<p class="zh">中文：只有 (4) 對：trans 易結晶、較硬 → 高爾夫球皮；(1) NR 是 cis；(2) trans 的 Tg 較高（220 vs 200 K）；(3) cis 為 0.81 nm，0.88 屬 trans。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 5 張</b>「Natural Rubber」：天然橡膠結構為 cis-1,4-polyisoprene</li>
@@ -2390,6 +2506,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q35">
     <div class="qhead"><span class="qno">Q35</span><div class="qen">Please give your brief reasons why the space shuttle Challenge exploded in 1988.</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>低溫 → fluoroelastomer O-ring 的 resiliency 變差 → 接縫洩漏 → erosion → 爆炸。<br>① 低溫：發射日很冷（約 −2 °C，補充）→ O-ring 變硬；Feynman 的 iced water 實驗：cold → slow to return to its original shape。<br>② 接縫張開時 O-ring 來不及回彈 → 密封失效（補充：鏈段鬆弛時間 &gt; 接縫開啟時間，即 Deborah number 論述）。<br>③ 高溫燃氣洩漏 → erosion 侵蝕 O-ring → 火焰點燃外部槽（external tank）的氫燃料 → 爆炸。<br>（事故為 1986 年，卷上 1988 有誤。）<br><b>English：</b>① In the cold the fluoroelastomer O-ring lost its resiliency: as Feynman showed in iced water, it was slow to return to its original shape. ② The joint opened and the ring could not reseal in time, so it leaked. ③ Hot gases caused erosion, and the leaking flames ignited the hydrogen fuel in the external tank.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Cold weather made the fluoroelastomer O-ring lose its resiliency</b>: as Feynman's iced-water demonstration showed, it was slow to return to its original shape, so the opening joint was not resealed → hot gases leaked and caused erosion → the flames ignited the hydrogen fuel in the external tank (the accident was in 1986).</p>
+<p class="zh">中文：低溫 → O-ring 彈性變差（Feynman 冰水實驗：回彈慢）→ 接縫洩漏、侵蝕 → 火焰點燃外部槽氫燃料 → 爆炸（事故為 1986 年）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Mechanical Properties 1 第 3 張</b>「The Challenger Accident」：O-ring 是氟橡膠（fluoroelastomer）圈，密封兩節固態火箭助推器接縫；定義 Resiliency 與 Erosion；洩漏的火焰點燃外部槽的氫燃料</li>
@@ -2432,6 +2552,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q36">
     <div class="qhead"><span class="qno">Q36</span><div class="qen">What is the "manufacturing secret" to make the "thermoplastic elastomer"?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>祕訣：tri-block 共聚物 = 一個 soft elastomeric segment + 兩個 hard blocks（兩個 Tg，補充）。<br>① hard blocks（glassy 或 crystalline）冷卻後相分離成 domain → physical crosslinks，取代化學交聯。<br>② soft 鏈段 Tg 低 → 橡膠彈性，連接各 domain 成網路。<br>③ 加工時兩段都高於 Tg → 可流動、可熔融成型；冷卻又回到交聯網路（可重複加工）。<br>例：SBS（polystyrene-block-polybutadiene-block-polystyrene）、Spandex、Lycra。<br><b>English：</b>A thermoplastic elastomer is a tri-block copolymer with a soft elastomeric segment and two hard glassy or crystalline blocks. ① On cooling the hard blocks separate into domains that act as physical crosslinks. ② The low-Tg soft segment gives rubber elasticity and links the domains into a network. ③ Above the Tg of both segments the material flows and can be processed, and it re-forms the network on cooling.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Make a tri-block copolymer</b> with one soft elastomeric segment and two hard (glassy or crystalline) blocks, e.g. SBS. The hard blocks phase-separate into domains that act as <b>physical crosslinks</b> while the low-Tg soft segment gives rubber elasticity; above the Tg of both segments it flows and can be processed, and it re-forms the network on cooling.</p>
+<p class="zh">中文：tri-block 共聚物（軟鏈段 + 兩個硬 block，如 SBS）→ 硬 block 相分離成 domain = 物理交聯 → 軟鏈段提供橡膠彈性；高於兩個 Tg 可加工，冷卻又成網路。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 66 張</b>「Thermoplastic Elastomers」：tri-block 共聚物，一個 soft elastomeric segment 加兩個 hard blocks；加工時兩段都高於 Tg 可流動；冷卻後相分離成兩種 domain，形成 physical crosslinks；例：polystyrene-block-polybutadiene-block-polystyrene、Spandex、Lycra</li>
@@ -2477,7 +2601,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q24">
     <div class="qhead"><span class="qno">Q24</span><div class="qen">Why does a SBS triblock copolymer exhibit a non-Newtonian and even highly elastic behavior at low temperature (&lt; 423 K) but show a Newtonian behavior at 448 K?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>423 K → non-Newtonian、有彈性；448 K → Newtonian（分界是 ODT 有序–無序轉變，補充）。<br>前提：SBS = PS–PB–PS tri-block；兩端 PS 相分離成 domain = physical crosslinks（Elasticity s066）。編號同下方「考卷要畫的圖」。<br>① 448 K、低剪切率 → 越過 ODT，domain 溶掉 → 均勻纏結熔體 → 黏度平台 η₀ → Newtonian（補充）。<br>② 448 K、高剪切率 → 鏈被拉直取向 → 才開始剪切變稀（補充）。<br>③ 423 K、低剪切率 → PS 已軟化（&gt; Tg ≈ 373 K）但仍相分離 → 暫態物理網路 → 無平台、η 持續上升（像有降伏應力）→ non-Newtonian、elastic（補充：數據需看 Fig B3.1）。<br>④ 423 K、高剪切率 → 網路被剪斷 → η 急降、靠近 448 K 曲線（補充）。<br><b>English：</b>① At 448 K, above the order–disorder transition, the PS domains dissolve, so the melt shows a Newtonian plateau η₀ at low shear rate. ② It thins only at high shear rate. ③ At 423 K the PS blocks are soft but still segregated into domains that act as physical crosslinks, so there is no plateau: the melt is non-Newtonian and elastic. ④ At high shear rate the network breaks and η drops toward the 448 K curve.</div>
-<!--draw--><div class="drawq" data-def="q24"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>423 K</b>: PS blocks phase-separate into domains that act as <b>physical crosslinks</b> → a network forms → non-Newtonian and elastic (no viscosity plateau).<br><b>448 K</b>: the PS domains dissolve → the network disappears → a homogeneous melt → Newtonian at low shear rate (constant η₀).</p>
+<p class="zh">中文：423 K PS 微區 = 物理交聯點 → 有網路 → 非牛頓、有彈性；448 K 微區溶掉 → 網路消失 → 低剪切率牛頓（η₀ 固定）。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Elasticity 第 66 張</b>「Thermoplastic Elastomers」：SBS 是三嵌段共聚物，軟的 elastomeric segment 加兩個硬的 glassy 段；加工時兩段都高於 Tg 所以能流動，冷卻後相分離成 domain，形成 physical crosslinks</li>
@@ -2488,6 +2615,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>glassy A 嵌段聚集成 domain → 當作 physical crosslinks → 網路有彈性；兩段都高於 Tg → 才能流動。</p>
 <p class="supp"><b>講義無，補充：</b>題目的 Fig B3.1（423 K／448 K 黏度對剪切率圖）不在已檢查的投影片中；ODT（order–disorder transition）、暫態網路、η₀ 平台、剪切變稀都是補充說明，保留原答案。</p>
 <div class="slideimgs"><figure><a href="slides/1_Elasticity_s066.webp" class="slidelink"><img src="slides/1_Elasticity_s066.webp" alt="Elasticity 第 66 張" loading="lazy" width="900" height="675"></a><figcaption>Elasticity 第 66 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s141.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s141.webp" alt="Polym Solid 第 141 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 141 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q24"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>黏度（viscosity, η）</b>是流體有多難流動，蜂蜜比水大。<b>剪切率（shear rate, γ̇）</b>是你推它推得多快。<b>牛頓流體（Newtonian）</b>是不管推多快 η 都一樣，例如水；<b>非牛頓（non-Newtonian）</b>是 η 會隨推的速度改變，例如推越快越稀，叫<b>剪切變稀（shear thinning）</b>。<b>SBS</b> 是三嵌段共聚物：中間一段橡膠 PB，兩端各接一段硬塑膠 PS。<b>Tg</b> 是 PS 從硬玻璃變軟的溫度（約 373 K）。<b>ODT（order–disorder transition）</b>是 PS 與 PB「分區排好隊」的結構被打散的溫度。<b>Tg 管鏈段能不能動，ODT 管分區結構還在不在</b>，兩者不同。</p>
@@ -2534,6 +2662,10 @@ ul.tight li{margin:3px 0}
 ⑤ Elastic recoil（可選第五項）→ Newtonian 無，Polymer 有 fading memory 而回縮<br>
 成因 → 鏈被拉伸、取向，儲存彈性能與法向應力 N₁（補充）<br>
 <b>English：</b>① Rod climbing: a polymer climbs the rod, a Newtonian fluid dips. ② Die swell: the extrudate is thicker than the die. ③ Tubeless siphon: flow continues after the tube is lifted. ④ Secondary flow: vortices form in the corners of a contraction. (⑤ Elastic recoil, optional.) Newtonian fluids show none of them because they have no fading memory.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Rod climbing</b> (normal stress effect; a Newtonian fluid dips), <b>die swell</b> (extrudate wider than the die, fading memory), <b>tubeless siphon</b> (flow continues after the tube is lifted), <b>secondary flow</b> (vortices in the corners of a contraction); optional fifth: elastic recoil. Newtonian fluids show none, because stretched chains store elastic energy.</p>
+<p class="zh">中文：rod climbing、die swell、tubeless siphon、secondary flow（vortex）（可加 elastic recoil）；Newtonian 都沒有 → 高分子鏈被拉伸、儲存彈性能。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Rheo. Intro 第 6 張</b>「Example 2: Normal Stress Effects」：攪拌棒旁 Newtonian 液面下凹，Polymer 沿棒爬升（rod climbing）；另有 "Hole" Pressure Error（P2 &lt; P1）</li>
 <li><b>Rheo. Intro 第 8 張</b>「Die Swell or Extruder Swell」：Elastic Effect，擠出物直徑 De1 &gt; De2 &gt; De3（短模口較大）；"Fading Memory"</li>
@@ -2589,7 +2721,10 @@ ul.tight li{margin:3px 0}
 (4) 對 → 模數 ∝ 結晶度；結晶度不變則與溫度無關（slide 原句）<br>
 (5) 對 → 結晶度只影響 Tg–Tm；低於 Tg 影響小（slide 原句）<br>
 <b>English：</b>All five are correct. (1) Glassy modulus ~10⁹ Pa vs rubbery plateau ~10⁶ Pa: about 10³ times. (2) Crosslinks keep the plateau and prevent terminal flow, so a higher crosslink density gives a higher modulus. (3) Crystals raise the modulus between Tg and Tm until they melt at Tm. (4) Modulus is proportional to crystallinity and independent of temperature if the crystalline order is unchanged. (5) Crystallinity only matters between Tg and Tm; below Tg its effect on the modulus is small.</div>
-<!--draw--><div class="drawq" data-def="q31"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>All five, (1)–(5), are correct.</b><br>(1) Glassy ~10⁹ Pa vs rubbery plateau ~10⁶ Pa: about 10³ times.<br>(2) Crosslinks keep the plateau (no terminal flow) → higher crosslink density, higher modulus.<br>(3) Crystals raise the modulus between Tg and Tm until Tm.<br>(4) Modulus ∝ crystallinity; no T dependence if crystallinity is unchanged.<br>(5) Crystallinity matters only between Tg and Tm, so little effect below Tg.</p>
+<p class="zh">中文：(1)–(5) 全對：glassy ≈ 10⁹、rubbery ≈ 10⁶ Pa（約 10³ 倍）；交聯與結晶都抬高 Tg–Tm 間的模數；結晶度不變則模數與溫度無關；結晶度對 Tg 以下影響小。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelasticity 第 30、35 張</b>（同 Polym Solid 第 143 張）「FIGURE 15.9」：三種 polystyrene 的 modulus–temperature 曲線（Crystalline、Cross linked、Linear amorphous），玻璃態模數相近；結晶者在 Tg–Tm 之間維持較高、到 Tm 才下降；交聯者平台持續、無 terminal flow</li>
 <li><b>Polym Solid 第 145 張</b>：兩條敘述，內容即選項 (4)、(5)（原文見下）</li>
@@ -2601,6 +2736,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較三種 PS 曲線 → 玻璃態相同、結晶度只影響 Tg–Tm 範圍、交聯使 rubbery plateau 持續（無 terminal flow）→ 對照五個選項。</p>
 <p class="supp"><b>講義無，補充：</b>(2)「平台隨交聯度升高」講義圖只顯示交聯樣品平台持續，未顯示更高（橡膠彈性 G = ρRT/Mc 可支持）；(1) 的數值需從圖讀出，不是印出的數字。依學生訂正過的考卷仍答 (1)–(5) 全對。</p>
 <div class="slideimgs"><figure><a href="slides/1_Viscoelasticity_s030.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s030.webp" alt="Viscoelasticity 第 30 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 30 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s035.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s035.webp" alt="Viscoelasticity 第 35 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 35 張</figcaption></figure><figure><a href="slides/Chap_3_b1_Polym_Solid_s145.webp" class="slidelink"><img src="slides/Chap_3_b1_Polym_Solid_s145.webp" alt="Polym Solid 第 145 張" loading="lazy" width="900" height="675"></a><figcaption>Polym Solid 第 145 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s022.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s022.webp" alt="Viscoelasticity 第 22 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 22 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s023.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s023.webp" alt="Viscoelasticity 第 23 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 23 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s024.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s024.webp" alt="Viscoelasticity 第 24 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 24 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q31"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>模數（modulus）</b>是材料有多「硬」：拉同樣的長度，需要多大的力；單位 Pa。<b>鬆弛模數（relaxation modulus）</b>是拉長到固定長度後，等一段時間還剩多少硬度。<b>Tg</b>是玻璃態變橡膠態的溫度；<b>Tm</b>是晶體熔化的溫度。<b>交聯（crosslinking）</b>是鏈與鏈之間接上永久的化學鍵。<b>結晶度（crystallinity）</b>是排成整齊晶體的鏈所佔的比例。<b>主曲線（master curve）</b>是模數對溫度（或時間）的完整曲線。</p>
@@ -2640,7 +2776,10 @@ ul.tight li{margin:3px 0}
   <article class="q" id="q32">
     <div class="qhead"><span class="qno">Q32</span><div class="qen">How many Maxwell models in parallel at least can you apply to describe a typical Master curve (Relaxation Modulus vs. Temperature)? How to match the curve?</div></div>
     <div class="ans"><b class="lab">考卷寫法</b>至少 2 個 Maxwell 元件並聯（Maxwell–Wiechert，n = 2，τ₂ ≫ τ₁）→ 單一元件只有一個 τ、只能降一次，畫不出 plateau 加 terminal flow。<br>並聯：應變相同、應力相加 → <span class="m">E(t) = E₁e^(−t/τ₁) + E₂e^(−t/τ₂)</span>。編號同下方 E(t) 圖：<br>① t ≪ τ₁：兩個黏壺都來不及動 → E = E₁ + E₂ = Eg（glassy）。<br>② t ≈ τ₁：快元件放鬆 → 模數掉 E₁。<br>③ τ₁ ≪ t ≪ τ₂：只剩慢元件 → E₂ = Er（rubbery plateau）；τ₂ ≫ τ₁ 平台才夠長。<br>④ t ≈ τ₂：慢元件也放鬆 → E → 0（terminal flow）。<br>配法：台階高度定 Eᵢ，下降位置定 τᵢ = ηᵢ/Eᵢ（在 Eᵢ/e 處讀，補充）。<br><b>English：</b>One Maxwell element has a single τ and drops only once, so at least two in parallel are needed: E(t) = E₁e^(−t/τ₁) + E₂e^(−t/τ₂). ① At t ≪ τ₁ the modulus is Eg = E₁ + E₂. ② Near τ₁ the fast element relaxes. ③ Between τ₁ and τ₂ only E₂ = Er remains (rubbery plateau). ④ Near τ₂ the modulus falls to zero (terminal flow). Step heights give Eᵢ and drop times give τᵢ = ηᵢ/Eᵢ.</div>
-<!--draw--><div class="drawq" data-def="q32"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>At least two</b> Maxwell elements in parallel (Maxwell–Wiechert): one element has a single τ and can drop only once, so it cannot give a plateau plus terminal flow. <span class="m">E(t) = E₁e^(−t/τ₁) + E₂e^(−t/τ₂)</span> with τ₂ ≫ τ₁: E₁ + E₂ = Eg at short t, E₂ = Er (plateau) between τ₁ and τ₂, then E → 0. Match the curve with step heights = Eᵢ and drop times τᵢ = ηᵢ/Eᵢ.</p>
+<p class="zh">中文：至少 2 個並聯（τ₂ ≫ τ₁）→ 一個元件只能降一次；E(t) = E₁e^(−t/τ₁) + E₂e^(−t/τ₂)：短時間 Eg = E₁ + E₂ → 平台 Er = E₂ → 0；台階高度定 Eᵢ，下降時間定 τᵢ = ηᵢ/Eᵢ。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelastic Modelling 第 13 張</b>「Distribution of relaxation &amp; retardation times」：Maxwell–Weichert model，n = 2；E(t) = Σ Eₙ exp(−t/τₙ)；例 E₁ = 3×10⁹、τ₁ = 1 min，E₂ = 5×10⁵、τ₂ = 1000 min，圖上先降一階、有平台、再降</li>
 <li><b>Viscoelastic Modelling 第 24、26 張</b>「The Maxwell–Wiechert Model」：數個 Maxwell 元件（彈簧 Eᵢ 串聯 dashpot ηᵢ）並聯；stress relaxation 時 σᵢ = σ₀ exp(−t/τᵢ)，E(t) = Σ Eₙ exp(−t/τₙ)</li>
@@ -2650,6 +2789,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>單一 Maxwell 只有一個指數衰減 → 真實曲線有 glassy、rubbery plateau、terminal flow → 並聯多個 Maxwell 元件，E(t) = Σ Eₙ exp(−t/τₙ)，講義例用 n = 2。</p>
 <p class="supp"><b>講義無，補充：</b>「在 Eᵢ/e 處讀 τᵢ」講義未寫（講義只給 τ = η/E）；「至少兩個」不是講義原句，講義以 n = 2 為例（第 24 張以 n = 3 示意）。第 13 張的 E₁ 是第一階高度（glassy），因 E₁ ≫ E₂，與 E₁ + E₂ 幾乎相同。</p>
 <div class="slideimgs"><figure><a href="slides/1_Viscoelastic_Modelling_s013.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s013.webp" alt="Viscoelastic Modelling 第 13 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 13 張</figcaption></figure><figure><a href="slides/1_Viscoelastic_Modelling_s024.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s024.webp" alt="Viscoelastic Modelling 第 24 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 24 張</figcaption></figure><figure><a href="slides/1_Viscoelastic_Modelling_s026.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s026.webp" alt="Viscoelastic Modelling 第 26 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 26 張</figcaption></figure><figure><a href="slides/1_Viscoelastic_Modelling_s010.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s010.webp" alt="Viscoelastic Modelling 第 10 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 10 張</figcaption></figure><figure><a href="slides/1_Viscoelastic_Modelling_s011.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s011.webp" alt="Viscoelastic Modelling 第 11 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 11 張</figcaption></figure><figure><a href="slides/1_Viscoelastic_Modelling_s012.webp" class="slidelink"><img src="slides/1_Viscoelastic_Modelling_s012.webp" alt="Viscoelastic Modelling 第 12 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelastic Modelling 第 12 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q32"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>彈簧（spring）</b>代表彈性：拉它就出力，σ = E × 伸長量，E 是硬度。<b>黏壺（dashpot）</b>代表黏性：像裝蜂蜜的針筒，快拉費力、慢拉輕鬆，拉開就回不來。<b>Maxwell 元件</b>是一個彈簧和一個黏壺<b>串聯</b>。<b>鬆弛模數 E(t)</b>是固定伸長後，隨時間還剩多少硬度。<b>鬆弛時間 τ</b>是硬度掉到約 1/e（約 37%）所需的時間，τ = η/E。<b>終端流動</b>是整條鏈最後都流開、模數趨近 0。</p>
@@ -2702,6 +2842,10 @@ ul.tight li{margin:3px 0}
 ② 代數字：log aT = −17.44×100/(51.6 + 100) = −11.50 → aT ≈ 3.1×10⁻¹²<br>
 ③ η(473 K) = aT × η(Tg) = 3.1×10⁻¹² × 10¹² ≈ 3.1 Pa·s<br>
 <b>English：</b>① Use the WLF equation with Tg as the reference: ΔT = 473 − 373 = 100 K. ② log aT = −17.44×100/(51.6+100) = −11.5. ③ η(473 K) = aT × η(Tg) = 3.1×10⁻¹² × 10¹² ≈ 3.1 Pa·s.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>η(473 K) ≈ 3.1 Pa·s</b>: WLF with Tg as reference, <span class="m">log aT = −C₁ΔT/(C₂ + ΔT)</span>, ΔT = 100 K → log aT = −17.44×100/(51.6+100) = −11.5 → aT ≈ 3.1×10⁻¹² → η = aT × 10¹² Pa·s ≈ 3.1 Pa·s.</p>
+<p class="zh">中文：log aT = −17.44×100/151.6 = −11.5 → aT ≈ 3.1×10⁻¹² → η = 3.1×10⁻¹² × 10¹² ≈ 3.1 Pa·s。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 133 張</b>「Example 1: temperature shift factor」：η₀(T) = aT(T) η₀(Tg)；aT = 10^(−17.44(T − Tg)/(51.6 + (T − Tg)))；PS 在 Tg 的 η₀ = 10¹² Pa·s（題目寫 200 °C，但解答代入 150 °C，為講義筆誤，結果 2600 Pa·s）</li>
 <li><b>Polym Solid 第 129 張</b>「Relaxation processes above Tg: The WLF equation」：log aT = −C₁(T − Ts)/(C₂ + (T − Ts))；C₁ = 17.44、C₂ = 51.6（以 Tg 為參考）；適用 Tg &lt; T &lt; Tg + 100 °C</li>
@@ -2752,7 +2896,10 @@ ul.tight li{margin:3px 0}
 ③ Shear thickening（dilatant）→ n &gt; 1，γ̇ ↑ → η ↑<br>
 ④ 高分子熔體是 thinning → 剪切使鏈由 random coil 變 stretched，沿流向取向並 disentangle，纏結限制減少（補充）→ η ↓，不會增稠<br>
 <b>English：</b>① Power law: η = mγ̇ⁿ⁻¹; n = 1 is Newtonian. ② Shear thinning: n &lt; 1, η decreases with shear rate. ③ Shear thickening: n &gt; 1, η increases. ④ A polymer melt thins because shear uncoils, aligns and disentangles the chains, so η falls and it does not thicken.</div>
-<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Shear thinning</b>: n &lt; 1, η decreases as γ̇ increases; <b>shear thickening</b>: n &gt; 1, η increases; Newtonian n = 1, with <span class="m">η = m·γ̇ⁿ⁻¹</span>. Polymers thin because shear uncoils the random coils, aligns them in the flow direction and disentangles them, so η falls.</p>
+<p class="zh">中文：thinning n &lt; 1（γ̇ ↑ → η ↓）、thickening n &gt; 1（η ↑）；高分子被剪切後鏈拉直、沿流向取向、纏結拉開 → η ↓，所以是 thinning。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Newtonian Fluid 第 21 張</b>「Power-Law Fluid」：η = mγ̇ⁿ⁻¹；n &gt; 1 shear thickening、n = 1 Newtonian、n &lt; 1 shear thinning</li>
 <li><b>Newtonian Fluid 第 20 張</b>「Power-Law Model (Ostwald-deWaele Model)」：τ₂₁ = −m|dv₁/dx₂|ⁿ⁻¹ dv₁/dx₂；m 為 consistency index，n 為 power-law index</li>
@@ -2763,6 +2910,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>用 power-law 指數 n 分類（n &lt; 1 thinning、n = 1 Newtonian、n &gt; 1 thickening）→ 高分子鏈受剪切由 random coil 變 stretched 並 disentangle → η 下降，所以是 thinning。</p>
 <p class="supp"><b>講義無，補充：</b>「有效纏結限制減少」不是講義原句（講義用 disentangle / stretch out）；講義沒有說明高分子為何不會 shear thickening 的機制，只給 n &gt; 1 的定義與 dilatant 曲線。</p>
 <div class="slideimgs"><figure><a href="slides/Newtonian_Fluid_s021.webp" class="slidelink"><img src="slides/Newtonian_Fluid_s021.webp" alt="Newtonian Fluid 第 21 張" loading="lazy" width="900" height="675"></a><figcaption>Newtonian Fluid 第 21 張</figcaption></figure><figure><a href="slides/Newtonian_Fluid_s020.webp" class="slidelink"><img src="slides/Newtonian_Fluid_s020.webp" alt="Newtonian Fluid 第 20 張" loading="lazy" width="900" height="675"></a><figcaption>Newtonian Fluid 第 20 張</figcaption></figure><figure><a href="slides/Newtonian_Fluid_s017.webp" class="slidelink"><img src="slides/Newtonian_Fluid_s017.webp" alt="Newtonian Fluid 第 17 張" loading="lazy" width="900" height="675"></a><figcaption>Newtonian Fluid 第 17 張</figcaption></figure><figure><a href="slides/Newtonian_Fluid_s019.webp" class="slidelink"><img src="slides/Newtonian_Fluid_s019.webp" alt="Newtonian Fluid 第 19 張" loading="lazy" width="900" height="675"></a><figcaption>Newtonian Fluid 第 19 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s002.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s002.webp" alt="Viscoelasticity 第 2 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 2 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s012.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s012.webp" alt="Viscoelasticity 第 12 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 12 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>剪切（shear）</b>是相鄰流層彼此滑動，像推一疊撲克牌，上面的牌滑得比下面快。<b>剪切率（shear rate，γ̇）</b>是「推得有多快」，單位 s⁻¹。<b>剪切應力（shear stress，τs）</b>是「為了這個速度要用多大的力」。<b>黏度（viscosity，η）</b>是阻力係數，η = τs/γ̇。蜂蜜 η 大，水 η 小。<b>纏結（entanglement）</b>是長鏈互相穿插、擋住彼此的限制。</p>
@@ -2806,7 +2954,10 @@ ul.tight li{margin:3px 0}
 ② 高剪切率（γ̇ &gt; γ̇c = 1/λ）→ 鏈來不及鬆弛，由 random coil 變 stretched、沿流向取向並 disentangle → η 下降 = shear thinning<br>
 ③ 加工剪切率（10⁰–10⁵ s⁻¹）多在下降區 → 熔體易流動（補充）<br>
 <b>English：</b>① At low shear rate (De ≪ 1) chains relax in time, so η stays at the zero shear rate viscosity. ② At high shear rate (γ̇ &gt; 1/λ) chains cannot relax: they stretch, orient and disentangle, so η falls (shear thinning). ③ Processing shear rates lie in the thinning region, so the melt flows easily.</div>
-<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en">At high shear rates (γ̇ &gt; 1/λ) the chains cannot relax in time, so they uncoil, align in the flow direction and disentangle, which lowers the flow resistance. The viscosity then follows the power law <span class="m">η = m·γ̇ⁿ⁻¹</span> with n &lt; 1, so η decreases as γ̇ increases.</p>
+<p class="zh">中文：剪切太快時鏈來不及鬆弛，被拉直、沿流向排好、纏結拉開 → 阻力變小；冪律 η = m·γ̇ⁿ⁻¹（n &lt; 1）→ γ̇ 越大 η 越小。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelasticity 第 9 張</b>「Variation of melt viscosity with strain rate」：低剪切率有 Zero Shear Rate Viscosity 平台，之後 η 隨剪切率下降；加工剪切率（10⁰–10⁵ s⁻¹）都落在下降區</li>
 <li><b>Viscoelasticity 第 2、4、5 張</b>「Deborah Number」：Random Coil →（Shear or Deformation）→ Stretched；De = λ/T，De ≪ 1 像 Viscous Liquid，De ≫ 1 像 Elastic Solid</li>
@@ -2817,6 +2968,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 process time (T) 與 relaxation time (λ) → 低剪切率 De ≪ 1，鏈來得及回到 random coil，η 為平台（zero shear rate viscosity）→ 高剪切率鏈來不及鬆弛，變 Stretched、disentangle → η 下降（shear thinning）。</p>
 <p class="supp"><b>講義無，補充：</b>「利於擠出、射出」只由第 9 張的加工剪切率條暗示，講義未用文字寫出；γ̇τr 的寫法是 De 的等價說法。</p>
 <div class="slideimgs"><figure><a href="slides/1_Viscoelasticity_s009.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s009.webp" alt="Viscoelasticity 第 9 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 9 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s002.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s002.webp" alt="Viscoelasticity 第 2 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 2 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s004.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s004.webp" alt="Viscoelasticity 第 4 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 4 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s005.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s005.webp" alt="Viscoelasticity 第 5 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 5 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s008.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s008.webp" alt="Viscoelasticity 第 8 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 8 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s012.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s012.webp" alt="Viscoelasticity 第 12 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 12 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="flow"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>熔體（melt）</b>是加熱到熔化的高分子，像一鍋很稠的液體。<b>黏度（viscosity，η）</b>是流動時的阻力。<b>剪切率（shear rate，γ̇）</b>是推動的速度。<b>纏結（entanglement）</b>是長鏈互相穿插、不能任意穿過鄰鏈造成的限制，不是化學鍵。<b>鬆弛時間（relaxation time，λ）</b>是被拉歪的鏈靠熱運動回到隨機線團（random coil）所需的時間。<b>Deborah 數 De = λ/T</b>：λ 是材料的時間，T 是外加流動的時間（process time）。<b>剪切變稀（shear thinning）</b>是 γ̇ 越大，η 越小。</p>
@@ -2860,7 +3012,10 @@ ul.tight li{margin:3px 0}
 ② M &gt; Mc → 鏈 entangle（reptation）→ η₀ ∝ M³·⁴（斜率 3.4），Mc = 2–3 Me<br>
 ③ M 加倍（均在纏結區）→ η₀ 增為 2³·⁴ ≈ 10.6 倍（補充，自行計算）<br>
 <b>English：</b>① Below the critical molecular weight Mc, chains do not entangle, so η₀ ∝ M. ② Above Mc, entanglement and reptation give η₀ ∝ M³·⁴ (Mc = 2–3 Me). ③ Doubling M in the entangled regime raises η₀ by 2³·⁴ ≈ 10.6 times.</div>
-<!--draw--><div class="drawq" data-def="q28"></div><!--/draw-->
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en">Below Mc, η₀ ∝ M (slope 1, no entanglement); above Mc, <span class="m">η₀ ∝ M³·⁴</span> (slope 3.4, entanglement and reptation), with Mc = 2–3 Me. Doubling M in the entangled regime raises η₀ by 2³·⁴ ≈ 10.6 times.</p>
+<p class="zh">中文：M &lt; Mc：η₀ ∝ M；M &gt; Mc：η₀ ∝ M³·⁴（纏結、reptation）；Mc = 2–3 Me；M 加倍 → η₀ 約 10.6 倍。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Fluid 2 第 72 張</b>「Polymer Properties from Rheology」：Polymer Melt η₀ ∝ Mw；η₀ ~ M（M &lt; Mc）、η₀ ∝ Mw³·⁴（M &gt; Mc）；Mc = 2–3 Me</li>
 <li><b>Fluid 2 第 74 張</b>「Variation of melt viscosity with molecular weight」：η_m = K_L N¹·⁰ 與 η_m = K_H N³·⁴（N = degree of polymerization），log–log 圖斜率 1.0 轉為 3.4</li>
@@ -2872,6 +3027,7 @@ ul.tight li{margin:3px 0}
 <p><b>老師的邏輯：</b>比較 M 與 critical molecular weight Mc → 短鏈不 entangle，黏度只隨鏈長成正比 → 長鏈 entangle、reptation，黏度急升為 M³·⁴。</p>
 <p class="supp"><b>講義無，補充：</b>「M 加倍 → 2³·⁴ ≈ 10.6 倍」是由 3.4 次方算出的（驗算：2³·⁴ = 10.56）；講義第 72 張寫 Mw，第 74 張寫 N。</p>
 <div class="slideimgs"><figure><a href="slides/Fluid_2_s072.webp" class="slidelink"><img src="slides/Fluid_2_s072.webp" alt="Fluid 2 第 72 張" loading="lazy" width="900" height="675"></a><figcaption>Fluid 2 第 72 張</figcaption></figure><figure><a href="slides/Fluid_2_s074.webp" class="slidelink"><img src="slides/Fluid_2_s074.webp" alt="Fluid 2 第 74 張" loading="lazy" width="900" height="675"></a><figcaption>Fluid 2 第 74 張</figcaption></figure><figure><a href="slides/Fluid_2_s076.webp" class="slidelink"><img src="slides/Fluid_2_s076.webp" alt="Fluid 2 第 76 張" loading="lazy" width="900" height="675"></a><figcaption>Fluid 2 第 76 張</figcaption></figure><figure><a href="slides/Fluid_2_s075.webp" class="slidelink"><img src="slides/Fluid_2_s075.webp" alt="Fluid 2 第 75 張" loading="lazy" width="900" height="675"></a><figcaption>Fluid 2 第 75 張</figcaption></figure><figure><a href="slides/1_Viscoelasticity_s053.webp" class="slidelink"><img src="slides/1_Viscoelasticity_s053.webp" alt="Viscoelasticity 第 53 張" loading="lazy" width="900" height="675"></a><figcaption>Viscoelasticity 第 53 張</figcaption></figure></div></div><!--/slidebox-->
+<!--draw--><div class="drawq" data-def="q28"></div><!--/draw-->
 <!--basics--><div class="basics">
   <h3>從零開始</h3>
   <p class="step"><b>第 0 步：名詞。</b><b>分子量（M）</b>代表鏈有多長。<b>零剪切黏度（η₀）</b>是推得很慢時量到的黏度，鏈幾乎不被流動改變，所以不同分子量可以公平比較。<b>纏結（entanglement）</b>是長鏈互相穿插、不能穿過彼此造成的限制。<b>臨界分子量 Mc</b>是鏈長到足以開始纏結的門檻，Mc = 2–3 Me（Me 是兩個纏結點之間的分子量）。<b>蛇行（reptation）</b>是鏈像蛇一樣在鄰鏈形成的管道裡爬行。</p>
@@ -2904,6 +3060,10 @@ ul.tight li{margin:3px 0}
 ④ 分子量 ↑ → η ↑：摩擦與 entanglement ↑；η₀ ∝ M（M &lt; Mc）、M³·⁴（M &gt; Mc）<br>
 ⑤ 塑化劑 wt% ↑ → η ↓：Vf ↑、Tg ↓（補充）<br>
 <b>English：</b>① Higher temperature increases free volume, so viscosity falls (Doolittle, WLF). ② Higher pressure reduces free volume, so viscosity rises. ③ Above the zero-shear plateau, a higher shear rate orients and disentangles the chains (shear thinning), so viscosity falls. ④ Higher molecular weight raises friction and entanglement: η₀ ∝ M below Mc and ∝ M³·⁴ above Mc. ⑤ More plasticizer increases free volume and lowers Tg, so viscosity falls.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>η↓</b>: temperature↑, shear rate↑, plasticizer↑; <b>η↑</b>: pressure↑, molecular weight↑. Free volume controls η (<span class="m">η = A exp(B/Vf)</span>): higher T or plasticizer raises Vf, higher pressure lowers it; higher γ̇ orients and disentangles chains (shear thinning); higher M adds entanglement (η₀ ∝ M³·⁴ above Mc).</p>
+<p class="zh">中文：η ↓：溫度↑、剪切率↑、塑化劑↑；η ↑：壓力↑、分子量↑；自由體積 Vf 多 → η 小；剪切使鏈取向、纏結拉開；M 大 → 纏結多。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Polym Solid 第 88 張</b>「Polymer solutions &amp; blends」：Doolittle equation η = A exp(B/Vf)，Vf ~ α(T − T₀)；Vogel–Fulcher η = A′ exp(B′/(T − T₀))</li>
 <li><b>Polym Solid 第 129 張</b>「Relaxation processes above Tg: The WLF equation」：log aT = −C₁(T − Ts)/(C₂ + (T − Ts))，適用 Tg &lt; T &lt; Tg + 100 °C</li>
@@ -2955,6 +3115,10 @@ ul.tight li{margin:3px 0}
 ④ 搭配 master curve（TTS，aT、bT）→ 涵蓋約 7 個數量級的剪切率<br>
 ⑤ 經驗規則 → 適用均相線性熔體；填充系統、凝膠、嵌段共聚物可能不成立（補充）<br>
 <b>English：</b>① A frequency sweep (SAOS) gives G′ and G″. ② |η*(ω)| = √(G′² + G″²)/ω combines them into one viscosity. ③ With ω = γ̇, η(γ̇) ≈ |η*(ω)|; for polystyrene the two values coincide. ④ A TTS master curve (aT, bT) extends this over about seven decades of shear rate. ⑤ It is empirical: it works for homogeneous linear melts but may fail for filled systems, gels and block copolymers.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Cox–Merz rule</b>: the steady-shear viscosity equals the magnitude of the complex viscosity at the same numerical value, η(γ̇) ≈ |η*(ω)| with ω = γ̇, <span class="m">|η*| = √(G′² + G″²)/ω</span>. A small-amplitude frequency sweep (G′, G″) therefore predicts the flow curve, and a TTS master curve extends it over about seven decades; it is empirical and works for homogeneous linear melts.</p>
+<p class="zh">中文：η(γ̇) ≈ |η*(ω)|（ω = γ̇）；|η*| = √(G′² + G″²)/ω → 用頻率掃描的 G′、G″ 估算流動曲線，搭配 master curve；經驗規則，適用均相線性熔體。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight"><li><b>Viscoelasticity 第 55 張</b>「結果」（Polystyrene 例）：參考 Cox-Merz Rule，角頻率相當於同數值的 shear rate；利用 Master Curve（TTS）與 Cox-Merz Rule 把頻率轉成剪切速度與黏度的關係；表 2 中 |η*(ω)| 與 η(γ̇) 數值相同（60,000 與 27.3 Pa·s）</li>
 <li><b>Viscoelasticity 第 54 張</b>「前言」「實驗過程」：Master Curve 擴大可量測範圍，適用高分子熔體；PS，T = 170/200/230/260 °C</li>
@@ -3012,6 +3176,10 @@ ul.tight li{margin:3px 0}
 ② 代數字（長度用 m）：a/W = 40/100 = 0.4 → Y = 2.1（題給，與 s035 查圖一致）；Fc = (44×10⁶ × 0.1 × 0.02)/(2.1 × √(π×0.04)) = 88000/(2.1 × 0.3545)<br>
 ③ 結果：Fc ≈ 118 kN（校驗：講義例題 100 kN 得 K = 37.2，100 × 44/37.2 ≈ 118 kN）<br>
 <b>English：</b>① Fracture occurs when K = Kc, with K = (YF/(WB))√(πa), so Fc = Kc·W·B/(Y√(πa)). ② With a/W = 0.4 and Y = 2.1: Fc = (44×10⁶ × 0.1 × 0.02)/(2.1 × √(π×0.04)). ③ Fc ≈ 118 kN.</div>
+<!--short--><div class="short"><b class="lab">簡答版</b>
+<p class="en"><b>Fc ≈ 118 kN</b>: fracture at K = Kc, <span class="m">K = (YF/(WB))√(πa)</span> → Fc = Kc·W·B/(Y√(πa)) = (44×10⁶ × 0.1 × 0.02)/(2.1 × √(π×0.04)) = 88000/(2.1 × 0.3545) ≈ 118 kN.</p>
+<p class="zh">中文：K = Kc 時斷裂；Fc = Kc·W·B/(Y√(πa)) = 88000/(2.1 × 0.3545) ≈ 118 kN。</p>
+</div><!--/short-->
 <!--slidebox--><div class="slidebox"><h3>講義依據</h3>
 <ul class="tight">
 <li><b>Brittle &amp; Ductile 第 34 張</b>「Example Problem」：鋁板厚 20 mm、寬 100 mm、40 mm edge crack，K = (YF/(WB))√(πa)，a/W = 0.4</li>
