@@ -271,6 +271,30 @@ ul.tight li{margin:3px 0}
     <tr><td>動態機械分析（dynamic mechanical analysis，DMA）</td><td>反覆施力，量軟硬和耗能；E′ 急降，E″、tan δ 出現峰。</td></tr></table></div>
   <p class="step"><b>第 2 步：DMA 的幾個符號各代表什麼？</b>應力（stress）是單位面積承受的力；應變（strain）是伸長量除以原長。儲能模數（storage modulus，E′）代表可回收的彈性反應，損耗模數（loss modulus，E″）代表變形中轉成熱的反應。相位差（phase lag，δ）描述應變落後應力多少；損耗因子（loss factor）tan δ = E″/E′，表示耗能相對於儲能的比例。熱容（heat capacity，Cp）則是在定壓下升高一度所需的熱量。</p>
   <p class="step"><b>第 3 步：為什麼損耗只在中間特別大？</b>想像反覆推動一個卡住的抽屜：完全推不動時，位移很小；滑得很順時，則很快跟上。介於兩者之間，抽屜會動卻拖拖拉拉，摩擦耗能最明顯。鏈段也一樣：低溫幾乎凍住，高溫能快速反應；Tg 附近已能動卻仍遲緩，所以反覆變形時耗能最顯著，形成損耗峰。</p>
+  <!--dmapeak--><p class="step"><b>為什麼是「峰」，不是「階梯」？耗能要兩個條件同時成立。</b>DMA 每推一下，能量只有兩條路：彈回來（E′）或變成熱（E″）。要變成熱，鏈段必須<b>①能動</b>（完全不動就沒有摩擦），而且<b>②跟不上外力</b>（一推就立刻跟上，就像橡皮筋，能量又彈回來）。①隨溫度上升，②隨溫度下降，兩者相乘只有中間最大，所以是一個峰。</p>
+<div class="tbl"><table><tr><th>溫度</th><th>① 能動嗎？</th><th>② 跟不上嗎？</th><th>像什麼</th><th>耗能</th></tr>
+<tr><td>遠低於 Tg</td><td>✗ 凍住</td><td>動都不動，談不上落後</td><td>鋼彈簧</td><td>小</td></tr>
+<tr><td><b>Tg 附近</b></td><td>✓ 開始能動</td><td>✓ 但很慢（sluggish）</td><td>麥芽糖、蜂蜜</td><td><b>最大</b></td></tr>
+<tr><td>高於 Tg</td><td>✓ 動得很快</td><td>✗ 立刻跟上</td><td>橡皮筋</td><td>小</td></tr></table></div>
+<figure style="margin:12px 0"><svg viewBox="0 0 680 410" style="width:100%;max-width:680px;display:block;background:var(--sheet);border-radius:8px" role="img" aria-label="耗能等於能動程度乘以跟不上程度，在 Tg 附近最大">
+<line x1="80" y1="300" x2="610" y2="300" stroke="var(--muted)" stroke-width="1"/>
+<line x1="80" y1="300" x2="80" y2="60" stroke="var(--muted)" stroke-width="1"/>
+<text x="614" y="305"font-size="13" fill="var(--muted)">溫度 →</text>
+<line x1="340" y1="70" x2="340" y2="300" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="4 4"/>
+<polyline fill="none" stroke="var(--teal)" stroke-width="2.2" points="80,280 160,278 220,271 260,256 300,226 340,180 380,134 420,104 460,90 520,82 600,80"/>
+<polyline fill="none" stroke="var(--red)" stroke-width="2.2" stroke-dasharray="6 4" points="80,80 160,82 220,89 260,104 300,134 340,180 380,226 420,256 460,271 520,278 600,280"/>
+<polyline fill="none" stroke="var(--amber)" stroke-width="4" points="80,279 160,271 220,244 260,196 300,122 340,80 380,122 420,196 460,244 520,271 600,279"/>
+<text x="160" y="322" text-anchor="middle" font-size="13" fill="var(--ink)">低溫：鏈段凍住</text>
+<text x="340" y="322" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">Tg 附近</text>
+<text x="520" y="322" text-anchor="middle" font-size="13" fill="var(--ink)">高溫：鏈段跟得上</text>
+<line x1="80" y1="356" x2="110" y2="356" stroke="var(--teal)" stroke-width="2.2"/>
+<text x="118" y="361" font-size="13" fill="var(--ink)">① 鏈段能動的程度</text>
+<line x1="330" y1="356" x2="360" y2="356" stroke="var(--red)" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="368" y="361" font-size="13" fill="var(--ink)">② 跟不上外力的程度（落後）</text>
+<line x1="80" y1="384" x2="110" y2="384" stroke="var(--amber)" stroke-width="4"/>
+<text x="118" y="389" font-size="13" fill="var(--ink)">耗能 ＝ ① × ② → E″、tan δ 峰</text>
+</svg><figcaption>示意圖（講義無，補充）：綠線往上、紅線往下，相乘只在 Tg 附近最大。另外 tan δ = E″/E′，分母 E′ 在這裡掉約 1000 倍，所以 tan δ 的峰特別明顯。</figcaption></figure>
+<p class="step"><b>用時間想（講義無，補充）：</b>假設 DMA 每秒推拉 1 次。低溫時鏈段要 100 年才轉得動，這 1 秒內等於沒動；高溫時 0.000001 秒就轉好，完全跟得上；Tg 附近鏈段剛好要約 1 秒，動到一半外力就反向，落後最嚴重、耗能最多。這就是下面「τ ≈ 1/ω」的意思。</p><!--/dmapeak-->
   <p class="step"><b>第 4 步：把「拖拖拉拉」換成時間尺度。</b>鬆弛時間（relaxation time，τ）是鏈段調整所需時間；角頻率（angular frequency，ω）表示外力振盪快慢，1/ω 是比較用的負載時間尺度。當 τ ≈ 1/ω，鏈段反應與負載時間相近，落後與耗能特別明顯。跨過轉移區，E′ 可下降約 10³ 倍。E″ 峰、tan δ 峰及 DSC 階躍的位置不必完全重合，報 Tg 時要交代量測方法。</p>
   <div class="mapback"><b>對回考卷寫法：</b>「V–T 轉折、Cp 階躍、DMA 模數下降與損耗峰」就是把鏈段開始活動的三種觀察方式壓縮成一行；「τ ≈ 1/ω」則說明峰的來源：鏈段來得及動，卻仍明顯落後，能量大量轉成熱。<br><b>English：</b>Tg can be determined by a dilatometric volume-slope change, a DSC heat-capacity step, or a DMA modulus drop and loss peak. The damping peak occurs when segmental relaxation matches the loading timescale, ωτ ≈ 1, causing strong energy dissipation.</div>
 </div>
@@ -307,12 +331,30 @@ ul.tight li{margin:3px 0}
   <p class="step"><b>第 0 步：先把題目的圖讀懂。</b>動態機械分析（dynamic mechanical analysis，DMA）是反覆拉、壓或彎曲材料，觀察它怎麼回應。玻璃轉移溫度（glass transition temperature，Tg）是高分子從硬脆玻璃態進入較軟狀態的溫度區域，關鍵是鏈段（segment）開始能協同運動。圖上的峰（peak）表示某個量隨溫度先增加再減少；本題問的是損耗訊號的峰，不是所有曲線都向上凸。</p>
   <p class="step"><b>第 1 步：用推抽屜想像「反應慢半拍」。</b>假設你固定節奏來回推抽屜。抽屜完全卡住時，幾乎不動；非常滑順時，一推就跟著走。若它勉強能動，卻一直拖住，你每次來回都要克服摩擦，能量就變成熱。Tg 附近的鏈段像第三種情況：已經可以重新安排，卻還沒有快到能立刻跟上外力。</p>
   <p class="step"><b>第 2 步：把回彈和耗能分開看。</b>應力（stress）是單位面積承受的力，應變（strain）是相對伸長或變形。模數（modulus）表示抗變形程度。儲能模數（storage modulus，E′）描述像彈簧一樣能回收的彈性反應；損耗模數（loss modulus，E″）描述轉成熱的反應。應變比應力晚到的角度叫相位差（phase lag，δ）；損耗因子（loss factor）tan δ = E″/E′，衡量耗能相對於儲能的大小。因此 E″ 峰是在看損耗，tan δ 峰是在看兩者的比例。</p>
-  <p class="step"><b>第 3 步：為什麼低溫、高溫都不是這個峰的中心？</b></p>
-  <div class="tbl"><table><tr><th>溫度區域</th><th>鏈段的反應</th><th>DMA 趨勢</th></tr>
-    <tr><td>遠低於 Tg</td><td>大尺度鏈段運動被凍住，只能小幅變形。</td><td>E′ 高，這種鏈段鬆弛的耗能有限。</td></tr>
-    <tr><td>Tg 附近</td><td>能協同移動，但反應仍遲緩。</td><td>E′ 急降，損耗訊號出現峰。</td></tr>
-    <tr><td>高於轉移區</td><td>鏈段調整很快，較能跟上負載。</td><td>這種鬆弛造成的落後與耗能減弱。</td></tr></table></div>
-  <p>所以峰表示「特定鏈段運動最會耗能的區域」，不是說所有高溫流動都不耗能，也不是把 E′ 的下降誤認成峰。</p>
+  <!--dmapeak--><p class="step"><b>第 3 步：為什麼是「峰」，不是「階梯」？耗能要兩個條件同時成立。</b>DMA 每推一下，能量只有兩條路：彈回來（E′）或變成熱（E″）。要變成熱，鏈段必須<b>①能動</b>（完全不動就沒有摩擦），而且<b>②跟不上外力</b>（一推就立刻跟上，就像橡皮筋，能量又彈回來）。①隨溫度上升，②隨溫度下降，兩者相乘只有中間最大，所以是一個峰。</p>
+<div class="tbl"><table><tr><th>溫度</th><th>① 能動嗎？</th><th>② 跟不上嗎？</th><th>像什麼</th><th>耗能</th></tr>
+<tr><td>遠低於 Tg</td><td>✗ 凍住</td><td>動都不動，談不上落後</td><td>鋼彈簧</td><td>小</td></tr>
+<tr><td><b>Tg 附近</b></td><td>✓ 開始能動</td><td>✓ 但很慢（sluggish）</td><td>麥芽糖、蜂蜜</td><td><b>最大</b></td></tr>
+<tr><td>高於 Tg</td><td>✓ 動得很快</td><td>✗ 立刻跟上</td><td>橡皮筋</td><td>小</td></tr></table></div>
+<figure style="margin:12px 0"><svg viewBox="0 0 680 410" style="width:100%;max-width:680px;display:block;background:var(--sheet);border-radius:8px" role="img" aria-label="耗能等於能動程度乘以跟不上程度，在 Tg 附近最大">
+<line x1="80" y1="300" x2="610" y2="300" stroke="var(--muted)" stroke-width="1"/>
+<line x1="80" y1="300" x2="80" y2="60" stroke="var(--muted)" stroke-width="1"/>
+<text x="614" y="305"font-size="13" fill="var(--muted)">溫度 →</text>
+<line x1="340" y1="70" x2="340" y2="300" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="4 4"/>
+<polyline fill="none" stroke="var(--teal)" stroke-width="2.2" points="80,280 160,278 220,271 260,256 300,226 340,180 380,134 420,104 460,90 520,82 600,80"/>
+<polyline fill="none" stroke="var(--red)" stroke-width="2.2" stroke-dasharray="6 4" points="80,80 160,82 220,89 260,104 300,134 340,180 380,226 420,256 460,271 520,278 600,280"/>
+<polyline fill="none" stroke="var(--amber)" stroke-width="4" points="80,279 160,271 220,244 260,196 300,122 340,80 380,122 420,196 460,244 520,271 600,279"/>
+<text x="160" y="322" text-anchor="middle" font-size="13" fill="var(--ink)">低溫：鏈段凍住</text>
+<text x="340" y="322" text-anchor="middle" font-size="14" font-weight="700" fill="var(--ink)">Tg 附近</text>
+<text x="520" y="322" text-anchor="middle" font-size="13" fill="var(--ink)">高溫：鏈段跟得上</text>
+<line x1="80" y1="356" x2="110" y2="356" stroke="var(--teal)" stroke-width="2.2"/>
+<text x="118" y="361" font-size="13" fill="var(--ink)">① 鏈段能動的程度</text>
+<line x1="330" y1="356" x2="360" y2="356" stroke="var(--red)" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="368" y="361" font-size="13" fill="var(--ink)">② 跟不上外力的程度（落後）</text>
+<line x1="80" y1="384" x2="110" y2="384" stroke="var(--amber)" stroke-width="4"/>
+<text x="118" y="389" font-size="13" fill="var(--ink)">耗能 ＝ ① × ② → E″、tan δ 峰</text>
+</svg><figcaption>示意圖（講義無，補充）：綠線往上、紅線往下，相乘只在 Tg 附近最大。另外 tan δ = E″/E′，分母 E′ 在這裡掉約 1000 倍，所以 tan δ 的峰特別明顯。</figcaption></figure>
+<p class="step"><b>用時間想（講義無，補充）：</b>假設 DMA 每秒推拉 1 次。低溫時鏈段要 100 年才轉得動，這 1 秒內等於沒動；高溫時 0.000001 秒就轉好，完全跟得上；Tg 附近鏈段剛好要約 1 秒，動到一半外力就反向，落後最嚴重、耗能最多。這就是下面「τ ≈ 1/ω」的意思。</p><!--/dmapeak-->
   <p class="step"><b>第 4 步：用兩個時間說出峰的條件。</b>鬆弛時間（relaxation time，τ）是鏈段完成調整所需的時間。角頻率（angular frequency，ω）描述外力振盪快慢；若每秒振盪 f 次，ω = 2πf，比較用的時間尺度是 1/ω。當 ωτ ≈ 1，外力變化和鏈段調整的快慢相近，就有顯著落後與耗散。提高頻率後，必須提高溫度讓 τ 縮短，才再度達到這個條件，因此峰移向高溫。E″ 與 tan δ 的峰溫可以略有不同。</p>
   <div class="mapback"><b>對回考卷寫法：</b>「τ 與 1/ω 相近」把抽屜比喻換成物理條件；「能量以熱耗散最多」解釋 E″、tan δ 為什麼形成峰；「E′ 急降」則表示材料失去玻璃態的高剛性。這與 Q9 的鏈段鬆弛機制相同。<br><b>English：</b>The DMA damping peak near Tg occurs when the segmental relaxation time is comparable to the loading timescale, ωτ ≈ 1, producing strong phase lag and energy dissipation. E″ and tan δ show peaks while E′ drops sharply through the transition.</div>
 </div>
@@ -4288,6 +4330,4 @@ document.querySelectorAll('.structs[data-q]').forEach(box=>{try{
   box.innerHTML=h+'</div>';}catch(e){}});
 })();
 </script>
-
-</body>
-</html>
+</body></html>
